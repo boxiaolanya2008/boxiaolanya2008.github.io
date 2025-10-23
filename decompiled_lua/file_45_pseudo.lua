@@ -1,0 +1,65 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2.  ECurrencyClientType2RichIconTxt
+-- 3.  GunsmithMainPreviewUIButtonText
+-- 4.  GunsmithSolutionMainKOLTipsText
+-- 5.  GunsmithSolutionMianUICheckText
+-- 6.  GunsmithSolutionSaveSuccessText
+-- 7.  _InternalProcessFocusItemUIData
+-- 8.  evtGunsmithCSPostRelayConnected
+-- 9. !DisableDynamicNavConfigsbyWidget
+-- 10. !GetWeaponSocketSnapshot4FrontEnd
+-- 11. !GunsmithSolutionEquipSuccessText
+-- 12. !GunsmithSolutionSkinSourceFormat
+-- 13. !SetFrontendFromWeaponDescription
+-- 14. !_OnCheckUseSkinCheckStateChanged
+-- 15. !evtGunsmithOnSimulateDataUpdated
+-- 16. !wt_WBP_CommonButtonV1S1_Simulate
+-- 17. !wt_WBP_CommonButtonV1S1_UnlockMP
+-- 18. "_InternalIsBlueprintFromFocusItem
+-- 19. "_InternalProcessUpdateData2Server
+-- 20. "_wt_WBP_CommonButtonV1S1_Simulate
+-- 21. "_wt_WBP_CommonButtonV1S1_UnlockMP
+-- 22. "wt_WBP_CommonButtonV1S1_UnlockSOL
+-- 23. #GetPbWeaponSkinInfoParamFromBackup
+-- 24. #GunsmithSolutionMainButtonSaveText
+-- 25. #GunsmithSolutionMainButtonUsedText
+-- 26. #_OnGunsmithPurchaseSuccessCallback
+-- 27. #_wt_WBP_CommonButtonV1S1_UnlockSOL
+-- 28. $GunsmithSolutionMainButtonEquipText
+-- 29. $_EnableGamepadFeatureItemDetailView
+-- 30. $hasUseUserGeneratedContentPrivilege
+-- 31. %OverrideContextBackupFromDescription
+-- 32. %ProcessLinkWeaponDescriptionNodeGUID
+-- 33. %_OnProcessGunsmithOnRangeDataUpdated
+-- 34. (AA
+-- 35. (AB
+-- 36. (EA
+-- 37. (_OnProcessGunsmithOnSimulateDataUpdated
+-- 38. (_OnProcessGunsmithPartMainItemUIClicked
+-- 39. (w@
+-- 40. )A@
+-- 41. )AA
+-- 42. )AC
+-- 43. )AD
+-- 44. )AE
+-- 45. )AN
+-- 46. +evtGunsmithCSPostAssemblyDepositPropUpdate
+-- 47. +evtGunsmithOnGunsmithPartMainItemUIClicked
+-- 48. ,@D
+-- 49. ,@R
+-- 50. ,ProcessSimulateSyncContext4PartFromFrontend
+
+-- 重构的函数结构:
+
+-- 可能的函数: !GunsmithSolutionSkinSourceFormat
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetMainListItemUIFilterDatas
+-- 可能的函数: GetNumberFormatStr
+-- 可能的函数: Key2StrFormat
+-- 可能的函数: Local
+-- 可能的函数: OnForceProcessUI
+-- 可能的函数: format

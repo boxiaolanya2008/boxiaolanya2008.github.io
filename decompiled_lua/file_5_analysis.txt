@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_5.lua
+大小: 13117 字节
+字符串数量: 150
+函数数量: 6
+常量数量: 7775
+
+提取的字符串:
+1.  Debug ]------------- [
+2.  GF
+3.  SubStage TryUnloadLinkSubStage
+4.  SubStageName:
+5.  TryPostLoadLinkedSubStage_PopUI
+6.  TryUnloadAllLinkSubStage
+7.  to:
+8. !OnLinkSubStageLoadFinishCallback
+9. "TryPostLoadLinkedSubStage_StackUI
+10. #AsyncOperateStreamLevelsBySubStage
+11. #CheckIsStreamLevelLoadedBySubStage
+12. #TryBatchLoadLinkSubStageByUIIdList
+13. (A@
+14. (B@
+15. (w@
+16. )AB
+17. )BA
+18. )BB
+19. )BF
+20. )CD
+21. )CE
+22. ,@@
+23. ,@A
+24. -DFM.YxFramework.Managers.UI.Util.UIDebugUtil
+25. .DFM.YxFramework.Managers.UI.Util.UIConfigUtil
+26. 3DFM.YxFramework.Managers.UI.Platform.PlatformLogic
+27. =[ UI LinkSubStage ]------------- Link curStackUINavId is nil
+28. @[ UI LinkSubStage ]-------------[Pop] Link curPopUINavId is nil
+29. AssetLoading
+30. BPKey
+31. BackToLastSubStage
+32. CancelDelay
+33. CommitTransition
+34. CreateCallBack
+35. Ctor
+36. DelayCall
+37. Destroy
+38. ELayerRuleChangeReason
+39. ELevelPriority
+40. ELuaLogCategory
+41. ESubStage
+42. ETransitionChangeReason
+43. EUILayer
+44. EnterSubStage
+45. Events
+46. Facade
+47. GameFlowManager
+48. GenLocalLogFunc
+49. GetCurrentStackUI
+50. GetCurrentStackUIId
+51. GetCurrentSubStage
+52. GetTransitionConfigInfos
+53. High
+54. Invoke
+55. IsForceAreaType
+56. IsHidingLayersBelowPop
+57. IsTransitionEnable
+58. LayersOnly
+59. LevelLoadManager
+60. LinkSubStage
+61. Low
+62. LuaFUIManagerLink
+63. LuaS
+64. M[ UI LinkSubStage ]-------------[Stack Post Check] Link curPopUINavId is nil
+65. Mask
+66. None
+67. OnLinkSubStageUnloadCallback
+68. Pop
+69. PopFullScreen
+70. RecordUILinkSubStageBeginClock
+71. RecordUILinkSubStageEndClock
+72. RecoverStackWorldRendering
+73. ResetLayersToVisible
+74. SetBelowPopUILayerVisible
+75. SetEnableWorldRendering
+76. Stack
+77. SubStage
+78. SubStage ** from:
+79. SubStage EnterSubStage ** from:
+80. SubStage:
+81. Timer
+82. Tip
+83. TryLoadLinkSubStageByUIId
+84. TryUnloadAllLinkSubStage
+85. TryUnloadLinkSubStage
+86. TryUpdateLinkSubStage_StackUI
+87. UILayer
+88. UIManager
+89. UINavID
+90. UITable
+91. V[ GameFlow Debug - UI LinkSubStage ] ******* Link 
+92. Watermark
+93. X[ UI LinkSubStage ]------------- Link 
+94. [ UI LinkSubStage - 
+95. [ UI LinkSubStage ] 
+96. [ UI LinkSubStage ]------------- BatchUIHandle:InternalHandleResFinished 
+97. [ UI LinkSubStage ]------------- SingleUIHandle:InternalHandleResFinished 
+98. [[ GameFlow Debug - UI LinkSubStage ] *******[Pop] Link 
+99. [[ UI LinkSubStage ]------------- BatchUIHandle 
+100. [[ UI LinkSubStage ]------------- Link 

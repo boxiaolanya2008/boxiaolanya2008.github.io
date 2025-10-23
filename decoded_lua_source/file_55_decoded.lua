@@ -1,0 +1,48 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:03.051904
+
+-- 模块导入
+-- GenLocalLogFuncELuaLogCategoryLuaMCommonWidgetimportWidgetLayoutLibraryLuaExtensionDFImageSplineAreaWidgetUMGSplineAreaInforequire.DFM.YxF
+--  DFM.YxFramework.Util.WidgetUtil
+-- .DFM.YxFramework.Managers.Coroutine.ObjectPool
+-- 4DFM.Business.Module.InventoryModule.InventoryConfig
+-- 8DFM.StandaloneLua.BusinessTool.StructTool.ItemOperaTool
+-- :DFM.Business.Module.CommonWidgetModule.CommonWidgetConfig
+-- =DFM.StandaloneLua.BusinessTool.StructTool.ItemSpaceAlgorithm
+-- import
+-- require
+
+-- 常量定义
+-- local AAB
+-- local ABA
+-- local ABB
+-- local ACP
+-- local ADO
+-- local ARCHIVE_MAX_LENGTH
+-- local Add
+-- local AddChild
+-- local AddItem
+-- local AddLuaEvent
+-- local AddSubUI
+-- local Anchors
+-- local BASE_BG_SIZE
+-- local BG_GRID_DEFAULT_PADDING
+-- local BackgroundZOrder
+-- local BindItemViewPostRefreshFunc
+-- local BindPostRefreshFunc
+-- local BindScrollBox
+-- local BindSelfPostRefreshFunc
+-- local CancelDelay
+-- local CancelFrameTask
+-- local CancelGetScrollBoxHeight
+-- local CellContainer
+-- local CheckCanTryFocusItemView
+-- local CheckLocInViewport
+-- local CheckRunWarehouseLogic
+-- local ClearChildren
+-- local Collapsed
+-- local ColorManager
+-- local CommonSlotItemView
+
+-- 函数实现

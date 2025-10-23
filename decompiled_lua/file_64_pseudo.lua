@@ -1,0 +1,61 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  BattlefieldMapViewWindow:OnOpen
+-- 2.  BattlefieldMapViewWindow:OnShow
+-- 3.  DFM.YxFramework.Util.WidgetUtil
+-- 4.  GetDownloadedMapNumInCheckedMap
+-- 5.  SetCatchedMatchIdListAndGroupId
+-- 6.  SetDifferentParentTransStrategy
+-- 7. !EGPUINavGroupTransSimpleStrategy
+-- 8. #BattlefieldMapViewWindow:OnNavBack
+-- 9. #_markTDMMapReddotViewedDelayHandle
+-- 10. $BattlefieldMapViewWindow:_CloseSelf
+-- 11. $GetDownloadProgressInfoByModuleName
+-- 12. $_checkAllBtnGroupReceiveFocusHandle
+-- 13. %BattlefieldMapViewWindow:OnHideBegin
+-- 14. %BattlefieldMapViewWindow:OnShowBegin
+-- 15. %d_%d_%s
+-- 16. &BattlefieldMapViewWindow:OnMapChecked
+-- 17. &BattlefieldMapViewWindow:OnMapClicked
+-- 18. &WBP_StrategicSelection_DownloadButton
+-- 19. (AA
+-- 20. (AB
+-- 21. (AD
+-- 22. (AE
+-- 23. (AH
+-- 24. (BattlefieldMapViewWindow:OnGetItemCount
+-- 25. (BattlefieldMapViewWindow:RefreshMapView
+-- 26. (w@
+-- 27. )@@
+-- 28. )A@
+-- 29. )AA
+-- 30. )AB
+-- 31. )AC
+-- 32. )AE
+-- 33. )AP
+-- 34. )B@
+-- 35. )BC
+-- 36. )BE
+-- 37. )BG
+-- 38. )BS
+-- 39. )BattlefieldMapViewWindow:OnInitExtraData
+-- 40. )CB
+-- 41. )CH
+-- 42. *BattlefieldMapViewWindow:CheckIsMapEnough
+-- 43. *evtDownloadManagerNtfModuleDownloadResult
+-- 44. +BattlefieldMapViewWindow:CheckDownloadInfo
+-- 45. +BattlefieldMapViewWindow:GetNotSelectedNum
+-- 46. ,@@
+-- 47. ,@E
+-- 48. ,BattlefieldMapViewWindow:OnOpen ReCheckMap!
+-- 49. ,BattlefieldMapViewWindow:TryDownloadByMapId
+-- 50. -BattlefieldMapViewWindow:OnProcessItemWidget
+
+-- 重构的函数结构:
+
+-- 可能的函数:  SetDifferentParentTransStrategy
+-- 可能的函数: FormatNowSize
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: format

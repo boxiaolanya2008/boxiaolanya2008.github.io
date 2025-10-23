@@ -1,0 +1,87 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  SetUsingPlatformPremiumFeatures
+-- 2.  TeamModule:_OnReceiveTeamInvite
+-- 3.  UpdatePlatformTeamSessionLeader
+-- 4. !DFM.YxFramework.Plugin.Json.Json
+-- 5. "CheckUsersPermissionsByOpenIdList
+-- 6. "OnAcceptInvitationFromTeamSession
+-- 7. #UpdatePlatformTeamSessionMaxMember
+-- 8. 'OnSessionLeaderChangedCompleteDelegate
+-- 9. 'OnSessionMemberChangedCompleteDelegate
+-- 10. (A@
+-- 11. (AB
+-- 12. (AD
+-- 13. (BB
+-- 14. (CD
+-- 15. (CanSendTeamMatchWitchCurrentTeamMembers
+-- 16. (CanTeamWithPlayerViaCrossPlayPermission
+-- 17. (DE
+-- 18. (w@
+-- 19. )@@
+-- 20. )AB
+-- 21. )AC
+-- 22. )AD
+-- 23. )AE
+-- 24. )AF
+-- 25. )AH
+-- 26. )AI
+-- 27. )BB
+-- 28. )BD
+-- 29. )CE
+-- 30. )DF
+-- 31. )DFM.Business.Module.TeamModule.TeamLogic
+-- 32. )DG
+-- 33. +CheckAnonymousUserCommunicationPermissions
+-- 34. +DFM.YxFramework.Managers.Module.ModuleBase
+-- 35. +evtCanSendTeamMatchWitchCurrentTeamMembers
+-- 36. +evtCanTeamWithPlayerViaCrossPlayPermission
+-- 37. , Mode=
+-- 38. , PlayerId=
+-- 39. , PlayerName=
+-- 40. ,@@
+-- 41. 0[TeamModule] HandleAutomationMatch groupIdsp[0]
+-- 42. 2OnAcceptInvitationFromTeamSessionCompleteDelegate
+-- 43. 2[TeamModule] HandleAutomationMatch match_mode_id:
+-- 44. 3[TeamModule] HandleAutomationMatch groupIdsp[0] e 
+-- 45. 8[TeamModule] HandleAutomationMatch match_mode_id is nil
+-- 46. :[v_dzhanshen] TeamModule:JoinTeamFromMiniProgram lastUrl=
+-- 47. ?[v_dzhanshen] TeamModule:JoinTeamFromMiniProgram teamId is nil
+-- 48. @[v_dzhanshen] TeamModule:JoinTeamFromMiniProgram lastUrl is nil
+-- 49. A@@
+-- 50. AcceptInvite
+
+-- 重构的函数结构:
+
+-- 可能的函数:  SetUsingPlatformPremiumFeatures
+-- 可能的函数:  UpdatePlatformTeamSessionLeader
+-- 可能的函数: #UpdatePlatformTeamSessionMaxMember
+-- 可能的赋值: , Mode=
+-- 可能的赋值: , PlayerId=
+-- 可能的赋值: , PlayerName=
+-- 可能的赋值: :[v_dzhanshen] TeamModule:JoinTeamFromMiniProgram lastUrl=
+-- 可能的赋值: C[v_dzhanshen] TeamModule:JoinTeamFromMiniProgram game_data teamId=
+-- 可能的函数: CreatePlatformTeamSession
+-- 可能的函数: DFMPlatformFriendManager
+-- 可能的函数: DestroyPlatformTeamSession
+-- 可能的函数: EArmedForceMode
+-- 可能的函数: EPlatformPremiumFeaturesType
+-- 可能的函数: EPlatformUserPermissionType
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: JoinPlatformTeamSession
+-- 可能的函数: LTeamModule:_OnReceiveTeamInvite Receive Team Invite From Different Platform
+-- 可能的函数: OnJoinTeamWithPlatformSession
+-- 可能的函数: OnPlatformSessionLeadChanged
+-- 可能的函数: OnPlatformSessionMemberChanged
+-- 可能的函数: PLATFORM_WINDOWS
+-- 可能的函数: PlayerInformat
+-- 可能的函数: SetForceEnter3DSafeHouse
+-- 可能的赋值: TeamID=
+-- 可能的赋值: TeamID=(%d+)
+-- 可能的函数: UpdatePlatformTeamSession
+-- 可能的函数: evtCreatePlatformTeamSession
+-- 可能的函数: evtDestroyPlatformTeamSession
+-- 可能的函数: evtJoinPlatformTeamSession
+-- 可能的函数: evtUpdatePlatformTeamSession

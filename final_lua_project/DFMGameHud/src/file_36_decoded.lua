@@ -1,0 +1,47 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:01.347640
+
+-- 模块导入
+-- ;DFM.Business.Module.CommonWidgetModule.UI.CommonPopWindows
+-- ;DFM.StandaloneLua.BusinessTool.LogAnalysis.LogAnalysisTool
+-- =DFM.Business.Module.LitePackageModule.Logic.LitePackageLogic
+-- @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
+-- @DFM.Business.Module.LitePackageModule.UI.LiteDownloadNormalItem
+-- GDFM.Business.DataStruct.LitePackageStruct.LitePackageDownloadTableItem
+-- import
+-- require
+
+-- 常量定义
+-- local ACC
+-- local AddListeners
+-- local AddLuaEvent
+-- local Anchors
+-- local BindBackAction
+-- local BindCloseCallBack
+-- local CancelAll
+-- local CancelDelay
+-- local CanvasPanel_61
+-- local CategoryPaksItem
+-- local CategoryTable
+-- local CategoryTitle
+-- local CenterCancelConfirm
+-- local CenterConfirm
+-- local ChangeDownloadAllType
+-- local CheckAndDownloadAll
+-- local CheckBtnStates
+-- local CheckHasPakNeedDownload
+-- local CloseUI
+-- local Collapsed
+-- local CommonBar
+-- local CommonTips
+-- local Config
+-- local CreateCallBack
+-- local Ctor
+-- local DFWaterfallScrollView_1
+-- local DelayCall
+-- local EConfirmBtnType
+-- local ELuaLogCategory
+-- local ESystemSettingPanel
+
+-- 函数实现

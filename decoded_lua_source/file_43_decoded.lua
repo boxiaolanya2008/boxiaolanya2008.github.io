@@ -1,0 +1,45 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:02.880606
+
+-- 模块导入
+-- .DFM.StandaloneLua.BusinessTool.HeroHelperTool
+-- .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+-- ADFM.YxFramework.Managers.GameFlow.InGameControl.InGameController
+-- NDFM.Business.Module.RoleInfoModule.UI.RoleComponent.CommonSocialTitleItem_Big
+-- import
+-- require
+
+-- 常量定义
+-- local AccountServer
+-- local ArmedForceImg
+-- local AssetPathName
+-- local AsyncSetImagePath
+-- local Badge
+-- local Blueprint_SetTextStyle
+-- local C002
+-- local C003
+-- local C004
+-- local C005
+-- local Card
+-- local CloseBadgeTips
+-- local Collapsed
+-- local Config
+-- local Ctor
+-- local DFImage_218
+-- local DFImage_TeamIdentity
+-- local DFMGameplayBlueprintHelper
+-- local DFTextBlock_132
+-- local DFTextBlock_266
+-- local DefaultCardPath
+-- local DisableBadgeInteraction
+-- local EBadgeSlotType
+-- local EGspPlayerGameStatusType
+-- local EGspPlayerResultType
+-- local EHeroAccessroy
+-- local ELuaLogCategory
+-- local ETeamIdentity
+-- local EnableEquip
+-- local EscapeFailTXT
+
+-- 函数实现

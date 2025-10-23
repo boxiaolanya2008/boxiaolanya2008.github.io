@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_49.lua
+大小: 39738 字节
+字符串数量: 709
+函数数量: 138
+常量数量: 28296
+
+提取的字符串:
+1.  &local=zh_TW&garena_channelid=0
+2.  = 
+3.  CallSceneCtrlFunctionBySubstage
+4.  DFM.YxFramework.Util.WidgetUtil
+5.  PlayCharacterAnimSeqByFashionId
+6.  extraParam: 
+7.  type: 
+8. !DFM.YxFramework.Plugin.Json.Json
+9. !GameletLogic.ShowReward itemID: 
+10. !GetBelongedHeroIdByHeroFashionId
+11. !SetDisplayWeaponAutoBoundAdapter
+12. " VersionUtil.IsGameChannelSteam()
+13. "GameletLogic.OnViewAboutToDestroy
+14. "GameletLogic.OnViewCreated layer:
+15. "GetOnlinePlayerStateFromStateCode
+16. #AsyncOperateStreamLevelsBySubStage
+17. #shareArkMessageToQQInSilenceResult
+18. #{"attr1":"","attr2":"","attr3":""}
+19. $pandoraShareArkMessageToQQInSilence
+20. %UpdateDetailViewPositionByWidgetInfo
+21. &GameletLogic.OnReportData: eventName:
+22. &GameletModule:Gamelet Error Nogamelet
+23. &app_item_id=
+24. &channelid=
+25. &gameid=
+26. &prefix=garena.df.dc.
+27. &roleId=
+28. &source=
+29. &ts=
+30. (@@
+31. (@A
+32. (AA
+33. (AB
+34. (AC
+35. (AE
+36. (BB
+37. (BH
+38. (CB
+39. (GameletLogic.OnViewCreated appID 
+40. (GameletLogic.OnViewCreated onLoadFinish
+41. (w@
+42. )@@
+43. )@A
+44. )@B
+45. )A@
+46. )AA
+47. )AB
+48. )AE
+49. )AF
+50. )BB
+51. )BC
+52. )BF
+53. )GameletLogic pandoraGoWeaponPreview item
+54. )GameletLogic pandoraPayReq GarenaIns nil
+55. )GameletLogic pandoraPayReq extraZone nil
+56. )GameletLogic.OnViewCreated add UIName2ID
+57. )[GameletLogic] pandoraAddFriend, player 
+58. *GameletLogic pandoraPayReq HD not support
+59. +GameletLogic pandoraPayReq extraRoleID nil
+60. ,DFM.StandaloneLua.BusinessTool.LocalizeTool
+61. ,GameletLogic pandoraPayReq region not match
+62. ,GameletLogic.OnViewCreated app parent exist
+63. -GameletLogic GetGameAppId IsWeGameEnabled() 
+64. -GameletLogic pandoraShowStackCurrency, appId
+65. .DFM.StandaloneLua.BusinessTool.HeroHelperTool
+66. .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+67. .GameletLogic pandoraGetProductPayInfoReq item
+68. /Font'/Game/UI/Fonts/FZLTHJW_Font.FZLTHJW_Font'
+69. /GameletLogic pandoraGetProductPayInfoReq price
+70. 0DFM.Business.Module.GameletModule.UI.GameletPop
+71. 1DFM.Business.Module.StoreModule.Logic.StoreLogic
+72. 1GameletLogic.ShowWeaponSkin SetWeaponDisplayType
+73. 2GameletLogic.ShowReward itemData is nil, itemID: 
+74. 3GameletLogic pandoraGetProductPayInfoReq productID
+75. 3GameletLogic pandoraPayReq GarenaIns.ZoneId set to
+76. 4DFM.Business.Module.GameletModule.UI.GameletStackCB
+77. 6DFM.Business.Module.GameletModule.UI.GameletStackNoCB
+78. 7Font'/Game/UI/Fonts/FZLTZHJW_ZH_Font.FZLTZHJW_ZH_Font'
+79. 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
+80. :GameletLogic pandoraPayReq GarenaIns.ChannelExtras set to
+81. ;DFM.Business.Module.GameletModule.UI.GameletStackCBStoreHR
+82. <GameletLogic pandoraGetProductPayInfoReq registrationRegion
+83. >GameletLogic.InitSDK gameletSettings.DelayWndCallMsg set true
+84. ?GameletLogic pandoraPayReq proto.goodsTokenUrl.zone_id invalid
+85. A@C
+86. AccountServer
+87. Activity
+88. Adapter
+89. Add
+90. AddActiveApp
+91. AddActivityAppTable
+92. AddAppIDRedDot
+93. AddAppIDTaskFinish
+94. AddFriend
+95. AddListener
+96. AppSetting
+97. Apple
+98. AppsFlyer
+99. AsyncLoadImgObjByPath
+100. AsyncSetImagePath

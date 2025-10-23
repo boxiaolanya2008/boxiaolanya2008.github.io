@@ -1,0 +1,46 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:19:59.349070
+
+-- 模块导入
+--  DFM.YxFramework.Util.WidgetUtil
+-- @DFM.Business.Module.SystemSettingModule.Logic.HD.SettingLogicHD
+-- EDFM.Business.Module.SystemSettingModule.Logic.HD.CloudSettingLogicHD
+-- FDFM.Business.Module.SystemSettingModule.Logic.HD.CommonSettingLogicHD
+-- MDFM.Business.Module.SystemSettingModule.UI.DFHD.SystemSettingHDLanguagePanel
+-- import
+-- require
+
+-- 常量定义
+-- local AddNavWidgetToArray
+-- local BindBackHandler
+-- local CheckUnsave
+-- local Collapsed
+-- local CommonBar
+-- local CommonTips
+-- local Config
+-- local CreateCallBack
+-- local Ctor
+-- local DFMGamePlayerMode
+-- local DescRootPanel
+-- local EDFMGamePlayMode
+-- local ELuaLogCategory
+-- local ESystemSettingHDPanel
+-- local Field
+-- local GamePlayMode_SOL
+-- local GenLocalLogFunc
+-- local GetCurrentTabTypeHD
+-- local GetGameState
+-- local GetGlobalSummaryList
+-- local GetWorld
+-- local HDEntrance
+-- local HDSetting
+-- local Hittest
+-- local IsBuildRegionCN
+-- local IsInEditor
+-- local Loc
+-- local LocalNicknameDisplay
+-- local LuaMSystemSetting
+-- local LuaS
+
+-- 函数实现

@@ -1,0 +1,14 @@
+-- Lua源代码重构
+-- 基于字节码分析重构的代码结构
+
+-- 导入模块
+-- import DFM.Business.Misc.DFMAudioConst
+-- import !DFM.Business.Misc.DFMGlobalConst
+-- import "DFM.Business.Misc.DFMGlobalEvents
+-- import $DFM.Business.Misc.DFMGlobalFunction
+-- import $DFM.Business.Proto.ProtoMappingTool
+-- import %XSX does not require hardware checks
+-- import &DFM.YxFramework.Plugin.Memory.MemTool
+-- import (DFM.Business.Misc.DFMGlobalModuleConfig
+-- import *DFM.BusinessEntrance.EntranceGlobalEvents
+-- import -DFM.StandaloneLua.BusinessTool.PSOAutomation

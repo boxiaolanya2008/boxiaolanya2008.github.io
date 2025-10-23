@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_35.lua
+大小: 41865 字节
+字符串数量: 622
+函数数量: 58
+常量数量: 23967
+
+提取的字符串:
+1.  AccountCnSteamForbidOverseaUser
+2.  AccountForbiddenLowVersionLogin
+3.  AccountLoginServiceClosed_Exper
+4.  GetRegisterErrNoOpeningTimeTips
+5.  error check this._SaveLoginInfo
+6.  evtOnLoginStartGetThirdPartInfo
+7. !Console_Lua_Proto_ConnectNotLink
+8. !DFM.YxFramework.Plugin.Json.Json
+9. !OnLogoutRet 1013 not login scene
+10. !TransTimestamp2YYMMDDHHMMSSCNStr
+11. ![OnLoginSuccess]Close Launch Bg!
+12. !evtOnGCloudSDKWebBrowserCallback
+13. !https://graph.qq.com/oauth2.0/me
+14. "IsEnablePostProcessLogin2FrontEnd
+15. "SetHighlight_DirectlyOrNavigation
+16. #[OnGetThirdPartInfoRet] set token:
+17. $_OnLoginSuccessInvokeBusinessTravel
+18. &LoginInteractLogic._OnTeamInfoUpdated
+19. &[OnLoginSuccess]ProcessLoginConnect()
+20. &[OnReconnectLoginOperate] connecturl:
+21. 'OnLogoutRet 0 lastId and channelId is 
+22. '[OnGetThirdPartInfoRet] ConnectMSDK...
+23. '[OnGetThirdPartInfoRet] no welogininfo
+24. '[OnGetThirdPartInfoRet] token is empty
+25. (@@
+26. (@A
+27. (@C
+28. (@D
+29. (@G
+30. (AH
+31. (BA
+32. (DB
+33. ([_OnINTLComplianceRet] hotfix she3 3112
+34. (w@
+35. )@@
+36. )@C
+37. )@E
+38. )@F
+39. )@G
+40. )@H
+41. )@I
+42. )@J
+43. )@K
+44. )A@
+45. )AB
+46. )AC
+47. )AE
+48. )AF
+49. )AI
+50. )AJ
+51. )AN
+52. )AO
+53. )BA
+54. )BB
+55. )CD
+56. )[OnConnectSuccess] wait netbar result...
+57. )psn:s2s openid id_token:psn.basic_claims
+58. *@@
+59. *DFM.Business.Module.LoginModule.LoginUtil
+60. *OnLogoutRet Luanch do not form dflauncher
+61. +DFM.Business.Module.LoginModule.LoginLogic
+62. +OnLogoutRet Luanch form dflauncher, ignore
+63. +[OpenCustomerService] IsBuildRegionGlobal:
+64. ,DFM.Business.Module.LoginModule.LoginConfig
+65. ,EF
+66. ,req.Request(fOnHopeVerifyCertificationRes);
+67. ,this:_OnCSGatewayKickPlayerNtf Kill ue5 now
+68. -999
+69. -OnLogoutRet 1012 not login scene do not deal
+70. -login channel _OnGetThirdPartInfoRet LockNow
+71. .[OnGetThirdPartInfoRet] refresh pay token now
+72. ._OnGetThirdPartInfoRet: xsx
+73. 0[ReturnLogin] PC 
+74. 1[OpenCustomerService] IsBuildRegionGlobal Mobile
+75. 2LoginInteractLogic _ShowLimitConfirmWindow hotfix
+76. 2[TestHopeVerify]instruction.type == 3, stop login
+77. 2[_LoginSuccess] UHighlightMomentMgr._LoginSuccess
+78. 3DFM.Business.Module.LoginModule.LoginRegisterLogic
+79. 3[OnGetThirdPartInfoRet] request netbar priv now...
+80. 3[TestHopeVerify]instruction.type == 1, go to login
+81. 4[TestHopeVerify]instruction.type == 0, go to login 
+82. 5Account Login CloseModuleType disable GM for server 
+83. 5[OnGetThirdPartInfoRet] filter unnecessary methodId:
+84. 6[NetBarNtf] bIsNetbarMachine:{0}  token:{1}  ip = {2}
+85. 6[OnLoginSuccess] _SetFirstLoginRegionCode INTLRegion 
+86. 7LoginInteractLogic._OnLoginSuccessInvokeBusinessTravel
+87. 8[TestHopeVerify]fOnHopeVerifyCertificationRes result:%d
+88. ;DFM.Business.Module.LoginModule.Logic.VietnamProtocolLogic
+89. ;DFM.StandaloneLua.BusinessTool.LogAnalysis.LogAnalysisTool
+90. ;[LoginInteractLogic][GetThirdPartInfo] channel, bIsQRCode:
+91. ;[NetBar] 
+92. ;[OnGetThirdPartInfoRet] UHighlightMomentMgr.SetupLoginInfo
+93. ;[ReturnLogin] Module.LitePackage:ReleasePufferDownloader()
+94. <LoginInteractLogic._OnGCloudSDKWebBrowserCallback jsonData:
+95. <LoginInteractLogic._OnGCloudSDKWebBrowserCallback ret_type:
+96. <[TestHopeVerify]instruction.type == 2 , showPop, stop login
+97. <_FetchNeccesaryData res.result = Err.AccountKickConnInRoom 
+98. ?DFMGameSDK_UDFMGameLogin_OnINTLAuthResult AccessToken time out
+99. ?access_token=
+100. @DFM.StandaloneLua.BusinessTool.LogAnalysis.GameLaunchReportTool

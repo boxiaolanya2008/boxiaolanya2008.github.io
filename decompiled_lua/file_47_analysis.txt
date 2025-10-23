@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_47.lua
+大小: 12125 字节
+字符串数量: 184
+函数数量: 27
+常量数量: 7924
+
+提取的字符串:
+1.  CSWAssemblyDepositPropUpdateReq
+2.  GetPartsDefaultItemInfoFromDesc
+3.  OverrideContextByPresetPropinfo
+4.  ProcessSetSkinLockAllAppearance
+5. !GetWeaponSocketSnapshot4FrontEnd
+6. !SetSkinFromPbWeaponSkinInfoParam
+7. "GetWeaponDescription4BackupServer
+8. "SetPropInfo2PbWeaponSkinInfoParam
+9. $OverrideDescSolutionFromDescription
+10. $SetWeaponDescription4SyncFromServer
+11. %AutoRemoveNodeFromDescWithSocketGUID
+12. %OverrideContextBackupFromDescription
+13. %OverrideContextFromServerPartUpdated
+14. %OverrideContextFromServerSkinUpdated
+15. %ProcessLinkWeaponDescriptionNodeGUID
+16. 'OnOverrideContextFromServerSkinUpdated
+17. (A@
+18. (AA
+19. (BA
+20. (CB
+21. (InternalRelinkWeaponDescriptionNodeGUID
+22. (w@
+23. )AB
+24. )CC
+25. )CD
+26. +ProcessRemovePartNodeFromweaponDescription
+27. +UpdateMissionEquippedAndUnequippedPartList
+28. , can not CSWAssemblyDepositPropUpdateReq!!!
+29. , local_prop: 
+30. ,InternalRelinkWeaponDescriptionRootNodeGUID
+31. .GetIDsContainedInventoryFromWeaponDescription
+32. .GetPbWeaponSkinInfoParamFromWeaponDescription
+33. ._InternalOverrideContextBackupFromDescription
+34. 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
+35. 0_InternalCanSendCSWAssemblyDepositPropUpdateReq
+36. 5GunsmithUIContextProcessor.ProcessAddPartNode, fail:
+37. 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
+38. ;DFM.Business.Module.GunsmithModule.Define.EGunsmithUIState
+39. =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+40. >DFM.Business.Module.GunsmithModule.Data.Skin.GunsmithSkinData
+41. ?GunsmithUIContextProcessor:CSWAssemblyDepositPropUpdateReq -- 
+42. @DFM.Business.Module.GunsmithModule.Logic.GunsmithUIContextLogic
+43. @DFM.Business.Module.GunsmithModule.Logic.TLog.GunsmithTLogLogic
+44. AA@
+45. AAA
+46. AddNodeToDescFromSocketGUID
+47. AssembleWeaponDataLibrary
+48. BuildFromModularWeaponDesc
+49. CommonTips
+50. Config
+51. Ctor
+52. DecodeSocketIDFromSocketGUID
+53. ELuaLogCategory
+54. Events
+55. FastEquip
+56. GenLocalLogFunc
+57. GetBackup
+58. GetFocusSocketGUID
+59. GetFrontend
+60. GetGUID
+61. GetGroupID
+62. GetIsFromUserPropInfo
+63. GetItemByGid
+64. GetItemID
+65. GetItemName
+66. GetNewPbWeaponSkinInfoParam
+67. GetNewPendantInfo
+68. GetPbWeaponSkinInfoParam
+69. GetPresetPropinfo
+70. GetRawDescObj
+71. GetRawPropInfo
+72. GetSocketFromGUID
+73. GetUIState
+74. GetWeaponDescription
+75. GetWeaponDescription4Backup
+76. GetWeaponDescription4Frontend
+77. GetWeaponDescription4Sync
+78. GetWeaponItemGUIDFormUser
+79. GetWeaponPropInfo
+80. GetWeaponSocketSnapshot4Backup
+81. Get_PropInfo_Weapon_SkinID
+82. Gunsmith
+83. GunsmithErrorOperationTips
+84. GunsmithUIContextProcessor
+85. HGunsmithUIContextProcessor:CSWAssemblyDepositPropUpdateReq -- UIState: 
+86. InteralFormatParam4SyncContext
+87. InternalAddPartNode
+88. InternalCheckyFastEquipResult
+89. InternalOverridePropinfo
+90. InternalProcessFastEquipResult
+91. InternalRemoveAllPart
+92. InternalRemovePartNode
+93. InventoryServer
+94. Invoke
+95. IsShipping
+96. IsSimulateState
+97. IsVirutalPartItem
+98. ItemInfoContext
+99. KGunsmithUIContextProcessor.InternalAddPartNode, weaponDescription is null.
+100. LGunsmithUIContextProcessor:CSWAssemblyDepositPropUpdateReq -- newPropInfo: 

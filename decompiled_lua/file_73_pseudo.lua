@@ -1,0 +1,83 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  GetTeamSearchingIndexByItemInfo
+-- 2.  Get_PropInfo_Weapon_PendantGUID
+-- 3. !GetWeaponPendantGUIDFromPropInfo
+-- 4. #SetWeaponMysticalSkinInfo2PropInfo
+-- 5. $GetShopStackDynamicGuidePriceByItem
+-- 6. $RecItemInfo == nil RecId self.id = 
+-- 7. %GetShopSingleDynamicGuidePriceByItem
+-- 8. %Get_PropInfo_Weapon_MysticalSkinInfo
+-- 9. &GetWeaponMysticalSkinInfoFromPropInfo
+-- 10. &SetWeaponMysticalPendantInfo2PropInfo
+-- 11. &propInfo num should not be zero,id = 
+-- 12. 'Item [%s] has wrong quality value [%d]
+-- 13. (A@
+-- 14. (AA
+-- 15. (AH
+-- 16. (CJ
+-- 17. (GH
+-- 18. (Get_PropInfo_Weapon_MysticalPendantInfo
+-- 19. (w@
+-- 20. )A@
+-- 21. )AA
+-- 22. )AB
+-- 23. )AC
+-- 24. )AI
+-- 25. )AL
+-- 26. )BQ
+-- 27. )CP
+-- 28. )GM
+-- 29. )GetWeaponMysticalPendantInfoFromPropInfo
+-- 30. )SetWeaponDescriptionSkinInfoFromPropInfo
+-- 31. *ItemBase:SetRawCppInfo item id not match.
+-- 32. *ItemBase:SetRawCppInfo refresh itemID for
+-- 33. +loot.InvMgrUseFakeItemIDForUnSearchedItems
+-- 34. ,@
+-- 35. ,@@
+-- 36. ,@B
+-- 37. ,@D
+-- 38. ,@E
+-- 39. ,@G
+-- 40. ,@O
+-- 41. .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+-- 42. .loot.ContainerUseFakeItemIDForUnSearchedItems
+-- 43. 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
+-- 44. 1DFM.Business.DataStruct.InventoryStruct.ItemSlot
+-- 45. 1DFM.StandaloneLua.BusinessTool.VehicleHelperTool
+-- 46. 333333
+-- 47. 3DFM.Business.DataStruct.InventoryStruct.SlotConfig
+-- 48. 4DFM.Business.DataStruct.ItemStruct.ItemBase_Feature
+-- 49. 8DFM.StandaloneLua.BusinessTool.StructTool.ItemOperaTool
+-- 50. 8[ItemBase:SetRawPropInfo] Pass a nil propinfo, item id:
+
+-- 重构的函数结构:
+
+-- 可能的赋值: $RecItemInfo == nil RecId self.id = 
+-- 可能的赋值: &propInfo num should not be zero,id = 
+-- 可能的函数: *ItemBase:SetRawCppInfo refresh itemID for
+-- 可能的函数: +loot.InvMgrUseFakeItemIDForUnSearchedItems
+-- 可能的函数: .loot.ContainerUseFakeItemIDForUnSearchedItems
+-- 可能的函数: ;ItemBase:_LoadItemInfo unable to find CommonItemAssets for
+-- 可能的赋值: =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+-- 可能的函数: ForceSetBindType
+-- 可能的函数: GetLastModifyReason
+-- 可能的函数: GetSecondsFormatDDHHMMSS
+-- 可能的函数: Gift
+-- 可能的函数: LItemBase:SetRawCppInfo unexpectedly get unsearched itemID for searched item
+-- 可能的函数: ModifyParam
+-- 可能的函数: ModifyParam2
+-- 可能的函数: ModifyTimeStamp
+-- 可能的函数: NeedSearchByLocalPlayer
+-- 可能的函数: SequentialFormat
+-- 可能的函数: SetLocalPickupFrame
+-- 可能的函数: format
+-- 可能的函数: localPickupFrame
+-- 可能的日志: logerror
+-- 可能的日志: loginfo
+-- 可能的函数: modifyParam
+-- 可能的函数: modifyParam2
+-- 可能的函数: modifyTimeStamp
+-- 可能的赋值: name = %s, id = %s, gid = %s

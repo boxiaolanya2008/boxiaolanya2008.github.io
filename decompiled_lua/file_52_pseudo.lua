@@ -1,0 +1,81 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2.  ItemDetailCommonKeyIconTipsItem
+-- 3.  SetLastItemDoubleClickTimestamp
+-- 4.  _OnInternalItemOperaModeChanged
+-- 5.  _bUseCustomInteractivityControl
+-- 6.  evtUpdateAllBlankItemVisibility
+-- 7.  evtWarehouseEquipSlotViewOnDrop
+-- 8.  self:
+-- 9. !CheckRunSingleClickMoveItemLogic
+-- 10. !CheckWeaponAdapterMatchHighlight
+-- 11. !IsSOLQuestItemButNotDSPickUpProp
+-- 12. "IsNotAllowOperateInCollectionRoom
+-- 13. "SlotsAllowOperateInCollectionRoom
+-- 14. "TeammateBindingContainerExistsTip
+-- 15. "_CheckIsShowSelectedCompByClicked
+-- 16. "evtShouldUseItemOnDraggingSummary
+-- 17. #CheckItemHaveTeammateBindCondition
+-- 18. #CheckRunCollectionRoomLootingLogic
+-- 19. #USING_ITEM_STACK_NUM_ANIM_DURATION
+-- 20. $IVWarehouseTemplate:OnDoubleClicked
+-- 21. $ItemOperateActionMethod_DoubleClick
+-- 22. $ItemOperateActionMethod_SingleClick
+-- 23. $_OnPlayerItemMarkingInfoArrayChange
+-- 24. $evtPlayerItemMarkingInfoArrayChange
+-- 25. %CheckItemCanBePutInEquippedContainer
+-- 26. %ShouldCheckEquippedNotEmptyContainer
+-- 27. %UpdateInteractiveInMarkSelectionMode
+-- 28. %d/%d
+-- 29. %evtUpdateFirstRowBlankItemVisibility
+-- 30. 'CheckIsLootingOrDepositoryOrSettlement
+-- 31. 'IVWarehouseTemplate:OnImmediateClicked
+-- 32. (A@
+-- 33. (AA
+-- 34. (AB
+-- 35. (AC
+-- 36. (AD
+-- 37. (AE
+-- 38. (AG
+-- 39. (AI
+-- 40. (BE
+-- 41. (D@
+-- 42. (EE
+-- 43. (FE
+-- 44. (GE
+-- 45. (HE
+-- 46. (IE
+-- 47. (JE
+-- 48. (KK
+-- 49. (w@
+-- 50. )A@
+
+-- 重构的函数结构:
+
+-- 可能的赋值: =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+-- 可能的函数: ArmedForceServer
+-- 可能的函数: CommonOnDropForBullet
+-- 可能的函数: CommonOnDropForFastEquip
+-- 可能的函数: DIVWarehouseTemplate:OnDoubleClicked blocked because last diffTime =
+-- 可能的函数: ForceStopLongPressTimer
+-- 可能的函数: Forward
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetLastModifyReason
+-- 可能的函数: GetLocalSize
+-- 可能的函数: GetLocalTimestamp
+-- 可能的函数: HasShowForbiddenToCarryOut
+-- 可能的函数: IsItemIDForbiddenToCarryOut
+-- 可能的函数: LeftShift
+-- 可能的函数: NeedSearchByLocalPlayer
+-- 可能的函数: SetForceHideSelectorRoot
+-- 可能的函数: SlotsNotAllowDragForMobile
+-- 可能的赋值: VIVWarehouseTemplate:CheckSearchState item=(name=%s gid=%d) search state from %d to %d
+-- 可能的函数: _CheckIVForbidenToCarryOut
+-- 可能的函数: _OnNotifyItemHighlight
+-- 可能的函数: evtNotifyItemHighlight
+-- 可能的函数: flagDisableOpForGuide
+-- 可能的函数: format
+-- 可能的函数: modifyTimeStamp

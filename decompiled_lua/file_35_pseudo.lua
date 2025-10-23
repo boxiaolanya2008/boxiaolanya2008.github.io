@@ -1,0 +1,119 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  AccountCnSteamForbidOverseaUser
+-- 2.  AccountForbiddenLowVersionLogin
+-- 3.  AccountLoginServiceClosed_Exper
+-- 4.  GetRegisterErrNoOpeningTimeTips
+-- 5.  error check this._SaveLoginInfo
+-- 6.  evtOnLoginStartGetThirdPartInfo
+-- 7. !Console_Lua_Proto_ConnectNotLink
+-- 8. !DFM.YxFramework.Plugin.Json.Json
+-- 9. !OnLogoutRet 1013 not login scene
+-- 10. !TransTimestamp2YYMMDDHHMMSSCNStr
+-- 11. ![OnLoginSuccess]Close Launch Bg!
+-- 12. !evtOnGCloudSDKWebBrowserCallback
+-- 13. !https://graph.qq.com/oauth2.0/me
+-- 14. "IsEnablePostProcessLogin2FrontEnd
+-- 15. "SetHighlight_DirectlyOrNavigation
+-- 16. #[OnGetThirdPartInfoRet] set token:
+-- 17. $_OnLoginSuccessInvokeBusinessTravel
+-- 18. &LoginInteractLogic._OnTeamInfoUpdated
+-- 19. &[OnLoginSuccess]ProcessLoginConnect()
+-- 20. &[OnReconnectLoginOperate] connecturl:
+-- 21. 'OnLogoutRet 0 lastId and channelId is 
+-- 22. '[OnGetThirdPartInfoRet] ConnectMSDK...
+-- 23. '[OnGetThirdPartInfoRet] no welogininfo
+-- 24. '[OnGetThirdPartInfoRet] token is empty
+-- 25. (@@
+-- 26. (@A
+-- 27. (@C
+-- 28. (@D
+-- 29. (@G
+-- 30. (AH
+-- 31. (BA
+-- 32. (DB
+-- 33. ([_OnINTLComplianceRet] hotfix she3 3112
+-- 34. (w@
+-- 35. )@@
+-- 36. )@C
+-- 37. )@E
+-- 38. )@F
+-- 39. )@G
+-- 40. )@H
+-- 41. )@I
+-- 42. )@J
+-- 43. )@K
+-- 44. )A@
+-- 45. )AB
+-- 46. )AC
+-- 47. )AE
+-- 48. )AF
+-- 49. )AI
+-- 50. )AJ
+
+-- 重构的函数结构:
+
+-- 可能的函数:  AccountCnSteamForbidOverseaUser
+-- 可能的函数:  AccountForbiddenLowVersionLogin
+-- 可能的函数: #[OnGetThirdPartInfoRet] set token:
+-- 可能的函数: '[OnGetThirdPartInfoRet] ConnectMSDK...
+-- 可能的函数: '[OnGetThirdPartInfoRet] no welogininfo
+-- 可能的函数: '[OnGetThirdPartInfoRet] token is empty
+-- 可能的函数: *OnLogoutRet Luanch do not form dflauncher
+-- 可能的函数: +OnLogoutRet Luanch form dflauncher, ignore
+-- 可能的函数: ,req.Request(fOnHopeVerifyCertificationRes);
+-- 可能的函数: -login channel _OnGetThirdPartInfoRet LockNow
+-- 可能的函数: .[OnGetThirdPartInfoRet] refresh pay token now
+-- 可能的函数: ._OnGetThirdPartInfoRet: xsx
+-- 可能的函数: 2[TestHopeVerify]instruction.type == 3, stop login
+-- 可能的函数: 3[OnGetThirdPartInfoRet] request netbar priv now...
+-- 可能的函数: 3[TestHopeVerify]instruction.type == 1, go to login
+-- 可能的函数: 4[TestHopeVerify]instruction.type == 0, go to login 
+-- 可能的函数: 5Account Login CloseModuleType disable GM for server 
+-- 可能的函数: 5[OnGetThirdPartInfoRet] filter unnecessary methodId:
+-- 可能的赋值: 6[NetBarNtf] bIsNetbarMachine:{0}  token:{1}  ip = {2}
+-- 可能的函数: 8[TestHopeVerify]fOnHopeVerifyCertificationRes result:%d
+-- 可能的函数: ;[OnGetThirdPartInfoRet] UHighlightMomentMgr.SetupLoginInfo
+-- 可能的函数: <[TestHopeVerify]instruction.type == 2 , showPop, stop login
+-- 可能的赋值: <_FetchNeccesaryData res.result = Err.AccountKickConnInRoom 
+-- 可能的赋值: ?access_token=
+-- 可能的函数: CSHopeVerifyCertificationReq
+-- 可能的函数: D[OnLoginSuccess] _SetFirstLoginRegionCode returning for INTLRegion 
+-- 可能的函数: FlagForceEnableIntro
+-- 可能的函数: ForceEnableIntro
+-- 可能的函数: ForceEnableIntro: 
+-- 可能的函数: GenLocalLogFunc
+-- 可能的赋值: Get Invalid Data! reason = 
+-- 可能的函数: GetDiffAccountFlag
+-- 可能的函数: GetForBidLoginTips
+-- 可能的函数: HandleDiffAccount
+-- 可能的函数: HopeVerifyCertification
+-- 可能的函数: Key2StrFormat
+-- 可能的赋值: LimitMessage = 
+-- 可能的函数: LoginCrossPlatform
+-- 可能的函数: LoginCrossPlatformLobby
+-- 可能的赋值: Message = 
+-- 可能的函数: NotifyLauncherExit
+-- 可能的赋值: OnLogoutRet 1012 channelId = 
+-- 可能的函数: PLATFORM_ANDROID
+-- 可能的函数: PLATFORM_OPENHARMONY
+-- 可能的函数: PLATFORM_WINDOWS
+-- 可能的函数: SetDiffAccountFlag
+-- 可能的函数: SetLaunchForm
+-- 可能的函数: [OnGetThirdPartInfoRet]...
+-- 可能的函数: [TestHopeVerify]OpenID:
+-- 可能的函数: \[TestHopeVerify][req.auth_info],auth_appid:%s,auth_user_type:%d,auth_user_id:%s,auth_key:%s
+-- 可能的函数: _OnGetThirdPartInfoRet
+-- 可能的函数: cross_platform
+-- 可能的函数: force_kick_old_conn
+-- 可能的函数: format
+-- 可能的函数: j[OnGetThirdPartInfoRet] realNameAuth = {1}, firstLogin = {2}, openId = {3}, retCode = {4} channelId = {5}
+-- 可能的赋值: limit reason = 
+-- 可能的日志: login_limit_reason
+-- 可能的日志: login_limit_start_time
+-- 可能的日志: login_limit_time
+-- 可能的日志: logtable
+-- 可能的赋值: reason = 
+-- 可能的函数: z[TestHopeVerify]res.instructions == nil and #res.instructions == 0, account may not in hope server whitelist, Go to login

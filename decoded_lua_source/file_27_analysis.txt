@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_27.lua
+Lua版本: 83
+字符串数量: 222
+函数数量: 0
+
+提取的字符串:
+1. _SafeBoxI
+2. _storeTabInfoModule
+3. _storeTabInfo_jumpMai
+4. GenLocalLogFuncELuaLogCategory
+LuaMStorerequire9DFM.StandaloneLua.Busin
+5. _heroTypeInfo
+6.  _reso
+7. +[Store] S
+8.  _resourceCommercializationTable
+9. !GetResourceCommercializationById
+10. !StoreField:GetCanMandelStopAudio
+11. !StoreField:SetCanMandelStopAudio
+12. "[Store] StoreField:GetSafeBoxInfo
+13. #InitResourceCommercializationTable
+14. $(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+)
+15. 'StoreField:SetLotteryData: Update data
+16. (Resource/ResourceCommercializationTable
+17. )GetDictStoreLotteryProbDistributionItems
+18. *DFM.YxFramework.Managers.Module.FieldBase
+19. +[Store] StoreField:GetSafeBoxEnduranceInfo
+20. 1[StoreField] GetStoreItemList allItemList is nil
+21. 4GetDictStoreLotteryProbDistributionItemsByLotteryID
+22. 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
+23. Alphabet
+24. ArmedForceData
+25. ArmedForceId
+26. AutoPlayVideoList
+27. CheckVideoNeedAutoPlay
+28. Config
+29. Cost
+30. Ctor
+31. Default
+32. ELuaLogCategory
+33. EStoreMainTab
+34. EStoreSortType
+35. EStoreSpecialSubTab
+36. Facade
+37. FilterStoreItemList
+38. GenLocalLogFunc
+39. GenTabInfo
+40. Get  _lotteryTabNum: 
+41. GetAllCost
+42. GetCanMandelStopAudio
+43. GetCanPlayMusic
+44. GetCollabTabVedioPlayed
+45. GetCurCost
+46. GetCurMandelMusicName
+47. GetCurMusicName
+48. GetCurrentTime
+49. GetDrawByType
+50. GetHeroTypeInfo
+51. GetIsOpeningBox
+52. GetIsStoreVar
+53. GetIsToPricePool
+54. GetItemConfigById
+55. GetJumpMainTabId
+56. GetJumpStoreItemId
+57. GetJumpSubTabId
+58. GetLotteryPoolInfoMap
+59. GetLotteryTabNum
+60. GetMPFitArmIdListByItemId
+61. GetMainPanel
+62. GetMandelDrawItemList
+63. GetNowTabID
+64. GetPrice
+65. GetRewardPropList
+66. GetRewardProps
+67. GetSafeBoxEnduranceInfo
+68. GetSafeBoxInfo
+69. GetSelectMainTabId
+70. GetSelectStoreItem
+71. GetSelectStoreItemId
+72. GetSelectSubTabId
+73. GetShopLotteryData
+74. GetShopLotteryDataByLotteryID
+75. GetShopLotteryDataByTabID
+76. GetSortFunction
+77. GetStoreItemList
+78. GetTabInfo
+79. GetTable
+80. GetWeaponTypeInfo
+81. Gun
+82. GunTheme
+83. Hero
+84. HeroServer
+85. InitHeroTypeInfo
+86. InitSafeBoxInfo
+87. InventoryServer
+88. Invoke
+89. IsHeroUserSelectable
+90. IsOwn
+91. IsTabHide
+92. ItemBase
+93. LotteryId
+94. LotteryProbDistribution
+95. LotteryProbDistributionTable
+96. LuaMStore
+97. LuaS
+98. MainTabId
+99. MainTabName
+100. Module

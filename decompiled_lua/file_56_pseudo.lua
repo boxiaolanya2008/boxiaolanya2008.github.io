@@ -1,0 +1,95 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  CommonWeaponSkinMissionOverview
+-- 2.  CommonWeaponSkinMissionProgress
+-- 3.  IVCommercializeShadingComponent
+-- 4.  ItemDetailCommonKeyIconTipsItem
+-- 5.  Lua_CommonWidget_CancelUsingStr
+-- 6.  Lua_CommonWidget_InputName2Long
+-- 7.  Lua_CommonWidget_InputNameEmpty
+-- 8.  Lua_CommonWidget_LoadWeightDesc
+-- 9.  Lua_CommonWidget_LocalVOSizeTxt
+-- 10.  Lua_CommonWidget_NormalLoadText
+-- 11.  Lua_CommonWidget_SubALLTabTitle
+-- 12.  Lua_CommonWidget_TributeBtnText
+-- 13.  Lua_CommonWidget_UnknownMission
+-- 14.  WBP_CommonDroDownBox_Btn_Button
+-- 15.  WBP_CommonFullScreenVideoChange
+-- 16.  WBP_CommonMainTabLiveS2_LiveTab
+-- 17.  WBP_CommonMainTabLiveS3_LiveTab
+-- 18.  {CultureName}
+-- 19. !IVQualityLootingShowAllComponent
+-- 20. !Lua_CommonWidget_LoadWeightTitle
+-- 21. !NavigationSelectorStyleHD_Strong
+-- 22. !WBP_Itemview_Notallowedtotakeout
+-- 23. !evtGlobalItemShowDoubleClickHint
+-- 24. !{cultureName}
+-- 25. !{displayName}
+-- 26. "({currentNum}/{maxNum}){taskName}
+-- 27. "Lua_CommonWidget_VideoConfigError
+-- 28. "Lua_CommonWidget_WeaponSkinLocked
+-- 29. "NavigationSelectorStyleHD_Default
+-- 30. "TeammateBindingContainerExistsTip
+-- 31. "WBP_SlotCompQualityLootingShowAll
+-- 32. #<customstyle color="C000">%s</>
+-- 33. #A!
+-- 34. #B:
+-- 35. #B;
+-- 36. #B?
+-- 37. #BA
+-- 38. #BB
+-- 39. #BC
+-- 40. #BD
+-- 41. #BE
+-- 42. #BG
+-- 43. #BI
+-- 44. #BK
+-- 45. #BT
+-- 46. #BU
+-- 47. #BY
+-- 48. #Bo
+-- 49. #Br
+-- 50. #Bv
+
+-- 重构的函数结构:
+
+-- 可能的函数:  Lua_CommonWidget_LocalVOSizeTxt
+-- 可能的赋值: #<customstyle color="C000">%s</>
+-- 可能的函数: %Lua_CommonWidget_ForbiddenToCarryOut
+-- 可能的赋值: '%s<customstyle color="%s">/%s
+-- 可能的函数: *CommonWidgetConfig.evtNotifyItemHighlight
+-- 可能的赋值: 5<customstyle color="Color_DarkNegative">
+-- 可能的赋值: <customstyle color="%s">%s</>
+-- 可能的赋值: <customstyle color="Color_Buffer_01">%skg</>
+-- 可能的赋值: <customstyle color="Color_Buffer_03">%skg
+-- 可能的赋值: =/Game/BluePrints/CaptureStuido/BP_CaptureEnv.BP_CaptureEnv_C
+-- 可能的赋值: =CommonWidgetConfig.Events.evtGlobalItemBindLongPressedAction
+-- 可能的赋值: =CommonWidgetModule.UI.ItemView.Components.IVContainerPreview
+-- 可能的赋值: =CommonWidgetModule.UI.ItemView.Components.IVMissionComponent
+-- 可能的赋值: =CommonWidgetModule.UI.ItemView.Components.IVQualityComponent
+-- 可能的赋值: =CommonWidgetModule.UI.ItemView.Components.IVTipMaskComponent
+-- 可能的赋值: =DFM.Business.Module.CommonWidgetModule.UI.CommonAddDecSlider
+-- 可能的赋值: =DFM.Business.Module.CommonWidgetModule.UI.CommonDragDropMask
+-- 可能的赋值: B<customstyle color="Color_Highlight01">%s</>
+-- 可能的函数: ForbiddenToCarryOut
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GiftBg
+-- 可能的函数: IsForceGameAndUI
+-- 可能的函数: LocalVOSizeTxt
+-- 可能的函数: Lua_View_Informa_BtnText
+-- 可能的函数: PlatformProfilePSBtnText
+-- 可能的函数: PlatformProfilePSImage
+-- 可能的函数: PlatformProfileXSXBtnText
+-- 可能的函数: PlatformProfileXSXImage
+-- 可能的赋值: Q<customstyle Color="C001">%s</><customstyle Size="Size_BoldTitle01">/%s
+-- 可能的函数: ViewInformaBtnText
+-- 可能的函数: ViewInformaImage
+-- 可能的函数: evtNotifyItemHighlight
+-- 可能的函数: format
+-- 可能的赋值: l<customstyle Color="C001">{integer}.{decimal}</><customstyle Size="Size_BoldTitle01">/{overWeight}
+-- 可能的函数: uPaperSprite'/Game/UI/UIAtlas/Common/BakedSprite/Common_ConstrollerFunction_Btn_03.Common_ConstrollerFunction_Btn_03'
+-- 可能的函数: uPaperSprite'/Game/UI/UIAtlas/Common/BakedSprite/Common_ConstrollerFunction_Btn_04.Common_ConstrollerFunction_Btn_04'
+-- 可能的函数: uPaperSprite'/Game/UI/UIAtlas/Common/BakedSprite/Common_ConstrollerFunction_Btn_09.Common_ConstrollerFunction_Btn_09'
+-- 可能的函数: uPaperSprite'/Game/UI/UIAtlas/Common/BakedSprite/Common_ConstrollerFunction_Btn_15.Common_ConstrollerFunction_Btn_15'

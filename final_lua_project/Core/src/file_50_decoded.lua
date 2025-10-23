@@ -1,0 +1,37 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:02.974822
+
+-- 常量定义
+-- local AccountServer
+-- local AddFriend
+-- local CheckCanReservation
+-- local Clamp
+-- local ClockManager
+-- local Collapsed
+-- local Config
+-- local DeleteFriend
+-- local EGameFlowStageType
+-- local ELuaLogCategory
+-- local EPlayerState_InMatch
+-- local EPlayerState_InTeam
+-- local EPlayerState_Offline
+-- local EPlayerState_Online
+-- local FLinearColor
+-- local Facade
+-- local Friend
+-- local FriendMatchInfo
+-- local FriendMatchInfoWithTeamMember
+-- local FriendServer
+-- local GAA
+-- local GameFlowManager
+-- local GameMode
+-- local GamepadIcon
+-- local GamepadIconBlack
+-- local GenLocalLogFunc
+-- local GetCommanderRankDataByScore
+-- local GetCurrentGameFlow
+-- local GetCurrentTime
+-- local GetFriendLoginInvisible
+
+-- 函数实现

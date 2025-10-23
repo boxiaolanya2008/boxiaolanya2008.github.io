@@ -1,0 +1,70 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  - EnableInput ProcessSleeping] Input
+-- 2.  EInputChangeReason.AssetLoading
+-- 3.  EInputChangeReason.ProtoWaiting
+-- 4.  GetDisplayInputActionBindingRow
+-- 5.  [george] Editor ProcessKeyESC()
+-- 6.  but Facade.UIManager:IsFrameRootAvailable() == false
+-- 7.  self.inputDisCount 
+-- 8. !GPUINav.AnalogCursorDeadZone 0.3
+-- 9. !RemoveHoldActoinBingingForHandle
+-- 10. "EInputChangeReason.BatchOperating
+-- 11. "GPUINav.AnalogCursorMaxSpeed 3000
+-- 12. "GetBestKeyMappingForDisplayAction
+-- 13. "__DebugOnly_InputChangeReasonName
+-- 14. #AddHoldDisplayActionPressedBinding
+-- 15. #AddHoldDisplayActionReleaseBinding
+-- 16. #EInputChangeReason.BusinessPending
+-- 17. #EInputChangeReason.ProcessSleeping
+-- 18. #InputMonitor:OnGameFlowChangeEnter
+-- 19. #SetDisplayActionIsEnabledForHandle
+-- 20. #[ 
+-- 21. $RemoveDisplayActoinBingingForHandle
+-- 22. &AddHoldDisplayActionProgressedBinding
+-- 23. &GPUINav.AnalogCursorAcceleration 4000
+-- 24. (AB
+-- 25. (BA
+-- 26. (RemoveHoldDisplayActoinBingingForHandle
+-- 27. (w@
+-- 28. )AB
+-- 29. *[george] DFHD_LUA OnGameFlowChangeEnter()
+-- 30. *[george] DFHD_LUA OnGameFlowChangeLeave()
+-- 31. ,@@
+-- 32. 4DFM.YxFramework.Managers.UI.Input.Hardware.KeyLogic
+-- 33. 5DFM.YxFramework.Managers.UI.Input.DisplayActionLogic
+-- 34. 6DFM.YxFramework.Managers.UI.Input.Hardware.MouseLogic
+-- 35. A@B
+-- 36. Add
+-- 37. AddActionBinding
+-- 38. AddAxisActionBinding
+-- 39. AddDisplayActionBinding
+-- 40. AddDisplayAxisActionBinding
+-- 41. AddHoldActionBinding
+-- 42. AddHoldActionPressedBinding
+-- 43. AddHoldActionProgressedBinding
+-- 44. AddHoldActionReleaseBinding
+-- 45. AddHoldDisplayActionBinding
+-- 46. AddListener
+-- 47. AddMouseMoveListener
+-- 48. AddValidateWhitelistWidget
+-- 49. AnimPlaying
+-- 50. AssetLoading
+
+-- 重构的函数结构:
+
+-- 可能的赋值:  but Facade.UIManager:IsFrameRootAvailable() == false
+-- 可能的函数: !RemoveHoldActoinBingingForHandle
+-- 可能的函数: "GetBestKeyMappingForDisplayAction
+-- 可能的函数: #SetDisplayActionIsEnabledForHandle
+-- 可能的函数: $RemoveDisplayActoinBingingForHandle
+-- 可能的函数: (RemoveHoldDisplayActoinBingingForHandle
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetBestKeyMappingForAction
+-- 可能的函数: GetPlatformName
+-- 可能的函数: RemoveActoinBingingForHandle
+-- 可能的函数: SetActionIsEnabledForHandle
+-- 可能的函数: _ForceEnableInput
+-- 可能的函数: _ForceEnableInputProcess

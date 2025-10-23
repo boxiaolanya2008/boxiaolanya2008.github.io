@@ -1,0 +1,64 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  GetStandardMapNameByMatchModeId
+-- 2.  azhengzheng:not info member num
+-- 3. "GetOnlinePlayerStateFromStateCode
+-- 4. (%d/%d)
+-- 5. (AA
+-- 6. (AB
+-- 7. (BH
+-- 8. (CE
+-- 9. (w@
+-- 10. )AA
+-- 11. )AB
+-- 12. )AC
+-- 13. )AD
+-- 14. )BB
+-- 15. -FriendLogic.GetPlatformIconPath platID error
+-- 16. AccountServer
+-- 17. AddFriend
+-- 18. CheckCanReservation
+-- 19. Clamp
+-- 20. ClockManager
+-- 21. Collapsed
+-- 22. Config
+-- 23. DeleteFriend
+-- 24. EGameFlowStageType
+-- 25. ELuaLogCategory
+-- 26. EPlayerState_InMatch
+-- 27. EPlayerState_InTeam
+-- 28. EPlayerState_Offline
+-- 29. EPlayerState_Online
+-- 30. FLinearColor
+-- 31. Facade
+-- 32. Friend
+-- 33. FriendBox:SetPlayerStateCode
+-- 34. FriendMatchInfo
+-- 35. FriendMatchInfoWithTeamMember
+-- 36. FriendServer
+-- 37. GAA
+-- 38. GameFlowManager
+-- 39. GameMode
+-- 40. GamepadIcon
+-- 41. GamepadIconBlack
+-- 42. GenLocalLogFunc
+-- 43. GetCommanderRankDataByScore
+-- 44. GetCurrentGameFlow
+-- 45. GetCurrentTime
+-- 46. GetFriendLoginInvisible
+-- 47. GetFriendRecentTime
+-- 48. GetMinorDataByScore
+-- 49. GetOffLineTime
+-- 50. GetPlatIdType
+
+-- 重构的函数结构:
+
+-- 可能的函数: -FriendLogic.GetPlatformIconPath platID error
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetPlatformIconPath
+-- 可能的函数: IsTheSamePlatformWithMe
+-- 可能的函数: Key2StrFormat
+-- 可能的函数: PlatformId
+-- 可能的函数: format

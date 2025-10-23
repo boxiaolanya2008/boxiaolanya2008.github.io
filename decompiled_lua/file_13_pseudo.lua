@@ -1,0 +1,69 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  CSDepositWithdrawShowCabinetReq
+-- 2.  bCollectionRoomEnableVerboseLog
+-- 3. #EnableOrDisableCollectionRoomDebug
+-- 4. #evtCollectionRoomCabinetGridChange
+-- 5. %CollectionRoomServer:_ReqGetShowRoom
+-- 6. (BI
+-- 7. (CollectionRoomServer.evtIsClickedReddot
+-- 8. (w@
+-- 9. )@A
+-- 10. )A@
+-- 11. )AA
+-- 12. )AB
+-- 13. )BA
+-- 14. )BB
+-- 15. )CollectionRoomServer:_ReqGetShowRoom res
+-- 16. )CollectionRoomServer:_ReqMoveShowCabinet
+-- 17. )DB
+-- 18. )DC
+-- 19. )DE
+-- 20. *@@
+-- 21. *@A
+-- 22. +CollectionRoomServer:_ReqShelveShowCabinet
+-- 23. +DFM.YxFramework.Managers.Server.ServerBase
+-- 24. ,CD
+-- 25. ,CollectionRoomServer:_ReqLevelUpShowCabinet
+-- 26. -CollectionRoomServer:OnLoadingLogin2Frontend
+-- 27. -CollectionRoomServer:_ReqMoveShowCabinet res
+-- 28. -CollectionRoomServer:_ReqWithdrawShowCabinet
+-- 29. /CollectionRoomServer:_ReqShelveShowCabinet res
+-- 30. 0CollectionRoomServer:_ReqLevelUpShowCabinet res
+-- 31. 1CollectionRoomServer:_ReqWithdrawShowCabinet res
+-- 32. 3CollectionRoomServer:_ReqGetShowRoom res.result=%d
+-- 33. 5CollectionRoomServer:OnGameFlowChangeEnter SafeHouse
+-- 34. 7CollectionRoomServer:_ReqMoveShowCabinet res.result=%d
+-- 35. 8CollectionRoomServer.evtCollectionRoomCabinetGridChange
+-- 36. 8DFM.StandaloneLua.BusinessTool.StructTool.ItemOperaTool
+-- 37. 9CollectionRoomServer:_ReqShelveShowCabinet res.result=%d
+-- 38. :CollectionRoomServer:_ReqLevelUpShowCabinet res.result=%d
+-- 39. ;CollectionRoomServer:_ReqExchangeShowCabinet res.result=%d
+-- 40. ;CollectionRoomServer:_ReqWithdrawShowCabinet res.result=%d
+-- 41. Add
+-- 42. BCollectionRoomServer:_ReqShelveShowCabinet no item found for gid=
+-- 43. BDFM.Business.ServerCenter.ServerConfig.CollectionRoomServerConfig
+-- 44. CSDepositGetShowRoomReq
+-- 45. CSDepositLevelUpShowCabinetReq
+-- 46. CSDepositMoveShowCabinetReq
+-- 47. CSDepositShelveShowCabinetReq
+-- 48. CSDepositSwapDIYCabinetReq
+-- 49. Change
+-- 50. CheckItemFitSlot
+
+-- 重构的函数结构:
+
+-- 可能的赋值: 3CollectionRoomServer:_ReqGetShowRoom res.result=%d
+-- 可能的赋值: 7CollectionRoomServer:_ReqMoveShowCabinet res.result=%d
+-- 可能的赋值: 9CollectionRoomServer:_ReqShelveShowCabinet res.result=%d
+-- 可能的赋值: :CollectionRoomServer:_ReqLevelUpShowCabinet res.result=%d
+-- 可能的赋值: ;CollectionRoomServer:_ReqExchangeShowCabinet res.result=%d
+-- 可能的赋值: ;CollectionRoomServer:_ReqWithdrawShowCabinet res.result=%d
+-- 可能的函数: BCollectionRoomServer:_ReqShelveShowCabinet no item found for gid=
+-- 可能的函数: ECabinetGridDiffType
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: LCollectionRoomServer:_ReqShelveShowCabinet item is already shelved for gid=
+-- 可能的函数: TryFindLocationForItem
+-- 可能的函数: format

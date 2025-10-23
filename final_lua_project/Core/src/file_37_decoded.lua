@@ -1,0 +1,42 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:01.352093
+
+-- 模块导入
+--  DFM.YxFramework.Util.WidgetUtil
+-- @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
+-- require
+
+-- 常量定义
+-- local AddInputActionBinding
+-- local AddLuaEvent
+-- local BP_ShowHoldProgressBarTips
+-- local BP_UpdateProgressBar
+-- local CheckChildModuleState
+-- local CheckModuleAsyncWithQueue
+-- local Collapsed
+-- local CommonTips
+-- local Config
+-- local Ctor
+-- local DFImage_Progress
+-- local DFMButton_DownloadBtn
+-- local DFTextBlock_DownloadText
+-- local DFTextBlock_ProgressNum
+-- local DownloadByModuleName
+-- local DownloadRes_Gamepad
+-- local DynamicMatIns
+-- local EDisplayInputActionPriority
+-- local EInputEvent
+-- local ELuaLogCategory
+-- local Event
+-- local Events
+-- local ExpansionPackCoordinator
+-- local GenLocalLogFunc
+-- local Get
+-- local GetDynamicMaterial
+-- local GetModuleStateByModuleName
+-- local GetNowSizeByModuleName
+-- local GetRealSizeTotalByModuleName
+-- local GetRegisterRuntimeChildModules
+
+-- 函数实现

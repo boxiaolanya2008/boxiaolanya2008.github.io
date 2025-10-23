@@ -1,0 +1,65 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  GetCrackedSettlementDisplayCtrl
+-- 2.  PreLoadCrackedSettlementScenens
+-- 3.  SetSettlementTeamCharacterPosId
+-- 4.  evtStartCameraMovementBroadCast
+-- 5. !CallSceneCharacterAvatarFunction
+-- 6. !CreateHallCharacterSetupDelegate
+-- 7. "_OnEvtCutSceneUIGetReadyBroadCast
+-- 8. #evtCameraMovementGetReadyBroadCast
+-- 9. $CreateHallSettlementPreloadCallback
+-- 10. $OnPreLoadedCrackedSettlementScenens
+-- 11. $StartPlayCrackedSettlementMVPCamera
+-- 12. %StartPlayCrackedSettlementTeamCamera
+-- 13. (AA
+-- 14. (w@
+-- 15. )BA
+-- 16. )BD
+-- 17. )CA
+-- 18. )CB
+-- 19. )DG
+-- 20. ,@@
+-- 21. ,@A
+-- 22. /CrackedSettlementDisplayLogic:_OnSettlementEnd
+-- 23. 6DFM.Business.Module.SettlementModule.SettlementConfig
+-- 24. 8CrackedSettlementDisplayLogic:_OnEvtUIGetReadyBroadCast
+-- 25. ;CrackedSettlementDisplayLogic:OnHallCharacterSetup slot = 
+-- 26. <CrackedSettlementDisplayLogic:OnHallSettlementResReadyEvent
+-- 27. =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+-- 28. >CrackedSettlementDisplayLogic:PreLoadCrackedSettlementScenens
+-- 29. @CrackedSettlementDisplayLogic:_OnEvtCutSceneUIGetReadyBroadCast
+-- 30. @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
+-- 31. A@@
+-- 32. ACrackedSettlementDisplayLogic:fAllLevelFinishCallback - reson = 
+-- 33. AddListener
+-- 34. AllLevelLoaded
+-- 35. AsyncOperateStreamLevels
+-- 36. BCrackedSettlementDisplayLogic:OnPreLoadedCrackedSettlementScenens
+-- 37. BCrackedSettlementDisplayLogic:StartPlayCrackedSettlementMVPCamera
+-- 38. CCrackedSettlementDisplayLogic:StartPlayCrackedSettlementTeamCamera
+-- 39. CallCharacterAvatarFunction
+-- 40. CallSceneCharacterCtrlFunction
+-- 41. CallSceneCtrlFunction
+-- 42. Character
+-- 43. CrackedSettlement
+-- 44. CrackedSettlementDisplayCtrl
+-- 45. CrackedSettlementEndFlag
+-- 46. CrackedSettlementWalk
+-- 47. DFMLightCoordinateSubsystem
+-- 48. DFMTODSubSystem
+-- 49. DestroyPlayerCharacter
+-- 50. DoPreloadSettlement
+
+-- 重构的函数结构:
+
+-- 可能的函数: !CallSceneCharacterAvatarFunction
+-- 可能的赋值: ;CrackedSettlementDisplayLogic:OnHallCharacterSetup slot = 
+-- 可能的赋值: =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+-- 可能的赋值: ACrackedSettlementDisplayLogic:fAllLevelFinishCallback - reson = 
+-- 可能的函数: CallCharacterAvatarFunction
+-- 可能的函数: CallSceneCharacterCtrlFunction
+-- 可能的函数: CallSceneCtrlFunction
+-- 可能的函数: GenLocalLogFunc

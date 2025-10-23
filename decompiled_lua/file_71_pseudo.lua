@@ -1,0 +1,60 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  - 
+-- 2.  - 1
+-- 3.  - 2
+-- 4.  -----
+-- 5.  >>----------
+-- 6.  ActivityMagicTowerCombatLoading
+-- 7.  ActivityMagicTowerConfirmWindow
+-- 8.  WBP_Activity_LeftDamageFloating
+-- 9. !WBP_Activity_RigthDamageFloating
+-- 10. #WBP_MorgenGame_NumericalPanel_C_22
+-- 11. #WBP_MorgenGame_NumericalPanel_C_24
+-- 12. %s/
+-- 13. (AA
+-- 14. (AD
+-- 15. (BA
+-- 16. (w@
+-- 17. )@A
+-- 18. )A@
+-- 19. )AA
+-- 20. )AE
+-- 21. )AF
+-- 22. )B@
+-- 23. +----------<< 
+-- 24. ,@A
+-- 25. -----
+-- 26. ----- 
+-- 27. .----------<< 
+-- 28. 3010003
+-- 29. 3010012
+-- 30. 3010031
+-- 31. 3010034
+-- 32. A@@
+-- 33. A@E
+-- 34. Activity
+-- 35. ActivityMagicTowerCombatPanel
+-- 36. AddInputActionBinding
+-- 37. AsyncSetImagePath
+-- 38. AsyncShowUI
+-- 39. BOSS
+-- 40. Back
+-- 41. BindBackAction
+-- 42. C----- 
+-- 43. CalculateRoundDamage
+-- 44. Cancel
+-- 45. CancelDelay
+-- 46. CanvasPanel_0
+-- 47. ClearTimerHandle
+-- 48. CloseUI
+-- 49. Collapsed
+-- 50. CommonTips
+
+-- 重构的函数结构:
+
+-- 可能的函数: Forward
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: format

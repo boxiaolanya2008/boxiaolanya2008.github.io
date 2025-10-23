@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_1.lua
+大小: 12030 字节
+字符串数量: 176
+函数数量: 21
+常量数量: 5313
+
+提取的字符串:
+1.  EInputAction_VehicleFireBtnDown
+2. "GetCurrentClientCharacterAvatarID
+3. #ABionicBirdActor::OnStopControl_ES
+4. $ABionicBirdActor::OnStartControl_ES
+5. %DFM.YxFramework.Managers.Timer.Timer
+6. &MetaDorianDriver:Init() RTTITypeNum: 
+7. &MetaDorianDriver:Init() StubFuncNum: 
+8. (@@
+9. (AA
+10. (AB
+11. (ABionicBirdActor::ProcessInputAction_BS
+12. (AC
+13. (B@
+14. (w@
+15. *@B
+16. *@C
+17. ,ZiplineActor_InitInCenterInteractor_BS Next
+18. -11.. MetaDorianDriver:Init() StubModuleNum: 
+19. -DFMAbility_ABionicBirdActor_OnStopControl_ES
+20. -UDFMWeaponTacticalEquipItem::OnBtnClicked_BS
+21. -ZiplineActor_InitInCenterInteractor_BS Enter
+22. .DFMAbility_ABionicBirdActor_OnStartControl_ES
+23. 0UWeaponAdapterItemRangeScope::OnWeaponEnable_BS
+24. 11... MetaDorianDriver:Init() 
+25. 2DFMAbility_ABionicBirdActor_ProcessInputAction_BS
+26. 2MetaDorianDriver.lua(Impl Version) Is Required...
+27. 333333
+28. 3UDFMAbilityPlayMontageSystem::BindUnEquipToTask_BS
+29. 3UDFMMobileWeaponTacticalEquipItem::OnBtnClicked_BS
+30. 3ZiplineActor_InitInCenterInteractor_BS Check World
+31. 4AInteractor_ZiplineActor::InitInCenterInteractor_BS
+32. 4UGPCharacterMovementComponent::OnEndCustomIdling_BS
+33. 6UGPCharacterMovementComponent::OnBeginCustomIdling_BS
+34. 7DFMGameHud_UDFMWeaponTacticalEquipItem_OnBtnClicked_BS
+35. 7UMapBaseHUDController::OnClientMarkDetectorLocation_BS
+36. :GPGameplay_UWeaponAdapterItemRangeScope_OnWeaponEnable_BS
+37. =DFMAbility_UDFMAbilityPlayMontageSystem_BindUnEquipToTask_BS
+38. =DFMGameHud_UDFMMobileWeaponTacticalEquipItem_OnBtnClicked_BS
+39. >DFMGameHud_UDFMWeaponTacticalEquipItem_OnBtnClicked_BS Hotfix
+40. >GPGameplay_UGPCharacterMovementComponent_OnEndCustomIdling_BS
+41. >ZiplineActor_InitInCenterInteractor_BS ActorWrold Null return
+42. ?DFMGameplay_AInteractor_ZiplineActor_InitInCenterInteractor_BS
+43. @DFMGameHud_UDFMWeaponTacticalEquipItem_OnBtnClicked_BS Hotfix 1
+44. @DFMGameHud_UDFMWeaponTacticalEquipItem_OnBtnClicked_BS Hotfix 2
+45. @DFMGameHud_UDFMWeaponTacticalEquipItem_OnBtnClicked_BS Hotfix 3
+46. @GPGameplay_UGPCharacterMovementComponent_OnBeginCustomIdling_BS
+47. AActor
+48. ADFMCharacter
+49. ADFMGameHud_UMapBaseHUDController_OnClientMarkDetectorLocation_BS
+50. AddDorianFunction
+51. BattleFieldUtil
+52. Blackboard
+53. Breakthrough
+54. CachedOwner
+55. ClearSpeedScale
+56. DDFMGameHud_UDFMMobileWeaponTacticalEquipItem_OnBtnClicked_BS Hotfix
+57. DFMAbility
+58. DFMGameHud
+59. DFMGameplay
+60. DelayCall
+61. DetectorLoc
+62. DetectorUin
+63. EInputActionType
+64. EInputAction_SprintBtnDown
+65. FDFMGameHud_UDFMMobileWeaponTacticalEquipItem_OnBtnClicked_BS Hotfix 1
+66. FDFMGameHud_UDFMMobileWeaponTacticalEquipItem_OnBtnClicked_BS Hotfix 2
+67. FDFMGameHud_UDFMMobileWeaponTacticalEquipItem_OnBtnClicked_BS Hotfix 3
+68. FDetectorLocationInfo
+69. FVector
+70. FashionLong3
+71. FreeBuildFixedWeapon
+72. FreeBuildOwnerCamp
+73. GDFMAbility_UDFMAbilityPlayMontageSystem_BindUnEquipToTask_BS DoReplace
+74. GPCharacter
+75. GPGameplay
+76. Get
+77. GetActiveMontageInstance
+78. GetAnimInstance
+79. GetFPPMesh
+80. GetLocalPlayerCamp
+81. GetMapInfoComp
+82. GetMesh
+83. GetModuleStateByModuleName
+84. GetRTTITypeNum
+85. GetStubFuncNum
+86. GetStubModuleNum
+87. GetView
+88. GetWorld
+89. GetbCanSwitchTacticalEquip
+90. HDFMAbility_UDFMAbilityPlayMontageSystem_BindUnEquipToTask_BS AnimIns = 
+91. HDFMAbility_UDFMAbilityPlayMontageSystem_BindUnEquipToTask_BS FPPMesh = 
+92. HUCharacterHeroResourceDataSingleton_GetAvatarTracingLineResourceInfo_BS
+93. IUCharacterHeroResourceDataSingleton::GetAvatarTracingLineResourceInfo_BS
+94. IconLocation
+95. Init
+96. IsHD
+97. IsUnderFPP
+98. LeapTime
+99. LiteDownloadManager
+100. LuaS

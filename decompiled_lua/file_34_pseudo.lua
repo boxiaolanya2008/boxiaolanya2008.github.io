@@ -1,0 +1,75 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  %d/%d
+-- 2.  * 
+-- 3.  <customstyle color="Color_Highlight01">%d/%d</>
+-- 4.  Lua_Quest_QuestRewardFullToMail
+-- 5.  Lua_Quest_QuestSeasonCollection
+-- 6.  Lua_Quest_QuestSeasonRemainTime
+-- 7.  Lua_Quest_QuestTypeLocImportant
+-- 8.  Lua_Quest_SubmitEquippedConfirm
+-- 9.  QuestModule.UI.NPCRoleInfoPanel
+-- 10.  QuestSeasonCollectorRewardPanel
+-- 11.  WBP_SeasonalTasks_ConditionItem
+-- 12.  WBP_SeasonalTasks_ContractPanel
+-- 13.  WBP_SeasonalTasks_FirstTime_Pop
+-- 14.  evtQuestSeasonPhaseItemSelected
+-- 15. !Lua_Quest_QuestNeedPre_Important
+-- 16. !Lua_Quest_QuestSeasonFinalUnlock
+-- 17. !Lua_Quest_QuestSeasonMissionGoal
+-- 18. !Lua_Quest_QuestTypeLocSeasonMain
+-- 19. !Lua_Quest_TaskLineRefreshTimeDay
+-- 20. !Lua_Quest_TaskLineRefreshTimeMin
+-- 21. !QuestModule.UI.SOL.QuestDescView
+-- 22. !QuestSeasonFinalMissionCondition
+-- 23. !QuestSeasonStageConditionMission
+-- 24. !WBP_SeasonalTasks_ContractDetail
+-- 25. !WBP_TaskChapterCircleProgress_in
+-- 26. !WBP_TaskDetailRoleDescription_in
+-- 27. !evtQuestRewardPrewiewStateUpdate
+-- 28. "Lua_Quest_NoRewadUnaAcceptedQuest
+-- 29. "Lua_Quest_QuestAllCollectorLocked
+-- 30. "Lua_Quest_QuestCollectorCompleted
+-- 31. "Lua_Quest_QuestCollectorSubmitTip
+-- 32. "Lua_Quest_QuestCurrencyFullToMail
+-- 33. "Lua_Quest_QuestSeasonContractNone
+-- 34. "Lua_Quest_QuestSeasonStarProgress
+-- 35. "Lua_Quest_TaskLineRefreshTimeHour
+-- 36. "QuestModule.UI.SOL.QuestLinePanel
+-- 37. "QuestModule.UI.SOL.QuestMainPanel
+-- 38. "WBP_SeasonalTasks_EntrustmentItem
+-- 39. "WBP_TaskChapterCircleProgress_out
+-- 40. "WBP_TaskChapterComponent_New_1_in
+-- 41. "WBP_TaskChapterComponent_New_2_in
+-- 42. "WBP_TaskChapterComponent_New_3_in
+-- 43. "WBP_TaskChapterComponent_New_4_in
+-- 44. "WBP_TaskDetailRoleDescription_out
+-- 45. "questRewardCurrencyBothFullToMail
+-- 46. #B#
+-- 47. #B$
+-- 48. #B'
+-- 49. #B(
+-- 50. #B+
+
+-- 重构的函数结构:
+
+-- 可能的赋值:  <customstyle color="Color_Highlight01">%d/%d</>
+-- 可能的赋值: %d<dfmrichtext type="img" id="TaskStar"/>
+-- 可能的赋值: <customstyle color="Color_Highlight01">
+-- 可能的赋值: <customstyle color="Color_Highlight01">*
+-- 可能的赋值: <dfmrichtext type="img" id="TaskStar"/> %d
+-- 可能的赋值: <dfmrichtext type="img" id="TaskStar"/> %d/%d
+-- 可能的函数: FinishQuestFormat1
+-- 可能的函数: FinishQuestFormat2
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: Lua_Quest_FinishQuestFormat1
+-- 可能的函数: Lua_Quest_FinishQuestFormat2
+-- 可能的函数: Lua_Quest_OpenLimitFormat1
+-- 可能的函数: Lua_Quest_OpenLimitFormat2
+-- 可能的函数: Lua_Quest_idFormat
+-- 可能的函数: OpenLimitFormat1
+-- 可能的函数: OpenLimitFormat2
+-- 可能的函数: format
+-- 可能的函数: idFormat

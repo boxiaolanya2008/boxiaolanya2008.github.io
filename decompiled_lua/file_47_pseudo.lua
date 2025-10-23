@@ -1,0 +1,63 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  CSWAssemblyDepositPropUpdateReq
+-- 2.  GetPartsDefaultItemInfoFromDesc
+-- 3.  OverrideContextByPresetPropinfo
+-- 4.  ProcessSetSkinLockAllAppearance
+-- 5. !GetWeaponSocketSnapshot4FrontEnd
+-- 6. !SetSkinFromPbWeaponSkinInfoParam
+-- 7. "GetWeaponDescription4BackupServer
+-- 8. "SetPropInfo2PbWeaponSkinInfoParam
+-- 9. $OverrideDescSolutionFromDescription
+-- 10. $SetWeaponDescription4SyncFromServer
+-- 11. %AutoRemoveNodeFromDescWithSocketGUID
+-- 12. %OverrideContextBackupFromDescription
+-- 13. %OverrideContextFromServerPartUpdated
+-- 14. %OverrideContextFromServerSkinUpdated
+-- 15. %ProcessLinkWeaponDescriptionNodeGUID
+-- 16. 'OnOverrideContextFromServerSkinUpdated
+-- 17. (A@
+-- 18. (AA
+-- 19. (BA
+-- 20. (CB
+-- 21. (InternalRelinkWeaponDescriptionNodeGUID
+-- 22. (w@
+-- 23. )AB
+-- 24. )CC
+-- 25. )CD
+-- 26. +ProcessRemovePartNodeFromweaponDescription
+-- 27. +UpdateMissionEquippedAndUnequippedPartList
+-- 28. , can not CSWAssemblyDepositPropUpdateReq!!!
+-- 29. , local_prop: 
+-- 30. ,InternalRelinkWeaponDescriptionRootNodeGUID
+-- 31. .GetIDsContainedInventoryFromWeaponDescription
+-- 32. .GetPbWeaponSkinInfoParamFromWeaponDescription
+-- 33. ._InternalOverrideContextBackupFromDescription
+-- 34. 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
+-- 35. 0_InternalCanSendCSWAssemblyDepositPropUpdateReq
+-- 36. 5GunsmithUIContextProcessor.ProcessAddPartNode, fail:
+-- 37. 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
+-- 38. ;DFM.Business.Module.GunsmithModule.Define.EGunsmithUIState
+-- 39. =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+-- 40. >DFM.Business.Module.GunsmithModule.Data.Skin.GunsmithSkinData
+-- 41. ?GunsmithUIContextProcessor:CSWAssemblyDepositPropUpdateReq -- 
+-- 42. @DFM.Business.Module.GunsmithModule.Logic.GunsmithUIContextLogic
+-- 43. @DFM.Business.Module.GunsmithModule.Logic.TLog.GunsmithTLogLogic
+-- 44. AA@
+-- 45. AAA
+-- 46. AddNodeToDescFromSocketGUID
+-- 47. AssembleWeaponDataLibrary
+-- 48. BuildFromModularWeaponDesc
+-- 49. CommonTips
+-- 50. Config
+
+-- 重构的函数结构:
+
+-- 可能的函数: , local_prop: 
+-- 可能的赋值: =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetWeaponItemGUIDFormUser
+-- 可能的函数: InteralFormatParam4SyncContext
+-- 可能的函数: format

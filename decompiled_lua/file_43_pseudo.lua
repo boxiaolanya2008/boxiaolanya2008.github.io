@@ -1,0 +1,64 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  SetBadgeImgPathByAccessoryDatas
+-- 2.  accessory items
+-- 3.  get 
+-- 4.  kGspPlayerGameStatusTypeEndGame
+-- 5.  kGspPlayerGameStatusTypePlaying
+-- 6. !Imp_SetSOLTeammatesIndexAndState
+-- 7. "HeroCommonCardBase _SetKillCount 
+-- 8. "HeroCommonCardBase:SetCardImgPath
+-- 9. #HeroCommonCardBase:OnInitExtraData
+-- 10. %HeroCommonCardBase Imp_SetStatistics
+-- 11. (AA
+-- 12. (C@
+-- 13. ([georgecgong] HeroCommonCardBase:Ctor()
+-- 14. (w@
+-- 15. )A@
+-- 16. )AB
+-- 17. )HeroCommonCardBase:SetPlayerName, name: 
+-- 18. *HeroCommonCardBase:SetCardImgPathByCardId
+-- 19. ,@E
+-- 20. ,HeroCommonCardBase:SetCardInfoByAccessories
+-- 21. -HeroCommonCardBase:SetCardInfoByAccessories2
+-- 22. .DFM.StandaloneLua.BusinessTool.HeroHelperTool
+-- 23. .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+-- 24. /HeroCommonCardBase:Imp_PlayCardFadeInAnimation
+-- 25. 0HeroCommonCardBase:Imp_PlayCardFadeOutAnimation
+-- 26. 3HeroCommonCardBase:SetBadgeImgPathByAccessoryDatas
+-- 27. 6HeroCommonCardBase:SetCardInfoByAccessories, prop_id 
+-- 28. 8HeroCommonCardBase:Imp_SetCardInfoByPlayerState, platID
+-- 29. 9HeroCommonCardBase:Imp_SetCardInfoByPlayerState, HeroID 
+-- 30. :HeroCommonCardBase:Imp_SetCardInfoByPlayerState, titleId 
+-- 31. ;HeroCommonCardBase:SetCardImgPath, CardImagePath is nil!!!
+-- 32. >HeroCommonCardBase:Imp_SetCardInfoByPlayerState, lua no Ctor!
+-- 33. ?HeroCommonCardBase:Imp_SetCardInfoByPlayerState, not crossplat
+-- 34. ?HeroCommonCardBase:Imp_SetCardInfoByPlayerState, teamIdentity 
+-- 35. A@@
+-- 36. AA@
+-- 37. ADFM.YxFramework.Managers.GameFlow.InGameControl.InGameController
+-- 38. AccountServer
+-- 39. ArmedForceImg
+-- 40. AssetPathName
+-- 41. AsyncSetImagePath
+-- 42. Badge
+-- 43. Blueprint_SetTextStyle
+-- 44. C002
+-- 45. C003
+-- 46. C004
+-- 47. C005
+-- 48. Card
+-- 49. CloseBadgeTips
+-- 50. Collapsed
+
+-- 重构的函数结构:
+
+-- 可能的函数: ArmedForceImg
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetPlatformID
+-- 可能的函数: PlatformPaddingBox_0
+-- 可能的函数: SetPlatformIDType
+-- 可能的函数: SetPlayerPlatformIDType
+-- 可能的日志: logtable

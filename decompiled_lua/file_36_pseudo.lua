@@ -1,0 +1,61 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  LitePackageMainPanel:OnActivate
+-- 2.  LitePackageMainPanel_Cancel_All
+-- 3. "LitePackageMainPanel:OnDeactivate
+-- 4. "LitePackageMainPanel_Download_All
+-- 5. "could not skip to download center
+-- 6. %LITE_DOWNLOAD_CHECK_SPACE_NOT_ENOUGH
+-- 7. %LitePackageMainPanel:OnInitExtraData
+-- 8. (AA
+-- 9. (BD
+-- 10. (w@
+-- 11. )B@
+-- 12. )BE
+-- 13. ,@@
+-- 14. -LitePackageMainPanel_Download_ALL_DOWNLOADED
+-- 15. .LitePackageMainPanel_Download_SKIP_TO_SETTING
+-- 16. /LitePackageMainPanel:TryScrollToTargetCategory
+-- 17. 333333
+-- 18. ;DFM.Business.Module.CommonWidgetModule.UI.CommonPopWindows
+-- 19. ;DFM.StandaloneLua.BusinessTool.LogAnalysis.LogAnalysisTool
+-- 20. =DFM.Business.Module.LitePackageModule.Logic.LitePackageLogic
+-- 21. @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
+-- 22. @DFM.Business.Module.LitePackageModule.UI.LiteDownloadNormalItem
+-- 23. A@@
+-- 24. A@A
+-- 25. ACC
+-- 26. AddListeners
+-- 27. AddLuaEvent
+-- 28. Anchors
+-- 29. BindBackAction
+-- 30. BindCloseCallBack
+-- 31. CancelAll
+-- 32. CancelDelay
+-- 33. CanvasPanel_61
+-- 34. CategoryPaksItem
+-- 35. CategoryTable
+-- 36. CategoryTitle
+-- 37. CenterCancelConfirm
+-- 38. CenterConfirm
+-- 39. ChangeDownloadAllType
+-- 40. CheckAndDownloadAll
+-- 41. CheckBtnStates
+-- 42. CheckHasPakNeedDownload
+-- 43. CloseUI
+-- 44. Collapsed
+-- 45. CommonBar
+-- 46. CommonTips
+-- 47. Config
+-- 48. CreateCallBack
+-- 49. Ctor
+-- 50. DFWaterfallScrollView_1
+
+-- 重构的函数结构:
+
+-- 可能的赋值: =DFM.Business.Module.LitePackageModule.Logic.LitePackageLogic
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: PLATFORM_ANDROID
+-- 可能的函数: PLATFORM_IOS

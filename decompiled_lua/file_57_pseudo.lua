@@ -1,0 +1,61 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2.  classname:
+-- 3.  self:
+-- 4. !AddHoldInputActionReleaseBinding
+-- 5. #SetDisplayInputActionWithLongPress
+-- 6. $AddHoldInputActionProgressedBinding
+-- 7. &self.wtCommonBtn:SetIsLocked(bLocked)
+-- 8. (A@
+-- 9. (AA
+-- 10. (SetImageIconFromAtlasInterface4AllState
+-- 11. (w@
+-- 12. )@@
+-- 13. )A@
+-- 14. +SetImageIconFromAtlasInterface4ButtonState
+-- 15. ,@
+-- 16. ,@A
+-- 17. -DFM.YxFramework.Managers.UI.Util.UIThemeUtil
+-- 18. 1self.wtCommonBtn:SetMainTitleText4AllState(text)
+-- 19. 2DFCommonButtonOnly:OnOpen Bind OnIconStateChanged
+-- 20. 4DFM.YxFramework.Managers.Resource.Util.ResImageUtil
+-- 21. :DFM.Business.Module.CommonWidgetModule.UI.HD.HDKeyIconBox
+-- 22. ?Start Removing!!! DFCommonButtonOnly:RemoveEvent(delegateName)
+-- 23. A@@
+-- 24. AnyKeyIconVisible
+-- 25. AsyncLoadImgObjByPath
+-- 26. AsyncSetImageIconPathAllState
+-- 27. AsyncSetImagePath
+-- 28. BP_SetMainTitle
+-- 29. BP_ShowHoldProgressBarTips
+-- 30. BP_UpdateProgressBar
+-- 31. ButtonClick
+-- 32. ButtonInternal
+-- 33. ButtonState
+-- 34. Cant find KeyIcon named [KeyIcon], Failed to DFCommonButtonOnly:SetDisplayInputAction(displayInputAction,bShowNoneKey, keyIconHeight)
+-- 35. CheckIfAutoApplyTheme
+-- 36. Collapsed
+-- 37. Ctor
+-- 38. DFCommonButton
+-- 39. DFCommonButtonOnly
+-- 40. DFCommonButton_PCOnly
+-- 41. DFHD_LUA
+-- 42. DFScaleBox_0
+-- 43. DStart Removing!!! DFCommonButtonOnly:SetStretchState(eStretchState)
+-- 44. Deactivated
+-- 45. Disabled
+-- 46. EButtonState
+-- 47. EButtonTouchMethod
+-- 48. ELuaLogCategory
+-- 49. Event
+-- 50. GenLocalLogFunc
+
+-- 重构的函数结构:
+
+-- 可能的函数: CheckIfAutoApplyTheme
+-- 可能的函数: GenLocalLogFunc
+-- 可能的日志: logbox
+-- 可能的日志: logframe

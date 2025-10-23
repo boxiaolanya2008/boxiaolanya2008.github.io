@@ -1,0 +1,142 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  , replace to:
+-- 2.  CheckAndSetCombinedPaksToPuffer
+-- 3.  GetHDCollectionNeedDownloadSize
+-- 4.  already downloading
+-- 5.  bFileExist: false
+-- 6.  bFileExist: true
+-- 7.  file need download
+-- 8.  md5:
+-- 9.  set file is ready
+-- 10. !CheckCombinePakWithPatchPakQuest
+-- 11. !CheckModuleNameNotRumtimeSpecial
+-- 12. !DFM.YxFramework.Plugin.Json.Json
+-- 13. !OnPlatformChunksDownloadFinished
+-- 14. !ReportPakDownloadMD5ToCrashSight
+-- 15. !W 
+-- 16. !W!
+-- 17. !W"
+-- 18. !W#
+-- 19. !W$
+-- 20. !Y&
+-- 21. !Y'
+-- 22. !Y(
+-- 23. !Y)
+-- 24. !Y*
+-- 25. !Y+
+-- 26. !Y,
+-- 27. !Y-
+-- 28. !Y.
+-- 29. !Y/
+-- 30. !Y0
+-- 31. !Y1
+-- 32. !Y2
+-- 33. !Y3
+-- 34. !Y4
+-- 35. !Y5
+-- 36. !Y6
+-- 37. !dictNowVersionPakIndexAndPakName
+-- 38. "([^"]+)"
+-- 39. "GetRealSizeToDownloadByModuleName
+-- 40. "dictLastVersionNotBeforeLoginPaks
+-- 41. #OnCurrentDownloadQuestNeedMoveNext
+-- 42. $AssetPackerBlueprintFunctionLibrary
+-- 43. $CheckModuleNameInPlayGoInitialChunk
+-- 44. $GetDownloadProgressInfoByModuleName
+-- 45. $LitePackageModule:GetQuestIdByMapId
+-- 46. $RegisterHDDownloadStatusMultiModule
+-- 47. $Vehicle/VehicleSkinPakPolicy is nil
+-- 48. $[LiteDownloadManager]:DownloadQuest
+-- 49. $[LiteDownloadManager]:RunQuestCheck
+-- 50. $evtCurrentDownloadQuestNeedMoveNext
+
+-- 重构的函数结构:
+
+-- 可能的函数: !OnPlatformChunksDownloadFinished
+-- 可能的函数: "dictLastVersionNotBeforeLoginPaks
+-- 可能的函数: $AssetPackerBlueprintFunctionLibrary
+-- 可能的函数: %GenerateAllModulePaksForWholePackage
+-- 可能的函数: &IsSimulateLitePackDownloadBeforeLogin
+-- 可能的函数: 'AddPlatformChunksDownloadFinishedEvent
+-- 可能的赋值: (.-)=(.*)
+-- 可能的函数: )OnPlatformChunksDownloadCompleteDelegate
+-- 可能的函数: , localSize:
+-- 可能的函数: , readyTotalSizeLocal:
+-- 可能的函数: -, check local file is ready. totalSizeLocal:
+-- 可能的函数: /manifest.txt
+-- 可能的函数: 1, check local file is not ready. totalSizeLocal:
+-- 可能的赋值: 3moduleInfo=%(ModuleName="(.-)".-PakList=%((.-)%)%)
+-- 可能的函数: 7[LiteDownloadManager] OnPlatformChunksDownloadFinished
+-- 可能的函数: ;[LiteDownloadManager] GetAllMediasInBeforelogin add media:
+-- 可能的赋值: =DFM.Business.Module.LitePackageModule.Logic.LitePackageLogic
+-- 可能的赋值: =LiteDownloadManager:CheckAndSetCombinedPaksToPuffer pakName:
+-- 可能的赋值: =[LiteDownloadManager:GetDownloadCategary] EItemType.Adapter:
+-- 可能的赋值: =[LiteDownloadManager:GetDownloadCategary] EItemType.Fashion:
+-- 可能的赋值: =[LiteDownloadManager] CheckAndDownloadAll add BaseModule_SOL
+-- 可能的赋值: =[LiteDownloadManager] GetMapModeHDResDownloaded , check ret:
+-- 可能的赋值: =[LiteDownloadManager] GetRealSizeTotalByModuleName pakIndex:
+-- 可能的赋值: =[LiteDownloadManager] LiteDownloadManager:ReloadLiteConfig()
+-- 可能的赋值: =[LiteDownloadManager] OnNetworkCtrlChange CN PufferMaxSpeed:
+-- 可能的赋值: >MultiModule=%(MultiModuleName="(.-)".-ChildModules=%((.-)%)%)
+-- 可能的函数: ?[LiteDownloadManager] CheckWIFIDownloadQuests , LITE_APMLevel:
+-- 可能的函数: ?[LiteDownloadManager] ReqPermisson no Notifications permission
+-- 可能的函数: @[LiteDownloadManager] ReqPermisson has Notifications permission
+-- 可能的函数: @[LiteDownloadManager] bNeedMountNow = true, pak in beforelogin:
+-- 可能的函数: A[LiteDownloadManager] CheckWIFIDownloadQuests , space not enough
+-- 可能的函数: B[LiteDownloadManager] CheckWIFIDownloadQuests , check modulename:
+-- 可能的函数: B[LiteDownloadManager] CheckWIFIDownloadQuests add roleModuleName:
+-- 可能的函数: BeforeLogin
+-- 可能的函数: BeforeLoginHD
+-- 可能的函数: C[LiteDownloadManager] CheckWIFIDownloadQuests bNeedAutoDownloadHD:
+-- 可能的函数: CheckLocalSize
+-- 可能的函数: CheckWIFIDownloadQuests
+-- 可能的函数: DownloadForceByModuleName
+-- 可能的函数: FormatNowSize
+-- 可能的函数: FormatSize
+-- 可能的函数: FormatTotal2SubSize
+-- 可能的函数: G[LiteDownloadManager] ReqPermisson no Notifications permission and req
+-- 可能的赋值: G[LiteDownloadManager] SetMountGameModeByArray paks == nil or #paks <=0
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetAllMediasInBeforelogin
+-- 可能的函数: H[LiteDownloadManager] drmdbg RegisterHDDownloadCollection BeforeLoginHD
+-- 可能的赋值: I[LiteDownloadManager] DownloadByModuleName  CheckBaseModuleState = false
+-- 可能的赋值: I[LiteDownloadManager] Puffer fileState == true but file size not match: 
+-- 可能的函数: IfPermissionGranted
+-- 可能的函数: IsPlatformAllChunksDownloaded
+-- 可能的函数: J[LiteDownloadManager] CheckWIFIDownloadQuests use mp, needDownloadRoleID:
+-- 可能的赋值: J[LiteDownloadManager] drmdbg :curdownlaodQuestName ~= nil stopmodulename:
+-- 可能的函数: K[LiteDownloadManager] CheckWIFIDownloadQuests use sol, needDownloadRoleID:
+-- 可能的赋值: L[LiteDownloadManager] CheckAndStartDeleteHDRes bisInCombined = true. ignoe:
+-- 可能的函数: L[LiteDownloadManager] CheckWIFIDownloadQuests , openWifiDownloadByLauncher.
+-- 可能的函数: M[LiteDownloadManager] CheckWIFIDownloadQuests , need_download_modules.count:
+-- 可能的函数: M[LiteDownloadManager] Puffer filename:%s, correctlyFileSize:%s, localSize:%s
+-- 可能的函数: M[LiteDownloadManager] drmdbg RegisterHDDownloadCollection OtherBeforeLoginHD
+-- 可能的函数: N[LiteDownloadManager] CheckWIFIDownloadQuests , bDownloadType == 1  not wifi.
+-- 可能的函数: Notifications
+-- 可能的函数: NowVersionPakInBeforeLogin
+-- 可能的函数: OtherBeforeLoginHD
+-- 可能的函数: PLATFORM_ANDROID
+-- 可能的函数: PLATFORM_IOS
+-- 可能的函数: Q[LiteDownloadManager] CheckWIFIDownloadQuests , freespace check failed. spaceGB:
+-- 可能的函数: ReqNotificationPermisson
+-- 可能的函数: RuntimeBeforeLogin
+-- 可能的函数: RuntimeBeforeLoginWholePackage
+-- 可能的函数: StartDownloadForce
+-- 可能的函数: U[LiteDownloadManager] CheckWIFIDownloadQuests, add CachModuleToDownload, moduleName:
+-- 可能的赋值: V[LiteDownloadManager] GetDownloadedQuestIDs nowMountedPaks[pakName] ~= true, pakName:
+-- 可能的函数: WIFTAuto
+-- 可能的函数: X[LiteDownloadManager] CheckFailedMountPaks pakFileName:%s, correctlyMD5:%s, localMD5:%s
+-- 可能的赋值: Y[LiteDownloadManager] IsDownloadedByModuleName nowMountedPaks[pakName] ~= true, pakName:
+-- 可能的赋值: Z[LiteDownloadManager] CheckAndSetCombineInfoToQueue outPakName == self.nowCombineOutPak: 
+-- 可能的赋值: [[LiteDownloadManager] CheckPakFileReady Puffer fileState == true but file size not match: 
+-- 可能的函数: _[LiteDownloadManager] CheckPakFileReady Puffer filename:%s, correctlyFileSize:%s, localSize:%s
+-- 可能的赋值: `[LiteDownloadManager] CheckAndDeleteNextLoginSetCombinedPaks bAllFileSetReady = false, pakName:
+-- 可能的函数: bResetLocalModuleInfo
+-- 可能的函数: dictLastVersionBeforeLoginPaks
+-- 可能的函数: format
+-- 可能的函数: j[LiteDownloadManager] CheckWIFIDownloadQuests , LITE_APMLevel >= LITE_HD_WIFI_LOBBY_DOWNLOAD_MODEL_LEVEL.
+-- 可能的日志: logtable
+-- 可能的函数: openWIFIDownload
