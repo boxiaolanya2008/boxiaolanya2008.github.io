@@ -1,44 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.755280
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:03.543187
 
--- 模块导入
--- IDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerLogic
--- ODFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerCombatLogic
--- QDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerConfigManager
--- RDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerNumericalPanel
--- require
-
--- 常量定义
--- local Activity
--- local ActivityMagicTowerCombatPanel
--- local AddInputActionBinding
--- local AsyncSetImagePath
--- local AsyncShowUI
--- local BOSS
--- local Back
--- local BindBackAction
--- local CalculateRoundDamage
--- local Cancel
--- local CancelDelay
--- local CanvasPanel_0
--- local ClearTimerHandle
--- local CloseUI
--- local Collapsed
--- local CommonTips
--- local Config
--- local Confirm
--- local CreateCallBack
--- local Ctor
--- local DFCommonSpine
--- local DFCommonSpine_1
--- local DFImage_53
--- local DFTextBlock
--- local DFTextBlock_26
--- local DelayCall
--- local EDisplayInputActionPriority
--- local EInputEvent
--- local ELuaLogCategory
--- local EUMGSequencePlayMode
-
--- 函数实现
+-- 常量占位
+local Activity = nil
+local ActivityMagicTowerCombatPanel = nil
+local AddInputActionBinding = nil
+local AsyncSetImagePath = nil
+local AsyncShowUI = nil
+local BOSS = nil
+local Back = nil
+local BindBackAction = nil
+local CalculateRoundDamage = nil
+local Cancel = nil
+local CancelDelay = nil
+local CanvasPanel_0 = nil
+local ClearTimerHandle = nil
+local CloseUI = nil
+local Collapsed = nil
+local CommonTips = nil
+local Config = nil
+local Confirm = nil
+local CreateCallBack = nil
+local Ctor = nil
+local DFCommonSpine = nil
+local DFCommonSpine_1 = nil
+local DFImage_53 = nil
+local DFTextBlock = nil
+local DFTextBlock_26 = nil
+local DelayCall = nil
+local EDisplayInputActionPriority = nil
+local EInputEvent = nil
+local ELuaLogCategory = nil
+local EUMGSequencePlayMode = nil

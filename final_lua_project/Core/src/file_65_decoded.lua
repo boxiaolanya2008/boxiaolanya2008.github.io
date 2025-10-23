@@ -1,43 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.751605
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:03.395193
 
--- 模块导入
--- <DFM.Business.Module.IrisSafeHouseModule.IrisSafeHouseConfig
--- @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
--- GDFM.Business.Module.BattlefieldEntryModule.Logic.BattlefieldEntryLogic
--- require
-
--- 常量定义
--- local AccountPunishReason
--- local AccountServer
--- local AddListener
--- local ArmedForceServer
--- local BattlefieldEntry
--- local CancelMatch
--- local CantChangeMapWhenMatching
--- local CantMatchScoreReadyTipText
--- local Captain
--- local CaptainStartMatch
--- local CheckCanStartMatch
--- local CheckHasValidHero
--- local CheckIsCommanderMode
--- local CheckIsCommanderUnlock
--- local CheckIsMapEnough
--- local CheckIsModeLockedByPlayerLevel
--- local CheckIsModeLockedByRankScore
--- local CheckIsNeedDownloadAllMap
--- local CheckIsSupportTournament
--- local CheckMapIsDownload
--- local CheckRankLockedBySeasonLevel
--- local CheckTeammateIsReady
--- local CheckWIFIDownloadQuests
--- local CommonTips
--- local Config
--- local DFHD_LUA
--- local DFMAudioRes
--- local Download
--- local EArmedForceMode
--- local ELuaLogCategory
-
--- 函数实现
+-- 常量占位
+local AccountPunishReason = nil
+local AccountServer = nil
+local AddListener = nil
+local ArmedForceServer = nil
+local BattlefieldEntry = nil
+local CancelMatch = nil
+local CantChangeMapWhenMatching = nil
+local CantMatchScoreReadyTipText = nil
+local Captain = nil
+local CaptainStartMatch = nil
+local CheckCanStartMatch = nil
+local CheckHasValidHero = nil
+local CheckIsCommanderMode = nil
+local CheckIsCommanderUnlock = nil
+local CheckIsMapEnough = nil
+local CheckIsModeLockedByPlayerLevel = nil
+local CheckIsModeLockedByRankScore = nil
+local CheckIsNeedDownloadAllMap = nil
+local CheckIsSupportTournament = nil
+local CheckMapIsDownload = nil
+local CheckRankLockedBySeasonLevel = nil
+local CheckTeammateIsReady = nil
+local CheckWIFIDownloadQuests = nil
+local CommonTips = nil
+local Config = nil
+local DFHD_LUA = nil
+local DFMAudioRes = nil
+local Download = nil
+local EArmedForceMode = nil
+local ELuaLogCategory = nil

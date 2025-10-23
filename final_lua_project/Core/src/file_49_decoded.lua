@@ -1,53 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.751172
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:02.969222
 
--- 模块导入
--- GenLocalLogFuncELuaLogCategoryLuaMGameletimportDFMGamelet
---  DFM.YxFramework.Util.WidgetUtil
--- !DFM.YxFramework.Plugin.Json.Json
--- ,DFM.StandaloneLua.BusinessTool.LocalizeTool
--- .DFM.StandaloneLua.BusinessTool.HeroHelperTool
--- .DFM.StandaloneLua.BusinessTool.ItemHelperTool
--- 0DFM.Business.Module.GameletModule.UI.GameletPop
--- 1DFM.Business.Module.StoreModule.Logic.StoreLogic
--- 4DFM.Business.Module.GameletModule.UI.GameletStackCB
--- 6DFM.Business.Module.GameletModule.UI.GameletStackNoCB
--- 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
--- ;DFM.Business.Module.GameletModule.UI.GameletStackCBStoreHR
--- import
--- require
-
--- 常量定义
--- local AccountServer
--- local Activity
--- local Adapter
--- local Add
--- local AddActiveApp
--- local AddActivityAppTable
--- local AddAppIDRedDot
--- local AddAppIDTaskFinish
--- local AddFriend
--- local AddListener
--- local AppSetting
--- local Apple
--- local AppsFlyer
--- local AsyncLoadImgObjByPath
--- local AsyncSetImagePath
--- local AsyncShowUI
--- local BPKey
--- local BUILD_REGION_CN
--- local BUILD_REGION_CN_EXPER
--- local BUILD_REGION_CN_MATCH
--- local Bind
--- local CallGameletFunc
--- local CallGameletFuncPure
--- local CannotInviteDuringMatching
--- local Card
--- local ChannelExtras
--- local CheckIsGameFriend
--- local Clear
--- local ClockManager
--- local CloseApp
-
--- 函数实现
+-- 常量占位
+local AccountServer = nil
+local Activity = nil
+local Adapter = nil
+local Add = nil
+local AddActiveApp = nil
+local AddActivityAppTable = nil
+local AddAppIDRedDot = nil
+local AddAppIDTaskFinish = nil
+local AddFriend = nil
+local AddListener = nil
+local AppSetting = nil
+local Apple = nil
+local AppsFlyer = nil
+local AsyncLoadImgObjByPath = nil
+local AsyncSetImagePath = nil
+local AsyncShowUI = nil
+local BPKey = nil
+local BUILD_REGION_CN = nil
+local BUILD_REGION_CN_EXPER = nil
+local BUILD_REGION_CN_MATCH = nil
+local Bind = nil
+local CallGameletFunc = nil
+local CallGameletFuncPure = nil
+local CannotInviteDuringMatching = nil
+local Card = nil
+local ChannelExtras = nil
+local CheckIsGameFriend = nil
+local Clear = nil
+local ClockManager = nil
+local CloseApp = nil

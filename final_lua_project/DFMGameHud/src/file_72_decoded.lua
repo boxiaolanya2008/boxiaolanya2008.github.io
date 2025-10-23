@@ -1,56 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.755363
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:03.571813
 
--- 模块导入
--- GenLocalLogFuncELuaLogCategory
-LuaMActivityuiActivityMainPanelrequire2DFM.Business.Module.ActivityModule.ActivityConfig7DFM.Business.M
---  DFM.YxFramework.Util.WidgetUtil
--- )DFM.Business.DataStruct.Common.Base.Safe
--- *DFM.Business.DataStruct.Common.Base.Table
--- -DFM.YxFramework.Managers.UI.Util.UIThemeUtil
--- /DFM.Business.DataStruct.Common.Base.CallFilter
--- 2DFM.Business.Module.ActivityModule.ActivityConfig
--- 7DFM.Business.DataStruct.Common.Agent.InputBindingAgent
--- 7DFM.Business.Module.ActivityModule.Logic.ActivityLogic
--- 8DFM.Business.DataStruct.UIDataStruct.TabUIContentDataV2
--- :DFM.Business.Module.CommonWidgetModule.CommonWidgetConfig
--- =DFM.Business.Module.ActivityModule.Logic.ActivityRedDotLogic
--- GDFM.Business.Module.ActivityModule.UI.RadioNews.ActivityRadioMainPanel
--- MDFM.Business.Module.CommonUILibraryModule.UI.Library.DFCommonCheckButtonOnly
--- import
--- require
-
--- 常量定义
--- local AAB
--- local AAD
--- local ABB
--- local ABC
--- local ABJ
--- local AUDIO_NAME
--- local ActUITextBlock
--- local Activate
--- local Activity
--- local ActivityAccessories
--- local ActivityAsaraBazaar
--- local ActivityAssemble
--- local ActivityBartender
--- local ActivityClose
--- local ActivityCollectionPanel
--- local ActivityCommonDailyTask
--- local ActivityCommonDesction
--- local ActivityCommonTask
--- local ActivityDailiesPanel
--- local ActivityDecryptMainPanel
--- local ActivityDescTextBox
--- local ActivityEquipment
--- local ActivityExchangeHaffCoins
--- local ActivityExchangeOnly
--- local ActivityFilingTaskMainPanel
--- local ActivityFinishedByReward
--- local ActivityFrontPage
--- local ActivityFullScreenButton
--- local ActivityGrowthMilestones
--- local ActivityGrowthSignInPanel
-
--- 函数实现
+-- 常量占位
+local AAB = nil
+local AAD = nil
+local ABB = nil
+local ABC = nil
+local ABJ = nil
+local AUDIO_NAME = nil
+local ActUITextBlock = nil
+local Activate = nil
+local Activity = nil
+local ActivityAccessories = nil
+local ActivityAsaraBazaar = nil
+local ActivityAssemble = nil
+local ActivityBartender = nil
+local ActivityClose = nil
+local ActivityCollectionPanel = nil
+local ActivityCommonDailyTask = nil
+local ActivityCommonDesction = nil
+local ActivityCommonTask = nil
+local ActivityDailiesPanel = nil
+local ActivityDecryptMainPanel = nil
+local ActivityDescTextBox = nil
+local ActivityEquipment = nil
+local ActivityExchangeHaffCoins = nil
+local ActivityExchangeOnly = nil
+local ActivityFilingTaskMainPanel = nil
+local ActivityFinishedByReward = nil
+local ActivityFrontPage = nil
+local ActivityFullScreenButton = nil
+local ActivityGrowthMilestones = nil
+local ActivityGrowthSignInPanel = nil

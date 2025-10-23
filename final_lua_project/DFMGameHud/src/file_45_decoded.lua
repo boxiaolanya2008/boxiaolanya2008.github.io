@@ -1,57 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.753752
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:02.914904
 
--- 模块导入
--- GenLocalLogFuncELuaLogCategory
-LuaMGunsmithrequire DFM.YxFramework.Util.WidgetUtilimpor
---  DFM.YxFramework.Util.WidgetUtil
--- 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
--- 1DFM.Business.Module.GunsmithModule.UI.GunsmithUI
--- 9DFM.Business.DataStruct.UIDataStruct.ItemUIDataContainer
--- 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
--- ?DFM.Business.Module.GunsmithModule.Logic.GunsmithSimulateLogic
--- @DFM.Business.Module.GunsmithModule.Logic.GunsmithUIContextLogic
--- @DFM.Business.Module.GunsmithModule.Logic.TLog.GunsmithTLogLogic
--- ADFM.Business.Module.GunsmithModule.Define.EGunsmithSolutionGroup
--- HDFM.Business.Module.GunsmithModule.Logic.Unlock.GunsmithPartUnlockLogic
--- LDFM.Business.Module.GunsmithModule.Data.Solution.GunsmithSolutionItemUIData
--- LDFM.Business.Module.GunsmithModule.Logic.Solution.GunsmithSolutionMainLogic
--- MDFM.Business.Module.GunsmithModule.UI.Simulate.GunsmithSimulateStatePropmtUI
--- PDFM.Business.Module.GunsmithModule.Define.EGunsmithSolutionMainEquipButtonState
--- import
--- require
-
--- 常量定义
--- local AddInputActionBinding
--- local AddLuaEvent
--- local AddNavWidgetToArray
--- local Blueprint
--- local ButtonClick
--- local CSWAssemblyUpdateDesignReq
--- local ChatServer
--- local Click
--- local CommonBar
--- local Common_ButtonBottom_Gamepad
--- local CompareWeaponDescription
--- local CompareWeaponDescriptionSkin
--- local Config
--- local ContainsFromGUID
--- local Ctor
--- local DFCheckBoxWithText
--- local DFCommonButtonOnly
--- local DFCommonCheckButtonOnly
--- local DFHD_LUA
--- local DefaultSecondary
--- local Destroy
--- local EAssemblerCamPoint
--- local EAssemblerCameraType
--- local ECurrencyClientType
--- local EDisplayInputActionPriority
--- local EGPUINavWidgetFocusedAction
--- local EInputEvent
--- local ELuaLogCategory
--- local EModularWeaponDescCompare
--- local EUINavDynamicType
-
--- 函数实现
+-- 常量占位
+local AddInputActionBinding = nil
+local AddLuaEvent = nil
+local AddNavWidgetToArray = nil
+local Blueprint = nil
+local ButtonClick = nil
+local CSWAssemblyUpdateDesignReq = nil
+local ChatServer = nil
+local Click = nil
+local CommonBar = nil
+local Common_ButtonBottom_Gamepad = nil
+local CompareWeaponDescription = nil
+local CompareWeaponDescriptionSkin = nil
+local Config = nil
+local ContainsFromGUID = nil
+local Ctor = nil
+local DFCheckBoxWithText = nil
+local DFCommonButtonOnly = nil
+local DFCommonCheckButtonOnly = nil
+local DFHD_LUA = nil
+local DefaultSecondary = nil
+local Destroy = nil
+local EAssemblerCamPoint = nil
+local EAssemblerCameraType = nil
+local ECurrencyClientType = nil
+local EDisplayInputActionPriority = nil
+local EGPUINavWidgetFocusedAction = nil
+local EInputEvent = nil
+local ELuaLogCategory = nil
+local EModularWeaponDescCompare = nil
+local EUINavDynamicType = nil

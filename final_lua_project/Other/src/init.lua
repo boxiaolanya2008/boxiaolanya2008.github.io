@@ -4,7 +4,7 @@
 print("正在初始化 其他模块 模块...")
 
 -- 导入模块文件
--- require 'file_51_decoded'
+require 'file_51_decoded'
 
 -- 模块初始化完成
 print("其他模块 模块初始化完成")
