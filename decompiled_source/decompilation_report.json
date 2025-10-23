@@ -1,0 +1,216 @@
+{
+  "summary": {
+    "total_files": 73,
+    "total_strings": 76,
+    "total_functions": 0,
+    "total_modules": 0
+  },
+  "files": {
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ½³¾¼´¬¶«º²°»ª³ºñª¶ñ½³¾¼´¬¶«º¯­°»ª¼º¹°­²ª³¾¶«º²ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ½³¾¼´¬¶«º²°»ª³ºñª¶ñ½³¾¼´¬¶«º¯­°»ª¼º¹°­²ª³¾¶«º²ñ³ª¾",
+      "file_size": 2668,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ¬«°­º²°»ª³ºñª¶ñ²¾¶±ñ¯­°»ª¼«¯­º©¶º¨ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ¬«°­º²°»ª³ºñª¶ñ²¾¶±ñ¯­°»ª¼«¯­º©¶º¨ñ³ª¾",
+      "file_size": 48897,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ·º­°²°»ª³ºñª¶ñ·º­°²¾¶±ñ·º­°²¾¶±¯¾±º³ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ·º­°²°»ª³ºñª¶ñ·º­°²¾¶±ñ·º­°²¾¶±¯¾±º³ñ³ª¾",
+      "file_size": 49973,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ«º¾²²°»ª³ºñ«º¾²²°»ª³ºñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ«º¾²²°»ª³ºñ«º¾²²°»ª³ºñ³ª¾",
+      "file_size": 18604,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ³¶«º¯¾¼´¾¸º²°»ª³ºñª¶ñ³¶«º¯¾¼´¾¸º²¾¶±¯¾±º³ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ³¶«º¯¾¼´¾¸º²°»ª³ºñª¶ñ³¶«º¯¾¼´¾¸º²¾¶±¯¾±º³ñ³ª¾",
+      "file_size": 9731,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ¦§¹­¾²º¨°­´ñ²¾±¾¸º­¬ñª¶ñ¶±¯ª«ñ¶±¯ª«²°±¶«°­ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ¦§¹­¾²º¨°­´ñ²¾±¾¸º­¬ñª¶ñ¶±¯ª«ñ¶±¯ª«²°±¶«°­ñ³ª¾",
+      "file_size": 11044,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ³¶«º¯¾¼´¾¸º²°»ª³ºñª¶ñ³¶«º¼°²²°±»°¨±³°¾»ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ³¶«º¯¾¼´¾¸º²°»ª³ºñª¶ñ³¶«º¼°²²°±»°¨±³°¾»ñ³ª¾",
+      "file_size": 7580,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ¬«°­º²°»ª³ºñª¶ñ²¾¶±ñ¬«°­º²¾¶±¯¾±º³ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ¬«°­º²°»ª³ºñª¶ñ²¾¶±ñ¬«°­º²¾¶±¯¾±º³ñ³ª¾",
+      "file_size": 15739,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ³°¸¶±²°»ª³ºñ³°¸¶±¶±«º­¾¼«³°¸¶¼ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ³°¸¶±²°»ª³ºñ³°¸¶±¶±«º­¾¼«³°¸¶¼ñ³ª¾",
+      "file_size": 41865,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ®ªº¬«²°»ª³ºñª¶ñ¬º¾¬°±ñ¹¾«ºñ®ªº¬«¬º¾¬°±¹¾¼«¼°±«­¾¼«»º«¾¶³ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ®ªº¬«²°»ª³ºñª¶ñ¬º¾¬°±ñ¹¾«ºñ®ªº¬«¬º¾¬°±¹¾¼«¼°±«­¾¼«»º«¾¶³ñ³ª¾",
+      "file_size": 11148,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [],
+      "functions": [],
+      "modules": [],
+      "source_code": "-- 自动生成的Lua源代码\n-- 从字节码文件反编译生成\n-- 生成时间: Thu Oct 23 04:12:14 AM UTC 2025\n\n-- 函数定义\n-- 主函数\nfunction main()\n    -- 主逻辑\nend\n\nreturn main",
+      "statistics": {
+        "total_strings": 0,
+        "function_strings": 0,
+        "class_strings": 0,
+        "module_strings": 0,
+        "variable_strings": 0,
+        "functions": 0,
+        "modules": 0
+      }
+    },
+    "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ¸ª±¬²¶«·²°»ª³ºñª¶ñ¸ª±¬²¶«·²¾¶±¯­º©¶º¨ª¶ñ³ª¾": {
+      "filepath": "/workspace/lua_bytecode/»¹²ñ½ª¬¶±º¬¬ñ²°»ª³ºñ¸ª±¬²¶«·²°»ª³ºñª¶ñ¸ª±¬²¶«·²¾¶±¯­º©¶º¨ª¶ñ³ª¾",
+      "file_size": 29335,
+      "lua_version": 83,
+      "format_version": 0,
+      "endianness": 25,
+      "strings": [
+        
