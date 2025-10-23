@@ -1,59 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.749911
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:19:59.366945
 
--- 模块导入
--- GenLocalLogFuncELuaLogCategoryLuaMSystemSettingclassSystemSettingModulerequire+DFM.YxFramework.Managers.Modu
--- !DFM.YxFramework.Plugin.Json.Json
--- +DFM.YxFramework.Managers.Module.ModuleBase
--- ,DFM.StandaloneLua.BusinessTool.LocalizeTool
--- /DFM.StandaloneLua.BusinessTool.RuntimeIconTool
--- >DFM.Business.Module.SystemSettingModule.Logic.SolSettingLogic
--- ?DFM.Business.Module.SystemSettingModule.Logic.BaseSettingLogic
--- @DFM.Business.Module.SystemSettingModule.Logic.HD.SettingLogicHD
--- ADFM.Business.Module.SystemSettingModule.Logic.HD.BHDSettingLogic
--- ADFM.Business.Module.SystemSettingModule.Logic.SystemSettingLogic
--- ADFM.Business.Module.SystemSettingModule.Logic.VolumeSettingLogic
--- BDFM.Business.Module.SystemSettingModule.Logic.DisplaySettingLogic
--- CDFM.Business.Module.SystemSettingModule.Logic.HD.SettingRegLogicHD
--- DDFM.Business.Module.SystemSettingModule.Logic.HD.MiscSettingLogicHD
--- DDFM.Business.Module.SystemSettingModule.Logic.SystemSettingEvtLogic
--- EDFM.Business.Module.SystemSettingModule.Logic.HD.VideoSettingLogicHD
--- EDFM.Business.Module.SystemSettingModule.Logic.SystemSettingLoadLogic
--- FDFM.Business.Module.SystemSettingModule.Logic.HD.CommonSettingLogicHD
--- FDFM.Business.Module.SystemSettingModule.Logic.SensitivitySettingLogic
--- IDFM.Business.Module.SystemSettingModule.Logic.HD.SettingDataTableLogicHD
-
--- 常量定义
--- local AbilityItemFireMode
--- local Add
--- local AddDisplayActionBinding
--- local AddListener
--- local AddLuaEvent
--- local AddRewardListeners
--- local AddTglog
--- local ApplyBHDSettingData
--- local ApplyLateSettings
--- local ApplyOutOfGameSettingData
--- local ApplyRecommandMaxFPSSettingHD
--- local ArmedForceServer
--- local Array2Str
--- local AsyncShowUI
--- local Auction
--- local BHDStartSuccess
--- local BHD_SYNC_SETTINGS
--- local BUILD_REGION_CN_EXPER
--- local Back
--- local BaseLayout
--- local BaseSettingName
--- local BattleLayout
--- local Bind
--- local Bool2Num
--- local CanFireOnQuickScopeOpen
--- local CanSwitchXPP
--- local CarrierVehicleMode
--- local CheckIsInFrontEnd
--- local ChoosenLanguage
--- local Clear
-
--- 函数实现
+-- 常量占位
+local AbilityItemFireMode = nil
+local Add = nil
+local AddDisplayActionBinding = nil
+local AddListener = nil
+local AddLuaEvent = nil
+local AddRewardListeners = nil
+local AddTglog = nil
+local ApplyBHDSettingData = nil
+local ApplyLateSettings = nil
+local ApplyOutOfGameSettingData = nil
+local ApplyRecommandMaxFPSSettingHD = nil
+local ArmedForceServer = nil
+local Array2Str = nil
+local AsyncShowUI = nil
+local Auction = nil
+local BHDStartSuccess = nil
+local BHD_SYNC_SETTINGS = nil
+local BUILD_REGION_CN_EXPER = nil
+local Back = nil
+local BaseLayout = nil
+local BaseSettingName = nil
+local BattleLayout = nil
+local Bind = nil
+local Bool2Num = nil
+local CanFireOnQuickScopeOpen = nil
+local CanSwitchXPP = nil
+local CarrierVehicleMode = nil
+local CheckIsInFrontEnd = nil
+local ChoosenLanguage = nil
+local Clear = nil

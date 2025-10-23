@@ -1,59 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.754009
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:19:58.964905
 
--- 模块导入
--- "DFM.YxFramework.Util.AnalysisUtil
--- %DFM.YxFramework.Managers.ManagerBase
--- (DFM.YxFramework.Managers.UI.Util.UIUtil
--- *DFM.YxFramework.Managers.UI.LuaUIBaseView
--- *DFM.YxFramework.Managers.UI.UIGlobalConst
--- ,DFM.StandaloneLua.BusinessTool.LocalizeTool
--- /DFM.YxFramework.Managers.Resource.Stub.ResStub
--- /DFM.YxFramework.Managers.UI.Input.InputMonitor
--- /DFM.YxFramework.Managers.UI.Util.UIReleaseUtil
--- 1DFM.YxFramework.Managers.UI.Handle.BatchUIHandle
--- 1DFM.YxFramework.Managers.UI.Util.UISimulatorUtil
--- 2DFM.YxFramework.Managers.UI.Handle.SingleUIHandle
--- 3DFM.YxFramework.Managers.Resource.Util.ResPathUtil
--- 4DFM.YxFramework.Managers.UI.Part.UIManager_InsLogic
--- 4DFM.YxFramework.Managers.UI.Part.UIManager_ResLogic
--- 5DFM.YxFramework.Managers.UI.Part.UIManager_LinkLogic
--- 5DFM.YxFramework.Managers.UI.Part.UIManager_RuleLogic
--- 6DFM.YxFramework.Managers.UI.Part.UIManager_LayerLogic
--- 6DFM.YxFramework.Managers.UI.Part.UIManager_ThemeLogic
--- 7DFM.YxFramework.Managers.UI.Part.UIManager_UECallLogic
-
--- 常量定义
--- local Add
--- local AddListener
--- local AddSubUI
--- local AsyncCreateSubUI
--- local AsyncCreateSubUICustomlized
--- local AsyncLoadRes
--- local AsyncLoadUIAsset
--- local AsyncLoadUIResOnly
--- local AsyncShowUI
--- local AsyncShowUICustomlized
--- local BPPath
--- local BaseHUD
--- local BatchUIHandle
--- local BindDebugButtons
--- local BindOwnerSubHistory
--- local CacheUIForCurrentFrame
--- local CancelDelay
--- local CancelLoadProcess
--- local CheckIsLowMemoryState
--- local ClearAllResRefs
--- local ClearHUD
--- local ClearHUDBySettings
--- local ClearNavigationSelector
--- local ClearSubUIPack
--- local ClearUIResStub
--- local CloseUI
--- local CloseUIByBatchHandle
--- local CloseUIByHandle
--- local CreateCallBack
--- local CreateNavigationSelector
-
--- 函数实现
+-- 常量占位
+local Add = nil
+local AddListener = nil
+local AddSubUI = nil
+local AsyncCreateSubUI = nil
+local AsyncCreateSubUICustomlized = nil
+local AsyncLoadRes = nil
+local AsyncLoadUIAsset = nil
+local AsyncLoadUIResOnly = nil
+local AsyncShowUI = nil
+local AsyncShowUICustomlized = nil
+local BPPath = nil
+local BaseHUD = nil
+local BatchUIHandle = nil
+local BindDebugButtons = nil
+local BindOwnerSubHistory = nil
+local CacheUIForCurrentFrame = nil
+local CancelDelay = nil
+local CancelLoadProcess = nil
+local CheckIsLowMemoryState = nil
+local ClearAllResRefs = nil
+local ClearHUD = nil
+local ClearHUDBySettings = nil
+local ClearNavigationSelector = nil
+local ClearSubUIPack = nil
+local ClearUIResStub = nil
+local CloseUI = nil
+local CloseUIByBatchHandle = nil
+local CloseUIByHandle = nil
+local CreateCallBack = nil
+local CreateNavigationSelector = nil

@@ -1,55 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.753533
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:02.870067
 
--- 模块导入
--- GenLocalLogFuncELuaLogCategory	LuaMHerorequire DFM.YxFramework.Util.WidgetUtiluiHeroMainPanelFacade
-TableManager	GetTa
---  DFM.YxFramework.Util.WidgetUtil
--- *DFM.Business.Module.HeroModule.HeroConfig
--- .DFM.StandaloneLua.BusinessTool.HeroHelperTool
--- .DFM.StandaloneLua.BusinessTool.ItemHelperTool
--- /DFM.Business.Module.HeroModule.Logic.HeroLogic
--- /DFM.StandaloneLua.BusinessTool.SkillHelperTool
--- 8DFM.Business.Module.HeroModule.UI.HeroMain.HeroPropItem
--- 9DFM.Business.Module.HeroModule.UI.HeroMain.HeroSkillIcon
--- 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
--- :DFM.StandaloneLua.BusinessTool.LogAnalysis.ButtonIdConfig
--- ?DFM.Business.Module.HeroModule.UI.HeroMain.HeroSkillDetailView
--- ?DFM.Business.Module.LobbyDisplayModule.Logic.LobbyDisplayLogic
--- import
--- require
-
--- 常量定义
--- local AAG
--- local AAH
--- local AAJ
--- local ActivityServer
--- local Add
--- local AddChild
--- local AddCloseCallBack
--- local AddHeroItem
--- local AddInputActionBinding
--- local AddLuaEvent
--- local AddNavWidgetToArray
--- local AddSubUI
--- local Anchors
--- local ArmedForceData
--- local ArmedForceID
--- local ArmedForceId
--- local ArmedForceServer
--- local AssemblyMain
--- local AssemblyTips
--- local AsyncSetImagePath
--- local AsyncShowUI
--- local BP_SetMainTitle
--- local Back
--- local Back_Gamepad
--- local BattlePassServer
--- local BindBackHandler
--- local BindCustomFocusProxy
--- local BindJumpClick
--- local BottomBarState
--- local BusinessPending
-
--- 函数实现
+-- 常量占位
+local AAG = nil
+local AAH = nil
+local AAJ = nil
+local ActivityServer = nil
+local Add = nil
+local AddChild = nil
+local AddCloseCallBack = nil
+local AddHeroItem = nil
+local AddInputActionBinding = nil
+local AddLuaEvent = nil
+local AddNavWidgetToArray = nil
+local AddSubUI = nil
+local Anchors = nil
+local ArmedForceData = nil
+local ArmedForceID = nil
+local ArmedForceId = nil
+local ArmedForceServer = nil
+local AssemblyMain = nil
+local AssemblyTips = nil
+local AsyncSetImagePath = nil
+local AsyncShowUI = nil
+local BP_SetMainTitle = nil
+local Back = nil
+local Back_Gamepad = nil
+local BattlePassServer = nil
+local BindBackHandler = nil
+local BindCustomFocusProxy = nil
+local BindJumpClick = nil
+local BottomBarState = nil
+local BusinessPending = nil

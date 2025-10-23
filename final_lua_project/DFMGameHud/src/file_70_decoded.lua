@@ -1,57 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.755205
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:03.531429
 
--- 模块导入
--- GenLocalLogFuncELuaLogCategory
-LuaMActivityuiActivityMagicTowerMainPanelModule	ActivityConfigrequireIDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerLogic7DFM.Business.Module.ActivityModule.Logic.ActivityLogicFDFM.Business.Module.ActivityModule.
---  DFM.YxFramework.Util.WidgetUtil
--- 7DFM.Business.Module.ActivityModule.Logic.ActivityLogic
--- ADFM.Business.Module.ActivityModule.UI.MagicTower.Safe.MTSafeItem
--- DDFM.Business.Module.ActivityModule.UI.MagicTower.Safe.MTSafeManager
--- FDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityInputHandler
--- HDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerMove
--- IDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerLogic
--- JDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerPlayer
--- KDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerKeyItem
--- ODFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerCombatLogic
--- PDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerAStarHandler
--- QDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerConfigManager
--- RDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerNumericalPanel
--- VDFM.Business.Module.ActivityModule.UI.MagicTower.ActivityMagicTowerConditionEvaluator
--- import
--- require
-
--- 常量定义
--- local AAA
--- local AAB
--- local AAC
--- local AAD
--- local AAE
--- local AActor
--- local ABA
--- local ABB
--- local AFTER_THE_SECOND
--- local Activity
--- local ActivityMagicTowerCombatPanel
--- local ActivityMagicTowerMainPanel
--- local ActivityMagicTowerMerchant
--- local ActivityServer
--- local Add
--- local AddDisplayActionBinding
--- local AddInputActionBinding
--- local AddLuaEvent
--- local AlignmentType
--- local Android_Back
--- local AsyncShowUI
--- local Back
--- local BindBackAction
--- local CBA
--- local COMBAT_RESULT
--- local CalculateFullCombatResult
--- local Cancel
--- local CancelAllFrameTasks
--- local CancelDelay
--- local CanvasPanel_0
-
--- 函数实现
+-- 常量占位
+local AAA = nil
+local AAB = nil
+local AAC = nil
+local AAD = nil
+local AAE = nil
+local AActor = nil
+local ABA = nil
+local ABB = nil
+local AFTER_THE_SECOND = nil
+local Activity = nil
+local ActivityMagicTowerCombatPanel = nil
+local ActivityMagicTowerMainPanel = nil
+local ActivityMagicTowerMerchant = nil
+local ActivityServer = nil
+local Add = nil
+local AddDisplayActionBinding = nil
+local AddInputActionBinding = nil
+local AddLuaEvent = nil
+local AlignmentType = nil
+local Android_Back = nil
+local AsyncShowUI = nil
+local Back = nil
+local BindBackAction = nil
+local CBA = nil
+local COMBAT_RESULT = nil
+local CalculateFullCombatResult = nil
+local Cancel = nil
+local CancelAllFrameTasks = nil
+local CancelDelay = nil
+local CanvasPanel_0 = nil

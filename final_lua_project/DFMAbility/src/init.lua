@@ -4,7 +4,7 @@
 print("正在初始化 能力系统模块 模块...")
 
 -- 导入模块文件
--- require 'file_1_decoded'
+require 'file_1_decoded'
 
 -- 模块初始化完成
 print("能力系统模块 模块初始化完成")

@@ -1,59 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.750927
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:02.838704
 
--- 模块导入
--- require6DFM.Business.Module
--- require6DFM.Business.Module.
--- require6DFM.Business.Module.It
--- GenLocalLogFuncELuaLogCategoryLuaMItemDetailrequire=DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool0DFM.StandaloneLua.Busin
--- isShowSourceAndUsePlacerequire6DFM.Business.Module.ItemDetailModule.ItemDetailConfig.DFM.StandaloneLua.BusinessTool.ShopHelperTool*DFM.Business.M
--- *DFM.Business.Module.JumpModule.JumpConfig
--- .DFM.StandaloneLua.BusinessTool.ItemHelperTool
--- .DFM.StandaloneLua.BusinessTool.ShopHelperTool
--- 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
--- 1DFM.StandaloneLua.BusinessTool.VehicleHelperTool
--- 6DFM.Business.Module.ItemDetailModule.ItemDetailConfig
--- 8DFM.StandaloneLua.BusinessTool.StructTool.ItemOperaTool
--- 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
--- =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
--- >DFM.Business.Module.InventoryModule.Logic.InventoryNavManager
--- DDFM.Business.DataStruct.GunsmithStruct.GunsmithWeaponSocketBaseData
--- import
--- require
--- 传入的 item 为 nil importMapInfoSystemidGetInstGetGameInstancenot MapInfoSystem!ModuleItemDetailConfigKeyInfoConfig
--- 负 nil importMapInfoSystemidGetInstGetGameInstancenot MapInfoSystem!ModuleItemDetailConfigKeyInfoConfig
-
--- 常量定义
--- local AAA
--- local ABD
--- local ActivityItem
--- local Adapter
--- local Add
--- local AddSubUI
--- local AddWorkshopItemToTargetPool
--- local Adpater
--- local AllNodes
--- local AllSocketList
--- local Anchors
--- local AnimShow
--- local ApplyWeaponSkin
--- local Archive
--- local ArchivePanel
--- local ArmedForce
--- local ArmedForceServer
--- local ArmorID
--- local AssembleWeaponDataLibrary
--- local Assembly
--- local AsyncLoadUIResOnly
--- local AsyncShowUI
--- local AttachPartIndex
--- local AttackGroupId
--- local Attacker
--- local Auction
--- local AuctionServer
--- local AutoProcessItem
--- local Badge
--- local BagContainer
-
--- 函数实现
+-- 常量占位
+local AAA = nil
+local ABD = nil
+local ActivityItem = nil
+local Adapter = nil
+local Add = nil
+local AddSubUI = nil
+local AddWorkshopItemToTargetPool = nil
+local Adpater = nil
+local AllNodes = nil
+local AllSocketList = nil
+local Anchors = nil
+local AnimShow = nil
+local ApplyWeaponSkin = nil
+local Archive = nil
+local ArchivePanel = nil
+local ArmedForce = nil
+local ArmedForceServer = nil
+local ArmorID = nil
+local AssembleWeaponDataLibrary = nil
+local Assembly = nil
+local AsyncLoadUIResOnly = nil
+local AsyncShowUI = nil
+local AttachPartIndex = nil
+local AttackGroupId = nil
+local Attacker = nil
+local Auction = nil
+local AuctionServer = nil
+local AutoProcessItem = nil
+local Badge = nil
+local BagContainer = nil

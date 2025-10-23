@@ -1,58 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.753845
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:20:02.931642
 
--- 模块导入
--- GenLocalLogFuncELuaLogCategory
-LuaMGunsmithrequire DFM.YxFramework.Util.WidgetUtilimportGameplayBlueprintHelperGPU
---  DFM.YxFramework.Util.WidgetUtil
--- 1DFM.Business.Module.GunsmithModule.UI.GunsmithUI
--- 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
--- ;DFM.Business.Module.GunsmithModule.Logic.GunsmithMainLogic
--- =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
--- @DFM.Business.Module.GunsmithModule.Logic.GunsmithUIContextLogic
--- @DFM.Business.Module.GunsmithModule.Logic.Skin.GunsmithSkinLogic
--- @DFM.Business.Module.GunsmithModule.Logic.TLog.GunsmithTLogLogic
--- @DFM.Business.Module.GunsmithModule.UI.Mission.GunsmithMissionUI
--- FDFM.Business.Module.GunsmithModule.Logic.Mission.GunsmithMissionLogic
--- HDFM.Business.Module.GunsmithModule.Logic.Unlock.GunsmithPartUnlockLogic
--- LDFM.Business.Module.GunsmithModule.Logic.Solution.GunsmithSolutionMainLogic
--- LDFM.Business.Module.GunsmithModule.UI.SceneSocket.GunsmithSceneSocketMainUI
--- MDFM.Business.Module.GunsmithModule.Define.EGunsmithMainPreviewUIShortcutType
--- MDFM.Business.Module.GunsmithModule.UI.Simulate.GunsmithSimulateStatePropmtUI
--- import
--- require
-
--- 常量定义
--- local Add
--- local AddAxisInputActionBinding
--- local AddInputActionBinding
--- local AddLuaEvent
--- local AddNavWidgetToArray
--- local AddShortcutType
--- local AddUIButtonClickedEvent
--- local BindCustomFocusProxy
--- local CONST_STRING
--- local CanShowMission
--- local CancelDelay
--- local CheckAbsolutePointInsideWidget
--- local CommonBar
--- local CommonTips
--- local Common_Right_X
--- local Common_Right_Y
--- local Config
--- local CreateCPlusCallBack
--- local CreateCallBack
--- local Ctor
--- local DFCommonButtonOnly
--- local DFCommonCheckButtonOnly
--- local DFImage_120
--- local DFTextBlock_179
--- local Default
--- local DelayCall
--- local Destroy
--- local Detail
--- local DisableUI
--- local EAssemblerCamPoint
-
--- 函数实现
+-- 常量占位
+local Add = nil
+local AddAxisInputActionBinding = nil
+local AddInputActionBinding = nil
+local AddLuaEvent = nil
+local AddNavWidgetToArray = nil
+local AddShortcutType = nil
+local AddUIButtonClickedEvent = nil
+local BindCustomFocusProxy = nil
+local CONST_STRING = nil
+local CanShowMission = nil
+local CancelDelay = nil
+local CheckAbsolutePointInsideWidget = nil
+local CommonBar = nil
+local CommonTips = nil
+local Common_Right_X = nil
+local Common_Right_Y = nil
+local Config = nil
+local CreateCPlusCallBack = nil
+local CreateCallBack = nil
+local Ctor = nil
+local DFCommonButtonOnly = nil
+local DFCommonCheckButtonOnly = nil
+local DFImage_120 = nil
+local DFTextBlock_179 = nil
+local Default = nil
+local DelayCall = nil
+local Destroy = nil
+local Detail = nil
+local DisableUI = nil
+local EAssemblerCamPoint = nil

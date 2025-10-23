@@ -1,54 +1,38 @@
+-- 由工具自动生成函数桩于 2025-10-23 04:43:43.750326
+-- 注意：以下为基于字节码信息推断的函数/常量桩，需要按业务补全
+
 -- Lua源代码解码结果
 -- 基于字节码深度分析生成
 -- 生成时间: 2025-10-23 04:19:59.462369
 
--- 模块导入
--- GenLocalLogFuncELuaLogCategory
-LuaMStoreimportEGPUINavWidgetFocusedActionrequire DFM.YxFramework.Util.
---  DFM.YxFramework.Util.WidgetUtil
--- .DFM.StandaloneLua.BusinessTool.HeroHelperTool
--- .DFM.StandaloneLua.BusinessTool.ItemHelperTool
--- 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
--- 1DFM.Business.Module.StoreModule.Logic.StoreLogic
--- 1DFM.StandaloneLua.BusinessTool.VehicleHelperTool
--- 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
--- ;DFM.StandaloneLua.BusinessTool.LogAnalysis.LogAnalysisTool
--- <DFM.Business.Module.LitePackageModule.UI.LiteCommonDownload
--- =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
--- @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
--- import
--- require
-
--- 常量定义
--- local AAA
--- local ABD
--- local Accessory
--- local Adapter
--- local AddAxisInputActionBinding
--- local AddInputActionBinding
--- local AddListener
--- local AddLuaEvent
--- local AddNavWidgetToArray
--- local AddNtfListener
--- local AnimShow
--- local Assembly_Confirm
--- local AsyncLoadImgObjByPath
--- local AsyncSetImagePath
--- local AsyncShowUI
--- local BP_SetMainTitle
--- local BannerName
--- local BelongedHeroIDs
--- local BindDiamond
--- local BindTipsWidget
--- local BundleCurrencyType
--- local BundleItems
--- local BuyLimit
--- local C002
--- local CSDirectPurchaseShippingNtf
--- local Card
--- local CheckAndRequestAppStoreWindow
--- local CheckIsSellBuyGoodId
--- local ClearTips
--- local Click
-
--- 函数实现
+-- 常量占位
+local AAA = nil
+local ABD = nil
+local Accessory = nil
+local Adapter = nil
+local AddAxisInputActionBinding = nil
+local AddInputActionBinding = nil
+local AddListener = nil
+local AddLuaEvent = nil
+local AddNavWidgetToArray = nil
+local AddNtfListener = nil
+local AnimShow = nil
+local Assembly_Confirm = nil
+local AsyncLoadImgObjByPath = nil
+local AsyncSetImagePath = nil
+local AsyncShowUI = nil
+local BP_SetMainTitle = nil
+local BannerName = nil
+local BelongedHeroIDs = nil
+local BindDiamond = nil
+local BindTipsWidget = nil
+local BundleCurrencyType = nil
+local BundleItems = nil
+local BuyLimit = nil
+local C002 = nil
+local CSDirectPurchaseShippingNtf = nil
+local Card = nil
+local CheckAndRequestAppStoreWindow = nil
+local CheckIsSellBuyGoodId = nil
+local ClearTips = nil
+local Click = nil
