@@ -1,0 +1,88 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.StringUtil
+-- 2.  SDKInfoServer:SetMapleServerUrl
+-- 3.  [SDKInfoServer] MakeConnectInfo
+-- 4.  urls)
+-- 5. !DFM.YxFramework.Plugin.Json.Json
+-- 6. !GetRegionNumericCodeByRegionCode
+-- 7. ![MakeConnectInfo] no server info
+-- 8. ![ResloveConnectUrlAsync] ip:port
+-- 9. "SDKInfoServer.evtServerAddrSelect
+-- 10. "[GetCoreUserId] CoreUserId is nil
+-- 11. "[MakeConnectInfo] login channelId
+-- 12. "[SDKInfoServer] SetGVoiceURL url:
+-- 13. "[SetCoreUserId] coreUserId is nil
+-- 14. $SDKInfoServer.evtServerAddrNotfound
+-- 15. $SDKInfoServer:GetLaunchChannelId = 
+-- 16. $[GetAccessToken] AccessToken is nil
+-- 17. $[GetConnectedIP] connectedIP is nil
+-- 18. %1%2%3Epic
+-- 19. %SDKInfoServer:GetStoreChannel is aab
+-- 20. %SDKInfoServer:GetStoreChannel is apk
+-- 21. %SDKInfoServer:_StartConnectServer...
+-- 22. %WeGame Launcher Connect With ip:port
+-- 23. %[GetSelectAddrKey] playerInfo is nil
+-- 24. %[SDKInfoServer] MakeConnectInfoAsync
+-- 25. %[SDKInfoServer] SetWeLoginInfo info:
+-- 26. %[SDKInfoServer] ZoneId from local = 
+-- 27. %d+
+-- 28. %d+$
+-- 29. %s:%s
+-- 30. &SDKInfoServer:Find ABTestKey, keyName
+-- 31. &SDKInfoServer:SetSelectAddrKey key = 
+-- 32. &SDKInfoServer:UpdateServerAddr by key
+-- 33. &[GetConnectedUrl] connectedUrl is nil
+-- 34. &[GetRefreshToken] RefreshToken is nil
+-- 35. &[ResloveConnectUrlAsync] domain:port:
+-- 36. &[SDKInfoServer] SetINTLComplianceInfo
+-- 37. &[SDKInfoServer] ZoneId form server = 
+-- 38. '([^%-]+%-)([^%-]+%-)([^%-]+%-)([^%-]+)
+-- 39. '[GetWeLoginInfo] wg_login_info is nil 
+-- 40. (.*):(.*)
+-- 41. (AB
+-- 42. (CA
+-- 43. (SDKInfoServer:GetVersionUpdateInfo req 
+-- 44. ([MakeConnectInfo] SdkGameId and openId:
+-- 45. ([SDKInfoServer] SetGVoiceURL url is nil
+-- 46. ([SDKInfoServer] SetRegionCode dt is nil
+-- 47. (w@
+-- 48. )A@
+-- 49. )AA
+-- 50. )AB
+
+-- 重构的函数结构:
+
+-- 可能的赋值: $SDKInfoServer:GetLaunchChannelId = 
+-- 可能的函数: %[SDKInfoServer] ZoneId from local = 
+-- 可能的赋值: &SDKInfoServer:SetSelectAddrKey key = 
+-- 可能的函数: &[SDKInfoServer] ZoneId form server = 
+-- 可能的函数: )[SDKInfoServer] ParseExtraJson platform:
+-- 可能的赋值: -prefuture=
+-- 可能的赋值: -serverurl=
+-- 可能的函数: /[SDKInfoServer] ParseExtraJson platform is nil
+-- 可能的赋值: 2SDKInfoServer:GetDefaultServerAddrKey last key = 
+-- 可能的函数: 3SDKInfoServer GetLoginList platform is not defined
+-- 可能的函数: 4[SDKInfoServer] SetLoginRelatedInfo self.pf before:
+-- 可能的赋值: <SDKInfoServer:GetStoreChannel is apk self._storeChannel == 
+-- 可能的赋值: =[SDKInfoServer] SetFirstLoginRegion regionNumericCode is nil
+-- 可能的函数: >SDKInfoServer GetUrlList prefuture parameter format invalid: 
+-- 可能的赋值: >SDKInfoServer:GetDefaultServerAddrKey defaultServerAddrKey = 
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetPlatformName
+-- 可能的函数: GetServerAddrDisplayWithFormat
+-- 可能的函数: InitDataBeforLogin
+-- 可能的函数: PLATFORM_ANDROID
+-- 可能的函数: PLATFORM_IOS
+-- 可能的函数: PLATFORM_MAC
+-- 可能的函数: PLATFORM_OPENHARMONY
+-- 可能的函数: PLATFORM_WINDOWS
+-- 可能的函数: SDKInfoServer:SetLaunchForm 
+-- 可能的函数: SetLaunchForm
+-- 可能的赋值: [NetBar] macs = 
+-- 可能的赋值: [NetBar] netbar_token = 
+-- 可能的函数: format
+-- 可能的函数: platform
+-- 可能的函数: platform=([^"}]+)

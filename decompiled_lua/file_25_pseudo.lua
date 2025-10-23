@@ -1,0 +1,63 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2.  RegStackUITopBarTabGroupRegInfo
+-- 3.  self.tab1, self.tab2:
+-- 4. !RegStackUITopBarCurrencyTypeList
+-- 5. $SendShopGetThemeBundleTimeConfigReq
+-- 6. &_OnStoreMainPanelRefreshCurrencyState
+-- 7. &evtStoreMainPanelRefreshCurrencyState
+-- 8. (A@
+-- 9. (AA
+-- 10. (BA
+-- 11. (CE
+-- 12. (w@
+-- 13. )A@
+-- 14. )AA
+-- 15. )AB
+-- 16. )AC
+-- 17. )AD
+-- 18. )AF
+-- 19. )AG
+-- 20. )B@
+-- 21. )BA
+-- 22. )BC
+-- 23. )CF
+-- 24. )FT
+-- 25. )GA
+-- 26. *evtStoreMainPanelRefreshCurrencyStateDone
+-- 27. ,@@
+-- 28. ,DFM.StandaloneLua.BusinessTool.LocalizeTool
+-- 29. 1DFM.Business.Module.StoreModule.Logic.StoreLogic
+-- 30. 7StoreMainPanel:OnOpen Module.Pay:GetProductInfo count:
+-- 31. :DFM.StandaloneLua.BusinessTool.LogAnalysis.ButtonIdConfig
+-- 32. ;DFM.StandaloneLua.BusinessTool.LogAnalysis.LogAnalysisTool
+-- 33. <StoreServer:GetServerLotteryInfo:Bind _OnLotteryInfoChanged
+-- 34. @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
+-- 35. A@A
+-- 36. A@B
+-- 37. AGQ
+-- 38. AddLuaEvent
+-- 39. AsyncShowUI
+-- 40. BindDiamond
+-- 41. CanvasMain
+-- 42. ChangeParam
+-- 43. CheckDrawExist
+-- 44. CheckIsCollaborationOn
+-- 45. CheckIsLuckyNestOn
+-- 46. CheckTimeValid
+-- 47. CheckTopTabGroupTabLevel23
+-- 48. ClockManager
+-- 49. CloseUI
+-- 50. CollabResearchVoucher
+
+-- 重构的函数结构:
+
+-- 可能的函数: ,DFM.StandaloneLua.BusinessTool.LocalizeTool
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetLocalTimestamp
+-- 可能的函数: GetMallGiftDatas
+-- 可能的赋值: H[echewzhu]StoreModule Facade.SoundManager:StopUIAudioEvent musicName = 
+-- 可能的函数: mallGiftData

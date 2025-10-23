@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_11.lua
+大小: 40554 字节
+字符串数量: 609
+函数数量: 18
+常量数量: 28635
+
+提取的字符串:
+1.  DFM.YxFramework.Util.StringUtil
+2.  SDKInfoServer:SetMapleServerUrl
+3.  [SDKInfoServer] MakeConnectInfo
+4.  urls)
+5. !DFM.YxFramework.Plugin.Json.Json
+6. !GetRegionNumericCodeByRegionCode
+7. ![MakeConnectInfo] no server info
+8. ![ResloveConnectUrlAsync] ip:port
+9. "SDKInfoServer.evtServerAddrSelect
+10. "[GetCoreUserId] CoreUserId is nil
+11. "[MakeConnectInfo] login channelId
+12. "[SDKInfoServer] SetGVoiceURL url:
+13. "[SetCoreUserId] coreUserId is nil
+14. $SDKInfoServer.evtServerAddrNotfound
+15. $SDKInfoServer:GetLaunchChannelId = 
+16. $[GetAccessToken] AccessToken is nil
+17. $[GetConnectedIP] connectedIP is nil
+18. %1%2%3Epic
+19. %SDKInfoServer:GetStoreChannel is aab
+20. %SDKInfoServer:GetStoreChannel is apk
+21. %SDKInfoServer:_StartConnectServer...
+22. %WeGame Launcher Connect With ip:port
+23. %[GetSelectAddrKey] playerInfo is nil
+24. %[SDKInfoServer] MakeConnectInfoAsync
+25. %[SDKInfoServer] SetWeLoginInfo info:
+26. %[SDKInfoServer] ZoneId from local = 
+27. %d+
+28. %d+$
+29. %s:%s
+30. &SDKInfoServer:Find ABTestKey, keyName
+31. &SDKInfoServer:SetSelectAddrKey key = 
+32. &SDKInfoServer:UpdateServerAddr by key
+33. &[GetConnectedUrl] connectedUrl is nil
+34. &[GetRefreshToken] RefreshToken is nil
+35. &[ResloveConnectUrlAsync] domain:port:
+36. &[SDKInfoServer] SetINTLComplianceInfo
+37. &[SDKInfoServer] ZoneId form server = 
+38. '([^%-]+%-)([^%-]+%-)([^%-]+%-)([^%-]+)
+39. '[GetWeLoginInfo] wg_login_info is nil 
+40. (.*):(.*)
+41. (AB
+42. (CA
+43. (SDKInfoServer:GetVersionUpdateInfo req 
+44. ([MakeConnectInfo] SdkGameId and openId:
+45. ([SDKInfoServer] SetGVoiceURL url is nil
+46. ([SDKInfoServer] SetRegionCode dt is nil
+47. (w@
+48. )A@
+49. )AA
+50. )AB
+51. )BB
+52. )BC
+53. )C@
+54. )CC
+55. )SDKInfoServer GetUrlList IsGlobalConsole
+56. )SDKInfoServer GetUrlList use ConsoleUrls
+57. )SDKInfoServer.evtPlayerServerNameChanged
+58. )SDKInfoServer:SetLoginThirdType channel:
+59. )SDKInfoServer:UpdateServerAddr customize
+60. )[MakeConnectInfoAsync] timeout dns error
+61. )[SDKInfoServer] ParseExtraJson platform:
+62. *SDKInfoServer: not Find ABTestKey,keyName
+63. *[SDKInfoServer] ParseExtraJson extraJson:
+64. *[SDKInfoServer] SetRegionCode regionCode:
+65. +DFM.YxFramework.Managers.Server.ServerBase
+66. +SDKInfoServer GetUrlList serverAddr is nil
+67. +SDKInfoServer:FindABTestKey target keyName
+68. +[SDKInfoServer] ParseExtraJson regionCode:
+69. +[SDKInfoServer] ParsePayToken channelInfo:
+70. +[SetOpenId] openId is not number or string
+71. +[VTS] [SetPictureUrl] skip set pirture url
+72. ,@
+73. ,@@
+74. ,AA
+75. ,SDKInfoServer.evtServerHotUpdateInfoChanged
+76. ,SDKInfoServer:SetLoginSubChannelID channel:
+77. ,[SetServerAddrKey] key or playerInfo is nil
+78. --currencyCode:
+79. -SDKInfoServer GetUrlList connect prefuture: 
+80. -android
+81. -prefuture=
+82. -prerelease
+83. -serverurl=
+84. -web
+85. ...
+86. .[SDKInfoServer] SetFirstLoginRegion dt is nil
+87. .dgameglobal.com:55010
+88. /[SDKInfoServer] ParseExtraJson platform is nil
+89. /[SDKInfoServer] SetLastSubChannelID channelId:
+90. 0SDKInfoServer IsConsole, TryGetPrefutureUrlList
+91. 0[MakeConnectInfo] create url fail with key:url 
+92. 0[SDKInfoServer] ParseExtraJson extraJson is nil
+93. 0[SDKInfoServer] SetCurrentLoginRegion dt is nil
+94. 0[SDKInfoServer] SetFirstLoginRegion regionCode:
+95. 1SDKInfoServer GetUrlList connect custom server: 
+96. 1SDKInfoServer:GetStoreChannel self._storeChannel
+97. 1[SDKInfoServer] ParseExtraJson regionCode is nil
+98. 1[SDKInfoServer] ParsePayToken channelInfo is nil
+99. 1[SDKInfoServer] SetRegionCode regionNumericCode:
+100. 2SDKInfoServer:GetDefaultServerAddrKey last key = 

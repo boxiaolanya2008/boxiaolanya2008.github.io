@@ -1,0 +1,58 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1. (w@
+-- 2. )@C
+-- 3. AudioLevel
+-- 4. ClientVolumeSetting
+-- 5. Config
+-- 6. DFMSystemSettingHelper
+-- 7. DolbyAtoms
+-- 8. E3DAudioType
+-- 9. ELuaLogCategory
+-- 10. EarpieceVolume
+-- 11. Event
+-- 12. Field
+-- 13. GCloudSDK
+-- 14. GPAudioStatics
+-- 15. GVoice
+-- 16. GenLocalLogFunc
+-- 17. Get
+-- 18. GetMicrophoneVolume
+-- 19. GetSpeakerVolume
+-- 20. GetWorld
+-- 21. Invoke
+-- 22. LODLevel
+-- 23. LuaMSystemSetting
+-- 24. LuaS
+-- 25. MicrophoneVolume
+-- 26. Module
+-- 27. Music_Copyright_Mute
+-- 28. PCAudioMasteringType
+-- 29. PCAudioPreset
+-- 30. Process3DAudioType
+-- 31. ProcessAudioMasteringPC
+-- 32. ProcessAudioPresetPC
+-- 33. ProcessCopyRightPlay
+-- 34. ProcessEarpieceVolume
+-- 35. ProcessHRTF
+-- 36. ProcessLODLevel
+-- 37. ProcessMicrophoneVolume
+-- 38. ProcessVolumeAll
+-- 39. ProcessVolumeMusic
+-- 40. ProcessVolumeMusic_temp
+-- 41. ProcessVolumeSFX
+-- 42. ProcessVolumeUI
+-- 43. ProcessVolumeVO
+-- 44. SaveDataConfig
+-- 45. SetDolbyNotDownMix
+-- 46. SetDolbyPluginEnable
+-- 47. SetGlobalRTPCByName
+-- 48. SetMicrophoneVolume
+-- 49. SetPerfGearData
+-- 50. SetResonanceEnable
+
+-- 重构的函数结构:
+
+-- 可能的函数: GenLocalLogFunc

@@ -1,0 +1,62 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2.  WBP_SeasonalTasks_ListNormal_in
+-- 3. !CreateIVCommonItemTemplateBySize
+-- 4. !SetBottomBarTempInputSummaryList
+-- 5. %GetSortedBranchGroupByStageIDAndType
+-- 6. &QuestEntryClicked: Invalid Quest Info
+-- 7. &_UpdateQuestInfos: Invalid Quest Info
+-- 8. (AA
+-- 9. (AC
+-- 10. (AD
+-- 11. (AE
+-- 12. (_OnQuestHeadClicked: Invalid Quest Info
+-- 13. (evtQuestSeasonEntryClickedWithGroupInfo
+-- 14. (w@
+-- 15. )AA
+-- 16. )AB
+-- 17. )AC
+-- 18. )AD
+-- 19. )AE
+-- 20. )AF
+-- 21. )AG
+-- 22. )BB
+-- 23. )BF
+-- 24. )BQ
+-- 25. )CB
+-- 26. +DFM.Business.Module.QuestModule.QuestLogic
+-- 27. ,@
+-- 28. ,@@
+-- 29. ,@H
+-- 30. /_OnQuestSubmitItemsSuccess: Invalid Quest Info
+-- 31. A@@
+-- 32. A@B
+-- 33. A@C
+-- 34. AAA
+-- 35. Accepted
+-- 36. AddInputActionBinding
+-- 37. AddListener
+-- 38. AddLuaEvent
+-- 39. AddNavWidgetToArray
+-- 40. Assembled_CommonMessageTips_V1
+-- 41. Assembled_CommonMessageTips_V2
+-- 42. BindCustomBoundaryNavRule
+-- 43. BindingNotBind
+-- 44. C002
+-- 45. C[QuestSeasonListNormal] selectedGroupItem Invalid while head click
+-- 46. CachingNewlyOpenQuestItem
+-- 47. CanAccept
+-- 48. ClearActionByType
+-- 49. ClearAllSelection
+-- 50. ClearData
+
+-- 重构的函数结构:
+
+-- 可能的函数: C[QuestSeasonListNormal] selectedGroupItem Invalid while head click
+-- 可能的函数: D[QuestSeasonListNormal] selectedGroupItem Invalid while entry click
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetSecondsFormatDDHHMMSS
+-- 可能的函数: format

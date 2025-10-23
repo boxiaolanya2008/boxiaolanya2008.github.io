@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_2.lua
+大小: 44379 字节
+字符串数量: 563
+函数数量: 28
+常量数量: 20228
+
+提取的字符串:
+1.  AGPPlayerController::EndPlay_BS
+2.  BreakableItemBuildingStateArray
+3.  DFM.YxFramework.Util.WidgetUtil
+4.  EInputAction_VehicleFireBtnDown
+5.  OnJumpVaultClimbSplitModeChange
+6.  PhaseSelectTipHoverAnchorWidget
+7. !AEggQuestClientProxy::EndPlay_BS
+8. !BreakableItemOneSectionDataArray
+9. !OpenWorld.EnableFreezeRebasing 0
+10. !OpenWorld.EnableFreezeRebasing 1
+11. !OpenWorld.FixedWorldOriginType 0
+12. !OpenWorld.FixedWorldOriginType 2
+13. !UDFMWeaponDataComponentAmmo_Item
+14. "AAbilityWeaponThrowableFlashDrone
+15. "GetCurrentClientCharacterAvatarID
+16. "UBionicBirdHudView::TryForceGC_BS
+17. "UGPInputManager::OnInputKeyAim_BS
+18. #ABionicBirdActor::OnStopControl_ES
+19. #AEggQuestClientProxy::BeginPlay_ES
+20. #UGPRushMoveComponent::PlayAudio_BS
+21. #des.Anim.EnablePhysicsSimulation 0
+22. #des.Anim.EnablePhysicsSimulation 1
+23. $ABionicBirdActor::OnStartControl_ES
+24. $ADFMPlayerCameraManager::EndPlay_BS
+25. $AGameState_Breakthrough::EndPlay_ES
+26. $GPInputManager_OnInputKeyAim not HD
+27. $UGPInputManager::OnInputKeyUnAim_BS
+28. $georgecgong BB nil or driving false
+29. %DFM.YxFramework.Managers.Timer.Timer
+30. &GPInputManager_OnInputKeyUnAim not HD
+31. &MetaDorianDriver:Init() RTTITypeNum: 
+32. &MetaDorianDriver:Init() StubFuncNum: 
+33. &UGPInputManager::OnInputKeySideAim_BS
+34. &UQA_AbilityRushSetting::ApplyLogic_BS
+35. 'georgecgong OnVehicleWeaponSeat, go on
+36. (@@
+37. (A@
+38. (AA
+39. (AB
+40. (ABionicBirdActor::ProcessInputAction_BS
+41. (AC
+42. (AE
+43. (B@
+44. (BB
+45. (BC
+46. (EE
+47. (GPGameplay_UGPInputManager_BeginPlay_BS
+48. (GPInputManager_OnInputKeySideAim not HD
+49. (UGPInputManager::OnInputKeyUnSideAim_BS
+50. (UGPUserInterfaceUtil::IsThemeIDValid_BS
+51. (w@
+52. )AA
+53. )AFreeBuildRankSkillPreviewPlacementActor
+54. )AWeaponBase::OnRepWeaponEquipPosition_BS
+55. )DE
+56. )DFMQuest_AEggQuestClientProxy_EndPlay_BS
+57. )UWeaponDataComponentAmmo::OnWeaponAdd_ES
+58. *@@
+59. *@C
+60. *@D
+61. *GPGameplay_AGPPlayerController_EndPlay_BS
+62. *GPInputManager_OnInputKeyUnSideAim not HD
+63. *UDesReplicationSubsystem::OnLevelShown_BS
+64. +AForestEggEntrance::OnPreloadOverlapEnd_ES
+65. +AGameState_Breakthrough::OnRep_CurStage_BS
+66. +DFMQuest_AEggQuestClientProxy_BeginPlay_ES
+67. +Lua_CommonTips_EscapedMaxLimitCountWarning
+68. +UDFMInputManager::ProcessLeanPeekAction_BS
+69. ,AC
+70. ,APlayerExitBase::OnRep_EnteredCharacters_ES
+71. ,DFMGameHud_UBionicBirdHudView_TryForceGC_BS
+72. ,DesRepSystem:OnLevelShown: find(InterActors
+73. ,GPGameplay_UGPInputManager_OnInputKeyAim_BS
+74. ,UInteractorProcessPawnAnimSequenceComponent
+75. ,ZiplineActor_InitInCenterInteractor_BS Next
+76. -11.. MetaDorianDriver:Init() StubModuleNum: 
+77. -DFMAbility_ABionicBirdActor_OnStopControl_ES
+78. -GPGameplay_UGPRushMoveComponent_PlayAudio_BS
+79. -Jet.Effect.JetEffectEnable3PTrailAirGround 0
+80. -Jet.Effect.JetEffectEnable3PTrailAirGround 1
+81. -UDFMWeaponTacticalEquipItem::OnBtnClicked_BS
+82. -USOLBigMapHUDView_MissionTitle::InitTitle_ES
+83. -UWeaponInputDefaultLogic::ToggleReloading_BS
+84. -ZiplineActor_InitInCenterInteractor_BS Enter
+85. .DFMAbility_ABionicBirdActor_OnStartControl_ES
+86. .GPGameplay_UGPInputManager_OnInputKeyUnAim_BS
+87. .UBattleFieldFreeBuildSkillMainView::OnHide_BS
+88. .UDFMInputManager_ProcessLeanPeekAction failed
+89. .UDFMInputManager_ProcessLeanPeekAction not HD
+90. /DFMGameplay_ADFMPlayerCameraManager_EndPlay_BS
+91. /UDFMInputManager_ProcessLeanPeekAction Success
+92. /[^/]*$
+93. 0ABionicSpyActor::GetCachePlayerCameraManager_BS
+94. 0Breakthrough_AGameState_Breakthrough_EndPlay_ES
+95. 0DFMAbility_UQA_AbilityRushSetting_ApplyLogic_BS
+96. 0GPGameplay_UGPInputManager_OnInputKeySideAim_BS
+97. 0UWeaponAdapterItemRangeScope::OnWeaponEnable_BS
+98. 11... MetaDorianDriver:Init() 
+99. 2AAbilityWeaponThrowableFlashDrone::DoBeginPlay_BS
+100. 2DFMAbility_ABionicBirdActor_ProcessInputAction_BS

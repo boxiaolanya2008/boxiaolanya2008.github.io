@@ -1,0 +1,62 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2. !AddHoldInputActionReleaseBinding
+-- 3. $AddHoldInputActionProgressedBinding
+-- 4. $DownloadManagerNtfModuleCheckResult
+-- 5. 'GetRemainderSizeToDownloadByModuleName
+-- 6. 'PUFFER_ERROR_TIP_CODE_SPACE_NOT_ENOUGH
+-- 7. 'evtDownloadManagerNtfModuleCheckResult
+-- 8. (AA
+-- 9. (AB
+-- 10. (AC
+-- 11. (w@
+-- 12. )AB
+-- 13. )AC
+-- 14. )AD
+-- 15. )BH
+-- 16. *evtDownloadManagerNtfModuleDownloadResult
+-- 17. ,@@
+-- 18. -evtDownloadManagerNtfModuleStateMaybeChanged
+-- 19. 5[LiteCommonDownload] ModuleDownloadResult errorCode:
+-- 20. @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
+-- 21. A@@
+-- 22. A@E
+-- 23. AddInputActionBinding
+-- 24. AddLuaEvent
+-- 25. BP_ShowHoldProgressBarTips
+-- 26. BP_UpdateProgressBar
+-- 27. CheckChildModuleState
+-- 28. CheckModuleAsyncWithQueue
+-- 29. Collapsed
+-- 30. CommonTips
+-- 31. Config
+-- 32. Ctor
+-- 33. DFImage_Progress
+-- 34. DFMButton_DownloadBtn
+-- 35. DFTextBlock_DownloadText
+-- 36. DFTextBlock_ProgressNum
+-- 37. DownloadByModuleName
+-- 38. DownloadRes_Gamepad
+-- 39. DynamicMatIns
+-- 40. EDisplayInputActionPriority
+-- 41. EInputEvent
+-- 42. ELuaLogCategory
+-- 43. E[LiteCommonDownload] OnDownloadBtnClicked pufferInitSucceed == false
+-- 44. Event
+-- 45. Events
+-- 46. ExpansionPackCoordinator
+-- 47. GenLocalLogFunc
+-- 48. Get
+-- 49. GetDynamicMaterial
+-- 50. GetModuleStateByModuleName
+
+-- 重构的函数结构:
+
+-- 可能的赋值: E[LiteCommonDownload] OnDownloadBtnClicked pufferInitSucceed == false
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: _OnShareBeforeScreenshot
+-- 可能的函数: evtShareBeforeScreenshot
+-- 可能的函数: format

@@ -1,0 +1,63 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2. !DisableDynamicNavConfigsbyWidget
+-- 3. "ECurrencyClientType2RichIconTxtV2
+-- 4. (AA
+-- 5. (AB
+-- 6. (w@
+-- 7. )AA
+-- 8. )AB
+-- 9. )AC
+-- 10. )AE
+-- 11. ,@@
+-- 12. ,@A
+-- 13. ,[Jackielili] RewardPanel HotFix For Item Id
+-- 14. -[v_dzhanshen] RewardPanel:OnClose CancelAnim
+-- 15. 2<dfmrichtext type="img" id="bankNote" align="0"/>
+-- 16. 3 <dfmrichtext type="img" id="bankNote" align="0"/>
+-- 17. 3DFM.Business.Module.RewardModule.UI.RewardBaseView
+-- 18. 7DFM.Business.Module.RewardModule.Logic.RewardViewLogic
+-- 19. A@@
+-- 20. A@A
+-- 21. A@B
+-- 22. A@C
+-- 23. A@M
+-- 24. Add
+-- 25. AddInputActionBinding
+-- 26. AddListeners
+-- 27. AddLuaEvent
+-- 28. AddSubUI
+-- 29. AddSummaries
+-- 30. BindCloseCallback
+-- 31. CancelAnim
+-- 32. CheckIsMoneyPaper
+-- 33. ClearBatchInfo
+-- 34. ClearSubUIByParent
+-- 35. Collapsed
+-- 36. Config
+-- 37. CreateCPlusCallBack
+-- 38. Ctor
+-- 39. DFHorizontalBox_43
+-- 40. DFVerticalBox_147
+-- 41. DoSendOpenUILog
+-- 42. EDisplayInputActionPriority
+-- 43. EGPInputModeType
+-- 44. EGPInputType
+-- 45. EInputEvent
+-- 46. EItemDetailFromUIType
+-- 47. ELuaLogCategory
+-- 48. ENavConfigPriority
+-- 49. EUINavDynamicType
+-- 50. EUMGSequencePlayMode
+
+-- 重构的函数结构:
+
+-- 可能的函数: ,[Jackielili] RewardPanel HotFix For Item Id
+-- 可能的赋值: 2<dfmrichtext type="img" id="bankNote" align="0"/>
+-- 可能的赋值: 3 <dfmrichtext type="img" id="bankNote" align="0"/>
+-- 可能的函数: Forward
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: Key2StrFormat

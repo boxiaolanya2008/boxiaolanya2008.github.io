@@ -1,0 +1,99 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  %s
+-- 2.  %s 
+-- 3.  %s, 
+-- 4.  ---
+-- 5.  -----
+-- 6.  ActivityMagicTowerConfirmWindow
+-- 7.  ActivityMagicTowerDialoguePanel
+-- 8.  ActivityMagicTowerEvacuatePanel
+-- 9.  CallSceneCtrlFunctionBySubstage
+-- 10.  DFM.YxFramework.Util.WidgetUtil
+-- 11.  GetSmallDialogueLineConfigTable
+-- 12.  OnProcessMagicTowerAstarPath x:
+-- 13.  WBP_MorgenGame_NumericalPanel_C
+-- 14.  y:
+-- 15. !----- 
+-- 16. !ItemID
+-- 17. !O&
+-- 18. !O'
+-- 19. !O(
+-- 20. !O)
+-- 21. !O*
+-- 22. !O+
+-- 23. !O,
+-- 24. !_InitPlayer Not find heroConfig!
+-- 25. !d36f607d559b2d45376ab4f0345ca5a5
+-- 26. !evtMagicTowerSafePanelLoadFinish
+-- 27. "----- 
+-- 28. "Implement_CreateItemPortraitOnMap
+-- 29. "MainPanel OnMagicTowerMoveFinish:
+-- 30. "WBP_MorgenGame_NumericalPanel_C_1
+-- 31. "_CheckTargetGridAgain
+-- 32. "evtMagicTowerSafePanelCloseFinish
+-- 33. #_InitHeroSpine heroActor is Exist!
+-- 34. $RemoveDisplayActoinBingingForHandle
+-- 35. $_CheckTargetGridMovable
+-- 36. $_InitHeroSpine Not find heroConfig!
+-- 37. %----- 
+-- 38. %Add_CreateItemPortraitOnMapFrameTask
+-- 39. %_GetPlayerSpawnPointLevelStructureID
+-- 40. %_LoadLevelData levelData is empty!!!
+-- 41. %s -----
+-- 42. %s --> %s 
+-- 43. %s, %s
+-- 44. &_LoadLevelData, self._curLevelID = %s
+-- 45. 'Start_CreateItemPortraitOnMapFrameTask
+-- 46. 'childInsLog 
+-- 47. (%d, %d) assetID = %s
+-- 48. (%d, %d) assetID = %s, itemType = %s
+-- 49. (%d, %d) spineID = %s
+-- 50. (%d, %d) spineID = %s, direction = %s
+
+-- 重构的函数结构:
+
+-- 可能的函数:  CallSceneCtrlFunctionBySubstage
+-- 可能的函数: $RemoveDisplayActoinBingingForHandle
+-- 可能的赋值: &_LoadLevelData, self._curLevelID = %s
+-- 可能的赋值: (%d, %d) assetID = %s
+-- 可能的赋值: (%d, %d) assetID = %s, itemType = %s
+-- 可能的赋值: (%d, %d) spineID = %s
+-- 可能的赋值: (%d, %d) spineID = %s, direction = %s
+-- 可能的赋值: (%s, %s) = %s
+-- 可能的赋值: )MainPanel _CheckLevelState curState = %s
+-- 可能的赋值: )_InitNewLevelData, self._curLevelID = %s
+-- 可能的赋值: GMainPanel _CheckLevelState is invalid! curState = %s, set default to 1
+-- 可能的赋值: GMainPanel _HandleMovement self._curLevel.x = %s, self._curLevel.y = %s
+-- 可能的函数: GenLocalLogFunc
+-- 可能的赋值: IMainPanel _CheckTargetGridMovable Door Block! targetX = %s, targetY = %s
+-- 可能的赋值: IMainPanel _CheckTargetGridMovable Wall Block! targetX = %s, targetY = %s
+-- 可能的赋值: L[ActivityMagicTowerMainPanel:Implement_CreateItemPortraitOnMap] taskID = %s
+-- 可能的函数: Modify
+-- 可能的函数: ModifyAttack
+-- 可能的函数: ModifyDefense
+-- 可能的函数: ModifyExp
+-- 可能的函数: ModifyHealth
+-- 可能的函数: ModifyHitProb
+-- 可能的函数: ModifyKeys
+-- 可能的函数: ModifyMoney
+-- 可能的函数: ModifyPlayerAttribute
+-- 可能的赋值: R[ActivityMagicTowerMainPanel:Add_CreateItemPortraitOnMapFrameTask] _runingTask = 
+-- 可能的赋值: T[ActivityMagicTowerMainPanel:Start_CreateItemPortraitOnMapFrameTask] _runingTask = 
+-- 可能的赋值: W[ActivityMagicTowerMainPanel:Start_CreateItemPortraitOnMapFrameTask] Start taskID = %s
+-- 可能的赋值: Y[ActivityMagicTowerMainPanel:Implement_CreateItemPortraitOnMap] taskID = %s invalid task
+-- 可能的赋值: ][ActivityMagicTowerMainPanel:SpawnSpineActorByCtrl]: (%s, %s) spineId = %s, scaleFactor = %s
+-- 可能的函数: _ForEachEnemy
+-- 可能的函数: _InitLocalLevelData
+-- 可能的函数: _IsMoveFunction
+-- 可能的赋值: a[ActivityMagicTowerMainPanel:SpawnTexture2DActorByCtrl]: (%s, %s) assetId = %s, scaleFactor = %s
+-- 可能的赋值: enemyID = %s
+-- 可能的函数: format
+-- 可能的函数: function
+-- 可能的赋值: isGameOver = %s
+-- 可能的日志: print
+-- 可能的赋值: spawnProbID = %s
+-- 可能的赋值: targetX = %s, targetY = %s
+-- 可能的赋值: targetX = %s, targetY = %s, itemID = %s

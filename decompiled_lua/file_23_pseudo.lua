@@ -1,0 +1,92 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2.  WBP_StaffLottery_MainUI_qiehuan
+-- 3.  WBP_StaffLottery_MainUI_zhuan01
+-- 4.  WBP_StaffLottery_MainUI_zhuan02
+-- 5.  debug traceback: 
+-- 6. !RecoverBottomBarInputSummaryList
+-- 7. !SetBottomBarTempInputSummaryList
+-- 8. !WBP_StaffLottery_MainUI_qiehuan2
+-- 9. !_ShouldTriggerUnlockEvtImmediate
+-- 10. "GetSpecialItemInfoByPresentItemId
+-- 11. "StaffLotteryMainUI:ExecuteLottery
+-- 12. "_OnStaffLotteryPurchasePopSuccess
+-- 13. "evtStaffLotteryPurchasePopSuccess
+-- 14. #CheckAndSetThirdTabReddotByGroupID
+-- 15. #SetDisplayInputActionWithLongPress
+-- 16. #StaffLotteryMainUI:BindAnyKeyPress
+-- 17. #evtStoreMandelLotteryItemBuyChange
+-- 18. #evtStoreMandelLotteryItemBuyFailed
+-- 19. $(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+)
+-- 20. $_OnGetBreakChildRecursiveLifeToggle
+-- 21. %StaffLotteryMainUI:HandleLotteryData
+-- 22. %StaffLotteryMainUI:UnbindAnyKeyPress
+-- 23. (A@
+-- 24. (AA
+-- 25. (AB
+-- 26. (AH
+-- 27. (CB
+-- 28. (RegisterRuntimeMultiModuleByChildModule
+-- 29. (StaffLotteryMainUI:OnClose audioName = 
+-- 30. (w@
+-- 31. )@@
+-- 32. )A@
+-- 33. )AA
+-- 34. )AB
+-- 35. )AD
+-- 36. )AE
+-- 37. )AF
+-- 38. )AJ
+-- 39. )BD
+-- 40. )BE
+-- 41. )BM
+-- 42. )StaffLotteryMainUI:_OnLotteryInfoChanged
+-- 43. *evtDownloadManagerNtfModuleDownloadResult
+-- 44. , bDownloaded = 
+-- 45. , isDownloading = 
+-- 46. , self._videoPakModuleName = 
+-- 47. ,@B
+-- 48. ,@F
+-- 49. -DFM.YxFramework.Managers.UI.Util.UIThemeUtil
+-- 50. -StaffLotteryMainUI:OnShowBegin hasSibling = 
+
+-- 重构的函数结构:
+
+-- 可能的函数: $_OnGetBreakChildRecursiveLifeToggle
+-- 可能的赋值: (StaffLotteryMainUI:OnClose audioName = 
+-- 可能的赋值: , bDownloaded = 
+-- 可能的赋值: , isDownloading = 
+-- 可能的赋值: , self._videoPakModuleName = 
+-- 可能的赋值: -StaffLotteryMainUI:OnShowBegin hasSibling = 
+-- 可能的赋值: .enablePlayFullScreenCG = 
+-- 可能的赋值: 1StaffLotteryMainUI:PlayVideoByName: videoName = 
+-- 可能的赋值: 4[StaffLotteryMainUI:_OnDownloadResult] ModuleKey = 
+-- 可能的赋值: 6[StaffLotteryMainUI:_SetLotteryPlaying]: isPlaying = 
+-- 可能的赋值: 8StaffLotteryMainUI:PlayVideoByName:  MediaNameToPlay = 
+-- 可能的赋值: 9StaffLotteryMainUI:_DisplayDownloadWidgets: inDisplay = 
+-- 可能的函数: :StaffLotteryMainUI:RefreshData() fCSShopGetLotteryInfoRes
+-- 可能的赋值: >StaffLotteryMainUI:HandleLotteryData: self.MediaNameToPlay = 
+-- 可能的赋值: ?[StaffLotteryMainUI:_RefreshCommonDownload] multiModuleName = 
+-- 可能的函数: Forward
+-- 可能的赋值: G[echewzhu]StoreModule Facade.SoundManager:PlayUIAudioEvent newMusic = 
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetLocalTimestamp
+-- 可能的函数: GetSecondsFormatDDHHMMSSString
+-- 可能的函数: MStaffLotteryMainUI:GetServerLotteryInfo:fCSShopGetLotteryInfoRes Update data
+-- 可能的函数: Modify
+-- 可能的赋值: PStaffLotteryMainUI:HandleLotteryData: bBigAward = true, self.MediaNameToPlay = 
+-- 可能的函数: PlatformPaddingBox_0
+-- 可能的函数: PlatformPaddingBox_1
+-- 可能的函数: PlatformPaddingBox_2
+-- 可能的函数: ProbabilityForStore
+-- 可能的赋值: QStaffLotteryMainUI:HandleLotteryData: bBigAward = false, self.MediaNameToPlay = 
+-- 可能的函数: _wtBGForLowQuality
+-- 可能的函数: _wtPlatformPaddingBox0
+-- 可能的函数: _wtPlatformPaddingBox1
+-- 可能的函数: _wtPlatformPaddingBox2
+-- 可能的赋值: downloaded = 
+-- 可能的函数: format
+-- 可能的赋值: self._videoPakModuleName = 

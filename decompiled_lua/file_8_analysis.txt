@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_8.lua
+大小: 50798 字节
+字符串数量: 768
+函数数量: 26
+常量数量: 31681
+
+提取的字符串:
+1.  DFM.Business.Misc.DFMAudioConst
+2.  Integrated Adapter Check Failed
+3.  Lua_EntranceFlowMemoryWarningHD
+4.  gameFlowType:
+5.  log LogBlueprintPlunder Display
+6.  log LogGameVersionUtils Display
+7.  log LogQuestClientProxy Display
+8.  log LogRedeployHudLogic Display
+9.  log LogWeaponThermalImaging Log
+10.  log LuaFResourceManager Warning
+11. !DFM.Business.Misc.DFMGlobalConst
+12. !GetCurrentUsedVideoMemoryOnLogin
+13. !Lua_EntranceFlow_DeviceLimitText
+14. !MetaPerf.MonitorUploadToAPM True
+15. !log LogCharacterMovement Warning
+16. !log LogGPHighlightMoment Display
+17. !log LogSubtitleSubsystem Display
+18. !r.Perf.SuperSceneRecordTime 1800
+19. "CheckAndShowResizableBarWarningHD
+20. "DFM.Business.Misc.DFMGlobalEvents
+21. "Lua_EntranceFlowCPUModalWarningHD
+22. "Lua_EntranceFlowGPUModalWarningHD
+23. "Lua_EntranceFlow_DeviceNeedUpdate
+24. "UECall_DeleteHUD_ADFMHUD_EndPlay 
+25. "log LogDisplayInputAction Display
+26. "log LogOpenWorldStreaming Warning
+27. "not shipping ApplyShippingLogRule
+28. "pc.PlayerSendW2SFrequency 9999999
+29. "r.Budget.NetWorkUseGlobalBudget 1
+30. "shipping not ApplyShippingLogRule
+31. #EGPDriverCompatibilityHandleMethod
+32. #Lua_EntranceFlowGPUDriverWarningHD
+33. #log LogCharacterAppearance Warning
+34. #log LogGpCharacterMovement Display
+35. #log LogRuntimeSkeletalMesh Warning
+36. $DFM.Business.Misc.DFMGlobalFunction
+37. $DFM.Business.Proto.ProtoMappingTool
+38. $Lua_EntranceFlowGPUDriverWarning2HD
+39. $UECall_CreateHUD_ADFMHUD_BeginPlay 
+40. $log LogSkeletalMeshMergeRuntime Log
+41. $log LuaFResourceManagerStub Warning
+42. $log LuaFUIManagerAliveCount Warning
+43. $pc.PlayerSendW2SFrequencyMP 9999999
+44. $pc.PlayerUploadW2SFrequency 9999999
+45. $r.Budget.HeavyTaskUseGlobalBudget 0
+46. $r.Budget.HeavyTaskUseGlobalBudget 1
+47. $r.Budget.StreamingUseGlobalBudget 0
+48. $r.Budget.StreamingUseGlobalBudget 1
+49. $r.Localize.EnableNativeTextUpdate 0
+50. %GFVersionUpdate_PufferUpdateBusiness
+51. %Lua_EntranceFlowVedioMemoryWarningHD
+52. %Lua_EntranceFlow_AppVersionLimitText
+53. %ModularWeapon.MergeFallbackDynamic 1
+54. %XSX does not require hardware checks
+55. %[viper] InitDevicePerfManagers!!!!!!
+56. %dGB
+57. %log LogStreamlineD3D12RHIPreInit Log
+58. %r.Budget.StaticTickUseGlobalBudget 0
+59. %r.Budget.StaticTickUseGlobalBudget 1
+60. &DFM.YxFramework.Plugin.Memory.MemTool
+61. &Game.ResetClientWorldTimeInSeamless 0
+62. &UECall_CreateHUD_ADFMHUD_StartInGame 
+63. &pc.PlayerUploadW2SFrequencyMP 9999999
+64. 'Lua_EntranceFlowSystemVersionWarningHD
+65. 'log LogWeaponProjectileReplicate Error
+66. (@@
+67. (@A
+68. (AD
+69. (AJ
+70. (DD
+71. (DFM.Business.Misc.DFMGlobalModuleConfig
+72. (Net.UERepGraph.DisableCheckGameThread 1
+73. (Weapon.Melee.EnableComboAttackCDCheck 0
+74. (w@
+75. )@@
+76. )@A
+77. )AD
+78. )AE
+79. )AK
+80. )UECall_CreateHUD_ADFMHUD_OnConstruction 
+81. *DFM.BusinessEntrance.EntranceGlobalEvents
+82. *GFVersionUpdate_InitVersionUpdateBusiness
+83. *log LogWeaponAdapterScopeSceneCapture Log
+84. *r.Budget.AsyncStreamableUseGlobalBudget 0
+85. *r.Budget.AsyncStreamableUseGlobalBudget 1
+86. +Lua_EntranceFlowIntegratedAdapterWarningHD
+87. -DFM.StandaloneLua.BusinessTool.PSOAutomation
+88. -UECall_DeleteHUD_AIrisWorldHUD_DeletePanels 
+89. /UECall_CreateHUD_AIrisWorldHUD_PreloadRuleHud 
+90. 2PlayerController.DisablePlayerTickIfNoInputComp 0
+91. 4.5G
+92. 4DFM.Business.ServerCenter.ServerConfig.ServerConfig
+93. 5------------- ReLoad Config Loc Start --------------
+94. 5.6G
+95. 5DFM.Business.ServerCenter.ServerConfig.ServerTipCode
+96. 6------------- ReLoad Config Loc End !! --------------
+97. 7[aidenliao] Cur Version not available, set from maple!
+98. 8-------------- Fetch [Server Data] Start --------------
+99. 9-------------- Fetch [Server Data] End !! --------------
+100. :-------------- Init [Lobby] Business Start --------------

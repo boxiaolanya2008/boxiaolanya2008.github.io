@@ -1,0 +1,64 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2.  GetCommanderGameContributorName
+-- 3. !DisableDynamicNavConfigsbyWidget
+-- 4. !_BindScoreBoardAndQuitBtnPressed
+-- 5. "WBP_Settlement_TopTournament_Team
+-- 6. #SetDisplayInputActionWithLongPress
+-- 7. #WBP_Settlement_TopTournament_Team_
+-- 8. #_UnBindScoreBoardAndQuitBtnPressed
+-- 9. %02d:%02d
+-- 10. %WBP_Settlement_TopTournament_Main_in
+-- 11. 'WBP_Settlement_TopTournament_Main_in_2
+-- 12. (AA
+-- 13. (AO
+-- 14. (BE
+-- 15. (BW
+-- 16. (w@
+-- 17. )A@
+-- 18. )AA
+-- 19. )AB
+-- 20. )AD
+-- 21. )AQ
+-- 22. )BF
+-- 23. )BX
+-- 24. )GT
+-- 25. *WBP_Settlement_TopTournament_Main_PC_S_in
+-- 26. ,@@
+-- 27. ,@W
+-- 28. ,@\
+-- 29. ,WBP_Settlement_TopTournament_Main_PC_S_in_2
+-- 30. 1TopTournament:RefreshView fail to find Commander
+-- 31. 5DFM.Business.Module.SettlementModule.SettlementLogic
+-- 32. 6DFM.Business.Module.SettlementModule.SettlementConfig
+-- 33. 6TopTournament:_OnQuitBtnClick self._itemEnterClick = 
+-- 34. 8TopTournament:_OnItemClickState self._itemEnterClick = 
+-- 35. 9TopTournament:_OnPlayerInfoBePraisedNtf  player   num   
+-- 36. :DFM.Business.Module.CommonWidgetModule.UI.HD.HDKeyIconBox
+-- 37. >DFM.Business.Module.CommonWidgetModule.UI.HD.HDKeyIconBoxText
+-- 38. >TopTournament:_OnPlayerInfoBePraisedNtf  _lowPraiseShowAnim  
+-- 39. A@@
+-- 40. A@A
+-- 41. A@B
+-- 42. A@C
+-- 43. AB\
+-- 44. ACI
+-- 45. ADFM.YxFramework.Managers.GameFlow.InGameControl.InGameController
+-- 46. AccountServer
+-- 47. Add
+-- 48. AddInputActionBinding
+-- 49. AddListener
+-- 50. AddLuaEvent
+
+-- 重构的函数结构:
+
+-- 可能的赋值: 6TopTournament:_OnQuitBtnClick self._itemEnterClick = 
+-- 可能的赋值: 8TopTournament:_OnItemClickState self._itemEnterClick = 
+-- 可能的函数: Forward
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetPlayerPlatformIdByOpenId
+-- 可能的函数: format
+-- 可能的函数: offense_reenforce

@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_15.lua
+大小: 4371 字节
+字符串数量: 111
+函数数量: 5
+常量数量: 2572
+
+提取的字符串:
+1.  TransitionModule:OnInitModule()
+2.  [oricai] reset crash size 0 !!!
+3. !r.Loading.EnableMPLoadingVideo 0
+4. "Slate.EnableSingleWordsEllipsis 0
+5. "Slate.EnableSingleWordsEllipsis 1
+6. #@jasonscheng reset gpu crash count
+7. (AA
+8. (Slate.EnableIntersectTextByLayoutRect 0
+9. (Slate.EnableIntersectTextByLayoutRect 1
+10. (w@
+11. )@A
+12. +DFM.YxFramework.Managers.Module.ModuleBase
+13. ,DFM.StandaloneLua.BusinessTool.LocalizeTool
+14. -Frontend Auto Test: Enter SafeHouse Success!
+15. 2Frontend Auto Test: LoginToModeHall, Delay 2 secs
+16. 5DFM.Business.Module.TransitionModule.TransitionLogic
+17. AccountServer
+18. AddListeners
+19. AddLuaEvent
+20. AndroidRHIPlatformInfo
+21. CS_Battlefield_Tutorial
+22. CS_Openning_S1_Oversea
+23. CS_Openning_Season
+24. CS_SOL_Tutorial
+25. C[Hotfix] Open SingleWordEllipsis Slate.EnableSingleWordsEllipsis 1
+26. CheckIsHDD
+27. ClientVideoSettingHD
+28. CloseModuleType
+29. Config
+30. Ctor
+31. D3D12
+32. DelayCall
+33. EGameFlowStageType
+34. ELuaLogCategory
+35. ERHIType
+36. Engine
+37. Events
+38. ExecuteConsoleCommand
+39. FConfigCacheIni
+40. Facade
+41. Flush
+42. GPGConfigUtils
+43. GPUCrashCount
+44. G[Hotfix] Close Ar SingleWordEllipsis Slate.EnableSingleWordsEllipsis 0
+45. Game
+46. GameToLobby
+47. GameToSafeHouse
+48. GenLocalLogFunc
+49. Get
+50. GetCurrentCulture
+51. GetGameInstance
+52. GetGlobalConfig
+53. GetPerfGearInst
+54. GetPlayerRegisterState
+55. GetRHIInfo
+56. GetRHIType
+57. Invoke
+58. InvokeGameNotifyCloseNetDirver
+59. IsBuildRegionCN
+60. IsHD
+61. IsModuleValid
+62. LoadGlobalIni
+63. Lobby
+64. LobbyToGame
+65. Login
+66. LoginToModeHall
+67. LuaExtension
+68. LuaMTransition
+69. LuaS
+70. ModeHall
+71. Module
+72. ModuleManager
+73. OnCultureChanged
+74. OnDestroyModule
+75. OnGameFlowChangeEnter
+76. OnGameFlowChangeLeave
+77. OnInitModule
+78. PerfGearFuncLib
+79. PreLoadAssetByName
+80. ReleaseAllStringTables
+81. RemoveListeners
+82. SafeHouse
+83. SaveToSaved
+84. Server
+85. SetCurrentCulture
+86. SetInt
+87. SetLuaErrTipsFlag
+88. Settlement
+89. SoundManager
+90. Timer
+91. TransitionModule
+92. UIManager
+93. UKismetSystemLibrary
+94. UpdateDestination
+95. UpdateGameNum
+96. UpdatePlayerLevel
+97. VulkanCrashSize
+98. WindowsRHIInfo
+99. [TransitionModule]
+100. _WITH_FRONTEND_TEST

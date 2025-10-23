@@ -1,0 +1,61 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  CallSceneCtrlFunctionBySubstage
+-- 2.  RegStackUITopBarTabGroupRegInfo
+-- 3. !CollectionUnlock_Props_MainTab%s
+-- 4. !RegStackUITopBarCurrencyTypeList
+-- 5. "%s_CacheCollectionPropReachMaxNum
+-- 6. "BindShowDefaultBackgroundCallBack
+-- 7. "ClearAllMysticalPendantFilterData
+-- 8. #AsyncOperateStreamLevelsBySubStage
+-- 9. (@A
+-- 10. (AA
+-- 11. (AB
+-- 12. (AF
+-- 13. (BF
+-- 14. (BU
+-- 15. (CR
+-- 16. (evtOnCollectionMainPanelTabIndexChanged
+-- 17. (w@
+-- 18. )@@
+-- 19. )A@
+-- 20. )AA
+-- 21. )AB
+-- 22. )AC
+-- 23. )AD
+-- 24. )AG
+-- 25. )BI
+-- 26. )DK
+-- 27. *CollectionUnlock_Props_MainTab%s_SubTab%s
+-- 28. ,@@
+-- 29. ,@A
+-- 30. ,@D
+-- 31. ,@E
+-- 32. .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+-- 33. 0evtOnCollectionMainPanelTertiaryTabIndexChanged
+-- 34. ;DFM.Business.Module.CollectionModule.Logic.CollectionLogic
+-- 35. ;DFM.StandaloneLua.BusinessTool.LogAnalysis.LogAnalysisTool
+-- 36. A@@
+-- 37. AccountServer
+-- 38. Add
+-- 39. AddCollectionTabEntryTime
+-- 40. AddListeners
+-- 41. AddLuaEvent
+-- 42. BattlefieldEntry
+-- 43. BindBackHandler
+-- 44. BindSetBackgourndCallback
+-- 45. CDNIcon
+-- 46. CanvasPanel_SubView
+-- 47. CheckTopTabGroup
+-- 48. ClearAllGunSkinFilterData
+-- 49. ClearAllHangingFilterData
+-- 50. ClearAllMysticalSkinFilterData
+
+-- 重构的函数结构:
+
+-- 可能的函数:  CallSceneCtrlFunctionBySubstage
+-- 可能的函数: ForceInvokeBack
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: format

@@ -1,0 +1,83 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  AssemblySquadPick:OnHeroClicked
+-- 2.  AssemblySquadPick:OnPreviewHero
+-- 3.  CallSceneCtrlFunctionBySubstage
+-- 4.  DFM.YxFramework.Util.WidgetUtil
+-- 5.  GetIsScrollBoxLengthOverSizeBox
+-- 6.  GetScrollOffsetsForItemIntoView
+-- 7.  evtAssemblySquadPickHeroClicked
+-- 8. !AssemblySquadPick:DoSetTickTimer
+-- 9. !AssemblySquadPick:OnAnimFinished
+-- 10. !AssemblySquadPick:Tick timerStop
+-- 11. !DisableDynamicNavConfigsbyWidget
+-- 12. !OnPS5OnlineIdCacheUpdateDelegate
+-- 13. !SetBottomBarTempInputSummaryList
+-- 14. !SetTimerToUpdateArmedTabPosition
+-- 15. !SwitchClickAnimWidgetsVisibility
+-- 16. !_showCardDisplayPanelDelayHandle
+-- 17. !evtAssemblySquadPickReadyToClose
+-- 18. "AssemblySquadPick:OnInitExtraData
+-- 19. "AssemblySquadPick:OnMicroBtnClick
+-- 20. "AssemblySquadPick:OnVoiceBtnClick
+-- 21. "AssemblySquadPick:_ShowSkillPanel
+-- 22. #AssemblySquadPick:DoInitPlayerName
+-- 23. #_OnGVoiceRoomMemberRoomStateChange
+-- 24. #evtAssemblySquadPickConfirmClicked
+-- 25. #evtAssemblySquadPickProcessIsReady
+-- 26. $AssemblySquadPick:CheckToHideUseTip
+-- 27. $AssemblySquadPick:FilterAccessories
+-- 28. $AssemblySquadPick:OnGetTabItemCount
+-- 29. $AssemblySquadPick:_OnProcessIsReady
+-- 30. $AssemblySquadPick:_OnRelayConnected
+-- 31. $AssemblySquadPick:_OnSkillPanelHide
+-- 32. %AssemblySquadPick:GetPreviewHeroItem
+-- 33. %AssemblySquadPick:InitHeroProperties
+-- 34. %AssemblySquadPick:OnInputTypeChanged
+-- 35. %ProcessReleaseResourceOnSOLHeroReady
+-- 36. &AssemblySquadPick:FixArmedTabPosition
+-- 37. &AssemblySquadPick:GetCardPathByCardId
+-- 38. &AssemblySquadPick:GetCardPathByHeroId
+-- 39. 'AssemblySquadPick:ShowCardDisplayPanel
+-- 40. 'AssemblySquadPick:SwitchBottomBarState
+-- 41. (AA
+-- 42. (AB
+-- 43. (AssemblySquadPick:DoInitPlayerCharacter
+-- 44. (AssemblySquadPick:OnMicroBtnClick is hd
+-- 45. (AssemblySquadPick:OnVoiceBtnClick is hd
+-- 46. (AssemblySquadPick:_InitMemberMicroState
+-- 47. (AssemblySquadPick:_SetPlayerPlatfomIcon
+-- 48. (BB
+-- 49. (w@
+-- 50. )A@
+
+-- 重构的函数结构:
+
+-- 可能的函数:  CallSceneCtrlFunctionBySubstage
+-- 可能的函数:  GetScrollOffsetsForItemIntoView
+-- 可能的函数: +WBP_ControllerFunctionButtonCommand_Mobile
+-- 可能的函数: AbsoluteToLocal
+-- 可能的函数: ArmedForce
+-- 可能的函数: ArmedForceServer
+-- 可能的函数: EArmedForceMode
+-- 可能的赋值: FAssemblySquadPick:ChangeHero previewedHeroInsId == selectedHeroInsId!
+-- 可能的函数: ForceLayoutPrepass
+-- 可能的函数: ForwardEquipmentData
+-- 可能的函数: ForwardHeroFashionSuitTable
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetArmedForceInfoByArmId
+-- 可能的函数: GetCurArmedForceMode
+-- 可能的函数: GetHeroArmedForceName
+-- 可能的函数: GetLocalSize
+-- 可能的函数: GetLocalTimestamp
+-- 可能的函数: GetPlayerPlatformIdByOpenId
+-- 可能的函数: JAssemblySquadPick:InitSceneDisplayCtrlType curArmedForceMode not valid!!!
+-- 可能的函数: LuaMArmedForce
+-- 可能的函数: PlatformPaddingBox_0
+-- 可能的函数: ScreenToWidgetLocal
+-- 可能的函数: SetPlatformIDType
+-- 可能的函数: armed_force_id
+-- 可能的函数: localTime
+-- 可能的日志: logtable

@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_43.lua
+大小: 14124 字节
+字符串数量: 236
+函数数量: 6
+常量数量: 9585
+
+提取的字符串:
+1.  SetBadgeImgPathByAccessoryDatas
+2.  accessory items
+3.  get 
+4.  kGspPlayerGameStatusTypeEndGame
+5.  kGspPlayerGameStatusTypePlaying
+6. !Imp_SetSOLTeammatesIndexAndState
+7. "HeroCommonCardBase _SetKillCount 
+8. "HeroCommonCardBase:SetCardImgPath
+9. #HeroCommonCardBase:OnInitExtraData
+10. %HeroCommonCardBase Imp_SetStatistics
+11. (AA
+12. (C@
+13. ([georgecgong] HeroCommonCardBase:Ctor()
+14. (w@
+15. )A@
+16. )AB
+17. )HeroCommonCardBase:SetPlayerName, name: 
+18. *HeroCommonCardBase:SetCardImgPathByCardId
+19. ,@E
+20. ,HeroCommonCardBase:SetCardInfoByAccessories
+21. -HeroCommonCardBase:SetCardInfoByAccessories2
+22. .DFM.StandaloneLua.BusinessTool.HeroHelperTool
+23. .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+24. /HeroCommonCardBase:Imp_PlayCardFadeInAnimation
+25. 0HeroCommonCardBase:Imp_PlayCardFadeOutAnimation
+26. 3HeroCommonCardBase:SetBadgeImgPathByAccessoryDatas
+27. 6HeroCommonCardBase:SetCardInfoByAccessories, prop_id 
+28. 8HeroCommonCardBase:Imp_SetCardInfoByPlayerState, platID
+29. 9HeroCommonCardBase:Imp_SetCardInfoByPlayerState, HeroID 
+30. :HeroCommonCardBase:Imp_SetCardInfoByPlayerState, titleId 
+31. ;HeroCommonCardBase:SetCardImgPath, CardImagePath is nil!!!
+32. >HeroCommonCardBase:Imp_SetCardInfoByPlayerState, lua no Ctor!
+33. ?HeroCommonCardBase:Imp_SetCardInfoByPlayerState, not crossplat
+34. ?HeroCommonCardBase:Imp_SetCardInfoByPlayerState, teamIdentity 
+35. A@@
+36. AA@
+37. ADFM.YxFramework.Managers.GameFlow.InGameControl.InGameController
+38. AccountServer
+39. ArmedForceImg
+40. AssetPathName
+41. AsyncSetImagePath
+42. Badge
+43. Blueprint_SetTextStyle
+44. C002
+45. C003
+46. C004
+47. C005
+48. Card
+49. CloseBadgeTips
+50. Collapsed
+51. Config
+52. Ctor
+53. DFImage_218
+54. DFImage_TeamIdentity
+55. DFMGameplayBlueprintHelper
+56. DFTextBlock_132
+57. DFTextBlock_266
+58. DefaultCardPath
+59. DisableBadgeInteraction
+60. EBadgeSlotType
+61. EGspPlayerGameStatusType
+62. EGspPlayerResultType
+63. EHeroAccessroy
+64. ELuaLogCategory
+65. ETeamIdentity
+66. EnableEquip
+67. EscapeFailTXT
+68. EscapeMissingTXT
+69. EscapeStillInGameTXT
+70. EscapeSuccessTXT
+71. Event
+72. FSlateColor
+73. Field
+74. GenLocalLogFunc
+75. Get
+76. GetBadgeSlotByIndex
+77. GetCamp
+78. GetCharacterIconColor
+79. GetCurHeroAccessoryItems
+80. GetCurPlayerTitleInfo
+81. GetHeroCardPathByCardId
+82. GetPlatformID
+83. GetPlayerName
+84. GetPlayerState
+85. GetSelectedHeroCardPath
+86. GetSubTypeById
+87. GetTeamIdentity
+88. GetUsedAccessory
+89. Hero
+90. HeroCommonCardBase
+91. HeroCommonCardIcon
+92. HeroID
+93. HeroServer
+94. Hidden
+95. HitTestInvisible
+96. IHeroCommonCardBase:UpdateTitleInfo(playerName, titleId, adCode, ranking)
+97. Imp_CppCloseBadgeTips
+98. Imp_CppHidePlatIcon
+99. Imp_CppHideideBadge
+100. Imp_CppShowBadge

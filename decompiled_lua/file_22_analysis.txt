@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_22.lua
+大小: 26581 字节
+字符串数量: 285
+函数数量: 59
+常量数量: 17310
+
+提取的字符串:
+1.  evtCloudSettingSlotStateChanged
+2.  value not found in cloud data
+3. !DFM.YxFramework.Plugin.Json.Json
+4. !GetLocalCommonSettingDataAndHash
+5. ![CloudSettingLogicHD] DoSendMeta
+6. ![CloudSettingLogicHD] Send Meta:
+7. ![CloudSettingLogicHD] _SendStats
+8. "SystemSettingHDCloudSettingWindow
+9. "[CloudSettingLogicHD] Send Stats:
+10. "evtCloudSettingUploadStateChanged
+11. #[CloudSettingLogicHD] remoteStats 
+12. $GetCloudSettingAutoUploadJustClosed
+13. %d+
+14. &SystemSettingHDCloudSettingChangeName
+15. &[CloudSettingLogicHD] Fetched Setting
+16. &[CloudSettingLogicHD] remoteMetaData 
+17. &[CloudSettingLogicHD] skip Send Meta:
+18. '[CloudSettingLogicHD] Fetching Setting
+19. '[CloudSettingLogicHD] Send Meta Failed
+20. '[CloudSettingLogicHD] skip Send Stats:
+21. (A@
+22. (AA
+23. (AC
+24. (AD
+25. (BA
+26. (BD
+27. (DF
+28. ([CloudSettingLogicHD] Send Meta Succeed
+29. ([CloudSettingLogicHD] Send Stats Failed
+30. ([CloudSettingLogicHD] remoteKeySetting 
+31. (w@
+32. )@@
+33. )A@
+34. )AA
+35. )AB
+36. )AD
+37. )B@
+38. )BB
+39. )BC
+40. )BE
+41. )BH
+42. )C@
+43. )CG
+44. )DE
+45. )[CloudSettingLogicHD] Send Stats Succeed
+46. +[CloudSettingLogicHD] Fetch Setting Failed
+47. +[CloudSettingLogicHD] SendKeySetting data 
+48. ,@A
+49. ,[CloudSettingLogicHD] Fetch Setting Success
+50. ,[CloudSettingLogicHD] SendKeySetting index=
+51. .[CloudSettingLogicHD] SendCommonSetting data 
+52. /[CloudSettingLogicHD] SendCommonSetting index=
+53. /[CloudSettingLogicHD] _ApplyIndexForKeySetting
+54. /[CloudSettingLogicHD] remoteCommonSettingData 
+55. 2[CloudSettingLogicHD] SendKeySetting index Failed
+56. 2[CloudSettingLogicHD] _ApplyIndexForCommonSetting
+57. 3[CloudSettingLogicHD] SendKeySetting index Succeed
+58. 5[CloudSettingLogicHD] SendCommonSetting index Failed
+59. 6[CloudSettingLogicHD] SendCommonSetting index Succeed
+60. 7[CloudSettingLogicHD] detect inconsistency keySetting:
+61. 9LoginRegisterLogic CheckPlayerNameValid Error: No Config
+62. 9[CloudSettingLogicHD] CheckAndSendSetting not autoupload
+63. 9[CloudSettingLogicHD][RecvUnicodeConf] not error result:
+64. :[CloudSettingLogicHD] detect inconsistency commonSetting:
+65. :[CloudSettingLogicHD] not error: check log hotfix20250910
+66. ;[CloudSettingLogicHD] CheckAndSendSetting bad appliedIndex
+67. =[CloudSettingLogicHD] detect inconsistency set Setting empty
+68. @DFM.Business.Module.SystemSettingModule.Logic.HD.SettingLogicHD
+69. ADSList
+70. ADSListGamepad
+71. ALoginRegisterLogic CheckPlayerNameValid Error: name empty or nil
+72. AccountServer
+73. AppliedIndex
+74. ApplyIndex
+75. ApplyKeySettingJsonStr
+76. AsyncShowUI
+77. AutoNamePrefix
+78. CDFM.Business.Module.SystemSettingModule.Logic.HD.SettingRegLogicHD
+79. CSSettingGetValuesByTypeReq
+80. CSSettingPutKeyValueReq
+81. Case
+82. CheckAndSendSetting
+83. CheckPlayerNameValid
+84. CheckUnsave
+85. ClientSettingHD.CloudSetting
+86. ClockManager
+87. CloudSettingIndex
+88. CloudSettingLocalCommon
+89. CloudSettingLocalKeymapping
+90. CloudSettingLocalTimeStamp
+91. CloudSettingTxt
+92. CommonSettingHD
+93. CommonTips
+94. Config
+95. CreateNameWindow
+96. Data
+97. DataKeySetting
+98. DebugOn
+99. DelayCall
+100. DeleteIndex

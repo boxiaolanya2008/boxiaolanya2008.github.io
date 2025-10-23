@@ -1,0 +1,84 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2. !RecoverBottomBarInputSummaryList
+-- 3. !SetBottomBarTempInputSummaryList
+-- 4. "FetchMPSeasonTotalDataByMatchInfo
+-- 5. #FetchSolSeasonTotalDataByMatchInfo
+-- 6. #QQPrivilegePersonalHomepageDisplay
+-- 7. &RoleInfo_RefreshSelf_GBadgeSyncamepad
+-- 8. &WBP_RoleInfo_PersonalHomepage_dianzan
+-- 9. 'WeChatPrivilegePersonalHomepageDisplay
+-- 10. 'ddh RefreshCollectRoom roomData is nil
+-- 11. (@@
+-- 12. (AA
+-- 13. (AF
+-- 14. (AI
+-- 15. (A`
+-- 16. (B@
+-- 17. (BA
+-- 18. (CG
+-- 19. (WBP_RoleInfo_PersonalHomepage_switch_01
+-- 20. (WBP_RoleInfo_PersonalHomepage_switch_02
+-- 21. (w@
+-- 22. )@@
+-- 23. )A@
+-- 24. )AA
+-- 25. )AB
+-- 26. )AC
+-- 27. )AD
+-- 28. )AH
+-- 29. )AN
+-- 30. )AW
+-- 31. )A]
+-- 32. )Ac
+-- 33. )BA
+-- 34. )CG
+-- 35. )CH
+-- 36. )ddh RefreshWeaponStar starWeapons is nil
+-- 37. ,@@
+-- 38. ,@A
+-- 39. ,@B
+-- 40. -RoleInfoPersonal:OnInitExtraData playerId = 
+-- 41. .DFM.StandaloneLua.BusinessTool.ShopHelperTool
+-- 42. 7DFM.Business.Module.RoleInfoModule.Logic.RoleInfoLogic
+-- 43. ; myPlayerId =
+-- 44. ;DFM.StandaloneLua.BusinessTool.LogAnalysis.LogAnalysisTool
+-- 45. A@@
+-- 46. A@A
+-- 47. A@B
+-- 48. A@C
+-- 49. AccountServer
+-- 50. AddFriend
+
+-- 重构的函数结构:
+
+-- 可能的赋值: -RoleInfoPersonal:OnInitExtraData playerId = 
+-- 可能的赋值: ; myPlayerId =
+-- 可能的函数: DFMPlatformUtils
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetLocalTimestamp
+-- 可能的函数: GetNumberFormatStr
+-- 可能的函数: GetPlatformData
+-- 可能的函数: GetPlatformIconPath
+-- 可能的函数: PLATFORM_GEN9
+-- 可能的函数: PlatformPaddingBox_19
+-- 可能的函数: PlatformPaddingBox_24
+-- 可能的函数: PlayAnimationForward
+-- 可能的函数: PlayerInformationApply
+-- 可能的函数: SetMyselfOrOther
+-- 可能的函数: ShowPlatformProfileUI
+-- 可能的函数: StuPriv_Certified
+-- 可能的函数: SubShareBasicInformation
+-- 可能的函数: _PlatformProfileBtnOnClick
+-- 可能的函数: _SetupForCurrentPlayer
+-- 可能的函数: _SetupForOtherPlayer
+-- 可能的函数: _platformId
+-- 可能的函数: _wtPersonalInformation
+-- 可能的函数: _wtPlatformIcon
+-- 可能的函数: _wtPlatformProfileBtn
+-- 可能的函数: format
+-- 可能的函数: wtPlatformIcon
+-- 可能的函数: wtPlatformProfileBtn

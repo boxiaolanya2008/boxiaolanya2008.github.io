@@ -1,0 +1,104 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  CSTeamChangeIsOpenQuickJoinTReq
+-- 2.  HandleCSTeamMemberPackUpdateNtf
+-- 3.  MatchGateForbidRankByReputation
+-- 4.  MatchGateForbidTeamByReputation
+-- 5.  SetUsingPlatformPremiumFeatures
+-- 6.  TeamServer.evtReadyStateChanged
+-- 7.  TeamServer:CancelPersonMatching
+-- 8.  TeamServer:ExitTeam teamId is 0
+-- 9.  TeamServer:OnCSTeamApplyJoinNtf
+-- 10.  TeamServer:OnCSTeamToInviteeNtf
+-- 11.  TeamServer:TryEnterSafeHouseDS 
+-- 12. !%s
+-- 13. !CannotTeamUpDueToNetworkMismatch
+-- 14. !CheckPlayerJoinSafehouseNtfValid
+-- 15. !DepositEntryPropNightVisionLimit
+-- 16. !E 
+-- 17. !E!
+-- 18. !E"
+-- 19. !E#
+-- 20. !E$
+-- 21. !E%
+-- 22. !E&
+-- 23. !E'
+-- 24. !E(
+-- 25. !E)
+-- 26. !E*
+-- 27. !E+
+-- 28. !E,
+-- 29. !E-
+-- 30. !MatchGateCheckPlayerAreaNotEqual
+-- 31. !TeamServer:CSRoomMatchTimeoutNtf
+-- 32. !TeamServer:HandleCSTeamExitBCNtf
+-- 33. !TeamServer:HandleCSTeamJoinBCNtf
+-- 34. !TeamServer:ReqInvite teamId is 0
+-- 35. !TeamServer:Response2ApplyJoinReq
+-- 36. !TriggerReputationErrorTipsIfNeed
+-- 37. !evtOnTeamRecruitmentStateChanged
+-- 38. "CSTeamStartMatchTRes whiteListStr
+-- 39. "CheckUsersPermissionsByOpenIdList
+-- 40. "MatchGateEquip15CollectionUpLimit
+-- 41. "OnJoinTeamSessionCompleteDelegate
+-- 42. "TeamServer.evtQuickJoinModeChange
+-- 43. "TeamServer.evtTeammateEquipChange
+-- 44. "TeamServer:CreateTeamWithModeList
+-- 45. "TeamServer:Get EnableMPRankMatch:
+-- 46. "_isSendingTeamMatchingDelayHandle
+-- 47. #DFMIrisEnterSeamlessGameplayHelper
+-- 48. #DoSendTeamInviteAndApplyJoinReqLog
+-- 49. #DoSendTeamInviteAndApplyJoinResLog
+-- 50. #HandleCSTeamEquipPositionChangeNtf
+
+-- 重构的函数结构:
+
+-- 可能的函数:  MatchGateForbidRankByReputation
+-- 可能的函数:  MatchGateForbidTeamByReputation
+-- 可能的函数:  SetUsingPlatformPremiumFeatures
+-- 可能的函数: !TriggerReputationErrorTipsIfNeed
+-- 可能的函数: &TeamServer:ReqUpdatePlatformSessionID
+-- 可能的函数: -TeamServer:ReqUpdatePlatformSessionID failed
+-- 可能的赋值: -TeamServer:SetBHDOpenQuickJoinMode isOpen = 
+-- 可能的函数: .TeamServer:ReqUpdatePlatformSessionID success
+-- 可能的赋值: /TeamServer:ReqSetIsOpenQuickJoinMode isOpen = 
+-- 可能的函数: <TeamServer:ApplyJoinByPlatformInvite 
+-- 可能的赋值: =TeamServer:ReqBHDTeamBeginMatch 
+-- 可能的函数: ApplyJoinByPlatformInvite
+-- 可能的函数: CSStateBatchGetInfoReq
+-- 可能的函数: CSTeamNotifyPrepareTReq
+-- 可能的赋值: CreateTeam, matchmodes = 
+-- 可能的函数: DFMPlatformFriendManager
+-- 可能的函数: EPlatformPremiumFeaturesType
+-- 可能的函数: EPlatformSessionRestriction
+-- 可能的函数: EPlatformUserPermissionType
+-- 可能的函数: EPlatformUserPrivileges
+-- 可能的函数: ForceTriggerReconnect
+-- 可能的函数: ForceUpdateDynamicGuidePrice
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetIsWaitForGotoGame
+-- 可能的函数: GetLocalBHDClientVersion
+-- 可能的函数: IsForceStartMatch
+-- 可能的函数: Key2StrFormat
+-- 可能的函数: MatchGateFaceVerifyRequired
+-- 可能的函数: PLATFORM_GEN9
+-- 可能的函数: ReqUpdatePlatformSessionID
+-- 可能的函数: SendTeamNotifyPrepareTReq
+-- 可能的函数: SendTeamNotifyPrepareTReqToAll
+-- 可能的函数: TTeamServer:ApplyJoinByPlatformInvite CannotTeamUpDueToCrossNetworkPrivilegeMismatch
+-- 可能的函数: TeamNeedFaceVerify
+-- 可能的函数: TeamNotifyPrepare
+-- 可能的赋值: [v_dzhanshen] TeamID=
+-- 可能的函数: _CheckedNotify
+-- 可能的函数: evtCreatePlatformTeamSession
+-- 可能的函数: evtDestroyPlatformTeamSession
+-- 可能的函数: evtJoinPlatformTeamSession
+-- 可能的函数: evtProcessPlatformSession
+-- 可能的函数: evtUpdatePlatformTeamSession
+-- 可能的函数: face_verify_url
+-- 可能的函数: format
+-- 可能的日志: logtable
+-- 可能的日志: print
+-- 可能的赋值: teamid = 0

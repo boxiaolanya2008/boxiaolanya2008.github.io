@@ -1,0 +1,62 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  GetMapResourceDataByMatchIdList
+-- 2. !GetMandelBrickPoolDataBySeasonId
+-- 3. #BattlefieldEntryLogic.Modes2String
+-- 4. %s%s
+-- 5. %s%s%s
+-- 6. 'BattlefieldEntryLogic.OpenModeSelector
+-- 7. (A@
+-- 8. (BattlefieldEntryLogic.ChangeTDMMapGroup
+-- 9. (BattlefieldEntryLogic.CheckHasValidHero
+-- 10. (BattlefieldEntryLogic.OpenMapViewWindow
+-- 11. (w@
+-- 12. )@@
+-- 13. )AA
+-- 14. )AB
+-- 15. )AC
+-- 16. )AE
+-- 17. )BA
+-- 18. )BC
+-- 19. )CD
+-- 20. )CF
+-- 21. *BattlefieldEntryLogic.GetIsModeSelectable
+-- 22. *BattlefieldEntryLogic.GetMapDataByMatchId
+-- 23. +BattlefieldEntryLogic.CheckIsCommanderMode
+-- 24. +BattlefieldEntryLogic.GetModeDataByGroupId
+-- 25. ,BattlefieldEntryLogic.CheckIsFlagBattleMode
+-- 26. ,BattlefieldEntryLogic.GetValidMapsByGroupId
+-- 27. ,GetMapResourceDataByGameRuleAndMatchSubMode
+-- 28. -BattlefieldEntryLogic.CheckIsCommanderUnlock
+-- 29. .DFM.StandaloneLua.BusinessTool.HeroHelperTool
+-- 30. /BattlefieldEntryLogic.CheckIsNightFightingMode
+-- 31. 2BattlefieldEntryLogic.GetTDMMapConstantValueByKey
+-- 32. 2BattlefieldEntryLogic.PrintTables, TDMMapConstant
+-- 33. 4BattlefieldEntryLogic.PrintTables, TDMMapIconConfig
+-- 34. 4BattlefieldEntryLogic.PrintTables, TDMMapTextConfig
+-- 35. 5BattlefieldEntryLogic.PrintTables, MPMandelBrickPool
+-- 36. 5BattlefieldEntryLogic.PrintTables, TDMMapBoardConfig
+-- 37. 6BattlefieldEntryLogic.GetMapResourceDataByMatchIdList
+-- 38. 7BattlefieldEntryLogic.GetMandelBrickPoolDataBySeasonId
+-- 39. 8BattlefieldEntryLogic.PrintTables, TDMMapResourceConfig
+-- 40. <BattlefieldEntryLogic.PrintTables, LitePackageDownloadTable
+-- 41. ?BattlefieldEntryLogic.GetIsModeSelectable, no available map!!!
+-- 42. AssetPathName
+-- 43. AsyncShowUI
+-- 44. BBattlefieldEntryLogic.GetMapResourceDataByGameRuleAndMatchSubMode
+-- 45. BBattlefieldEntryLogic.Modes2String modes list should not be empty
+-- 46. BDFM.Business.Module.BattlefieldEntryModule.BattlefieldEntryConfig
+-- 47. BIG_MAP_GROUP_CONSTANT
+-- 48. BattlePassServer
+-- 49. BattlefieldEntry
+-- 50. BattlefieldMapViewWindow
+
+-- 重构的函数结构:
+
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: IfRemind
+-- 可能的函数: Key2StrFormat
+-- 可能的函数: format
+-- 可能的日志: logtable

@@ -1,0 +1,159 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  - BHDGameController Step5] MatchServer:ReqPlayerStateBHDCheck Server.TeamServer:ForceTriggerReconnect()
+-- 2.  - BHDGameController Step5] MatchServer:ReqPlayerStateBHDCheck self:EndMatching()
+-- 3.  IsNewPlayerMatchFinished
+-- 4.  MP Close Seamless Travel Force!
+-- 5.  MatchServer.evtPrepareJoinMatch
+-- 6.  MatchServer.evtReEnterSafeHouse
+-- 7.  MatchServer:CatchStartMatchInfo
+-- 8.  MatchServer:IsGameStateChanged:
+-- 9.  MatchServer:_RobotJoinMatchNtf 
+-- 10.  PrepareJoinMatch
+-- 11.  PrepareJoinMatch, but DFHD_LUA == 0
+-- 12.  PrepareJoinMatch, but not preload BHD
+-- 13.  SetUsingPlatformPremiumFeatures
+-- 14.  Waiting Join Match!
+-- 15.  [SyncMapSign] send, ds_room_id=
+-- 16.  _OnMatchRoomSyncMemberOptionNtf
+-- 17.  _OnMatchRoomTDMChangeArmedForce
+-- 18.  _matchCheckTimerStop
+-- 19. !CSActivityGetAcceptedActivityReq
+-- 20. !CSMatchRoomPickStageReconnectReq
+-- 21. !CheckPlayerJoinSafehouseNtfValid
+-- 22. !MatchServer.evtMatchStateChanged
+-- 23. !MatchServer:DoStartMatch() URL: 
+-- 24. !MatchServer:GetIsWaitForGotoGame
+-- 25. !MatchServer:GetSafeHouseDSRoomId
+-- 26. !MatchServer:GetSafeHouseDSTeamId
+-- 27. !MatchServer:SetSafeHouseDSRoomId
+-- 28. !MatchServer:SetSafeHouseDSTeamId
+-- 29. !MatchServer:UpdateSeamlessTravel
+-- 30. !SetSafeHouseDSState_ToStandalone
+-- 31. !StopReportFlowInGameTimeOutTimer
+-- 32. ![ParseHostInfo] Find Ip and Port
+-- 33. ![ParseHostInfo] parsedIp is ipv6
+-- 34. ", _bSeamlessEntrySquadPickFinish:
+-- 35. "CSMatchRoomTdmChangeArmedForceNtf
+-- 36. "Game.EnableClientSeamlessTravel 0
+-- 37. "MatchServer.evtReEnterBattleField
+-- 38. "MatchServer.evtUpdateAccelAddress
+-- 39. "MatchServer:CheckIsEnableSeamless
+-- 40. "MatchServer:CheckStatetoReconnect
+-- 41. "MatchServer:TrySwitchLoadingState
+-- 42. "MatchServer:_ClearIpListInGame...
+-- 43. "OnGameplayConfigLoadCompleteEvent
+-- 44. "[GetDsInfo] used default ip, port
+-- 45. "[InBlackIpList] ip or port is nil
+-- 46. "[SyncMapSign] RequestAcceptQuests
+-- 47. "_gameplayConfigLoadCompleteHandle
+-- 48. #AsyncOperateStreamLevelsBySubStage
+-- 49. #DFMIrisEnterSeamlessGameplayHelper
+-- 50. #DoMatchRoomSetTdmRoomArmedForceReq
+
+-- 重构的函数结构:
+
+-- 可能的函数:  - BHDGameController Step5] MatchServer:ReqPlayerStateBHDCheck Server.TeamServer:ForceTriggerReconnect()
+-- 可能的函数:  MP Close Seamless Travel Force!
+-- 可能的赋值:  PrepareJoinMatch, but DFHD_LUA == 0
+-- 可能的函数:  SetUsingPlatformPremiumFeatures
+-- 可能的赋值:  [SyncMapSign] send, ds_room_id=
+-- 可能的函数:  _OnMatchRoomTDMChangeArmedForce
+-- 可能的函数: !MatchServer:GetIsWaitForGotoGame
+-- 可能的函数: "CSMatchRoomTdmChangeArmedForceNtf
+-- 可能的函数: #DoMatchRoomSetTdmRoomArmedForceReq
+-- 可能的赋值: #[OnDnsReslovedGuide] DFHD_LUA == 1
+-- 可能的赋值: %s?Camp=%s
+-- 可能的函数: 'MatchServer:_OnCSLobbyLaunchLocalDsNtf
+-- 可能的赋值: '[OnLuaNetworkFailure] curgameflow = %s
+-- 可能的赋值: (MatchServer:SetMatchModeInfo game_mode=
+-- 可能的赋值: , result =
+-- 可能的函数: /MatchServer:DoMatchRoomSetTdmRoomArmedForceReq
+-- 可能的函数: 0MatchServer:_OnCSLobbyConnectLocalDsNtf: %s, %d
+-- 可能的赋值: 2MatchServer:_OnMatchRoomMatchEndNtf ntf.reason = 
+-- 可能的函数: 4MatchServer:_OnMatchRoomTDMChangeArmedForce RoomId:
+-- 可能的赋值: 4[OnLuaNetworkFailure] self.bGameStateChanged = true
+-- 可能的函数: 7MatchServer:_OnCSLobbyLaunchLocalDsNtf StartLocalDSEnd
+-- 可能的函数: 8MatchServer:ReqReconnectPickHeroStage CSStateGetInfoRes
+-- 可能的赋值: 8MatchServer:TrySwitchLoadingState,enableSeamlessTravel=
+-- 可能的函数: 9[SyncMapSign] _OnCSPrepareJoinMatchNtf, DSRoomIDForSync=
+-- 可能的函数: :MatchServer:_OnCSLobbyLaunchLocalDsNtf StartLaunchLocalDS
+-- 可能的赋值: =MatchServer:DoStartMatch AccountServer.PlayerState 
+-- 可能的赋值: =[LogDFMGameIdcSelector] _OnUdpPingRecv udp seqId %d no found
+-- 可能的赋值: =[SyncMapSign] MatchServer:OnCSMatchRoomSyncMemberOptionRes, 
+-- 可能的赋值: =[SyncMapSign] OnCSActivityGetAcceptedActivityRes, objective:
+-- 可能的函数: ?MatchServer:IsLocalDSDebug 
+-- 可能的函数: A[LogDFMGameIdcSelector] RecvTime udp seqId no found for seqid %d
+-- 可能的赋值: A[SetIdcSelectorInfo] final ping: domain = %s, ip = %s, port = %s
+-- 可能的函数: ArmedForceId
+-- 可能的函数: ArmedForceMode
+-- 可能的函数: ArmedForceServer
+-- 可能的函数: CMatchServer:OnCSPrepareJoinMatchNtf, Call DelayFunction fOnAnimEnd
+-- 可能的函数: CSLobbyLaunchLocalDsNtf
+-- 可能的函数: CSNotifyNtf
+-- 可能的函数: CheckNextForceSkipSeamless
+-- 可能的函数: CreateSessionForActivity
+-- 可能的函数: DFMPlatformActivityManager
+-- 可能的函数: DMatchServer:OnCSPrepareJoinMatchNtf, Call DelayFunction fOnDelayEnd
+-- 可能的函数: DSRoomIDForSync
+-- 可能的函数: EArmedForceMode
+-- 可能的函数: EPlatformPremiumFeaturesType
+-- 可能的函数: ForceStopSeamlessEnter
+-- 可能的函数: ForceTriggerReconnect
+-- 可能的函数: Game.ForceSetSeamlessType 0
+-- 可能的函数: Game.ForceSetSeamlessType 2
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: GetCurArmedForceMode
+-- 可能的函数: GetIsWaitForGotoGame
+-- 可能的函数: GetLocalIPAddr
+-- 可能的函数: GetPlayerPlatformIdByOpenId
+-- 可能的赋值: H[SyncMapSign] OnCSQuestGetAcceptedQuestsRes, res.accepted_quests == nil
+-- 可能的赋值: H[UDFMTODSubSystem] MatchServer:OnCSPrepareJoinMatchNtf, tod_weather_id=
+-- 可能的函数: IsLocalDSDebug
+-- 可能的赋值: M%s %s -game -server -log ROOM_ID=%d PORT=%d DSA_PORT=%d IN_PORT=%d DSA_IP=%s
+-- 可能的函数: MatchLocalDSDebug
+-- 可能的赋值: MatchServer:GetLevelUrl url = 
+-- 可能的赋值: N[SyncMapSign] OnCSActivityGetAcceptedActivityRes, res.quest_objectives == nil
+-- 可能的函数: OnLeaveMatchForActivity
+-- 可能的函数: PLATFORM_ANDROID
+-- 可能的函数: PLATFORM_IOS
+-- 可能的函数: PlatformMatchInfo
+-- 可能的函数: PlatformMemberInfo
+-- 可能的赋值: QMatchServer:OnCSPrepareJoinMatchNtf, SquadPick Finish, SeamlessEntryPromiseCall=
+-- 可能的函数: StartLaunchLocalDS
+-- 可能的函数: StartLocalDS
+-- 可能的函数: WaitForGotoGame
+-- 可能的赋值: Y%s %s -game -server -log ROOM_ID=%d DSA_PORT=%d IN_PORT=%d DSA_IP=%s -multi_room_port=%d
+-- 可能的赋值: YMatchServer:OnCSPrepareJoinMatchNtf(), TrySwitchNextStage, in squad pick finish, result=
+-- 可能的赋值: Z%s %s -game -server -log ROOM_ID=%d PORT=%d DSA_PORT=%d IN_PORT=%d DSA_IP=%s -SUBWORLD=%s
+-- 可能的赋值: [GetLevelUrlAsync] url = 
+-- 可能的赋值: [SyncMapSign] TestGetMapId = 
+-- 可能的赋值: ]%s:%d?PlayerId=%s?ModularWeapon=%s?Cookie=%s?MapId=%s?SpotGroup=%d?DSRoomId=%d?IsOBPlayer=%s
+-- 可能的函数: ]MatchServer:_OnCSLobbyConnectLocalDsNtf::
+-- 可能的赋值: ^MatchServer:OnCSPrepareJoinMatchNtf(), TrySwitchNextStage in gameplayconfig callback, result=
+-- 可能的函数: _OnCSLobbyConnectLocalDsNtf
+-- 可能的函数: _OnCSLobbyLaunchLocalDsNtf
+-- 可能的函数: _OnCSNotifyNtf
+-- 可能的函数: _OnGetMatchIdForActivity
+-- 可能的函数: _OnSetMatchIdForActivity
+-- 可能的函数: _platformMatchInfo
+-- 可能的函数: armedforce_id
+-- 可能的函数: bUseLocalDs
+-- 可能的函数: d[LogDFMGameIdcSelector] GetReportIDCRoundTripTimeMap add timeout access point: %s(%s:%d) for idc %s
+-- 可能的函数: evtTdmPlayerArmedForceChanged
+-- 可能的函数: evtUnreadyForMatch
+-- 可能的函数: format
+-- 可能的函数: function
+-- 可能的函数: gc.ForceCollectGarbage
+-- 可能的函数: h[LogDFMGameIdcSelector] GetReportIDCRoundTripTimeMap add timeout idc: access point %s(%s:%d) for idc %s
+-- 可能的函数: isWaitForGotoGame
+-- 可能的函数: lastLocalDSIP
+-- 可能的函数: lastLocalDSPort
+-- 可能的函数: logformat
+-- 可能的日志: logtable
+-- 可能的函数: not is wait for goto game
+-- 可能的函数: notify_msg
+-- 可能的函数: player_armed_force
+-- 可能的日志: print

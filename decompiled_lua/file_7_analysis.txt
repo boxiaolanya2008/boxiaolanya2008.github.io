@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_7.lua
+大小: 15086 字节
+字符串数量: 217
+函数数量: 21
+常量数量: 11709
+
+提取的字符串:
+1.  SafeAndCardPackActivatingConfig
+2.  itemMainType itemSubType : 
+3. !WeaponSkin/MysticalSkinBasicPara
+4. "GetPendantMysticalDetailInfoTable
+5. $WeaponSkin/PendantMysticalSkinTable
+6. %WeaponSkin/MysticalSkinInfoDataTable
+7. %s-%d
+8. &WeaponMelee/WeaponMeleeAttributeTable
+9. (AA
+10. (BB
+11. (w@
+12. )@@
+13. )A@
+14. )AB
+15. )Linear color for quality [%d] not found.
+16. *WeaponSkin/MysticalPendantDetailInfoTable
+17. +Buff ID [%d] not configured, please check!
+18. +Buff ID [%s] not configured, please check!
+19. +config is nil, plz check CommercializeData
+20. -Buff Type [%s] not configured, please check!
+21. .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+22. /Bag Func ID [%d] not configured, please check!
+23. 3000
+24. 3SafeBox Func ID [%d] not configured, please check!
+25. 4ItemConfigTool.GetMeleeAttributeTable nil, item id:
+26. 5ItemConfigTool.GetItemArmedForceCfgNew nil, item id:
+27. 8ChestHanging Func ID [%d] not configured, please check!
+28. A00
+29. ActiveTime
+30. ArmedForceProps
+31. Armor/BodyArmorFunction
+32. Armor/HelmetArmorFunction
+33. BagFunc
+34. BattlePassServer
+35. Blue
+36. BuffClientPerformance
+37. BuffEffect
+38. BuffType
+39. CheckIsInFrontEnd
+40. CheckItemHasConfig
+41. ChestHangingFunc
+42. ClockManager
+43. CloseModuleType
+44. Collapsed
+45. ColorManager
+46. CommercializeData
+47. CommercializeImage
+48. CommercializeType
+49. CommonItemAsset
+50. DeafultTag
+51. DogTagCustomInfo
+52. ECurrencyClientType2ImgPath
+53. EQualityPrefix
+54. ESlateVisibility
+55. EndTime
+56. ExtensionBoxDesc
+57. Facade
+58. FindPermissionActivateCard
+59. GameFlowManager
+60. GameItem
+61. GameItemNamePrefix
+62. GetBagFuncTable
+63. GetBodyArmorFunctionById
+64. GetBuffById
+65. GetBuffPerformanceByType
+66. GetBuffPerformanceByTypeEnum
+67. GetChestHangingFuncTable
+68. GetCommercializeIconPath
+69. GetCustomizedDogTagDesc
+70. GetCustomizedDogTagMajorRankID
+71. GetCustomizedDogTagName
+72. GetExtItemLevelUpItemId
+73. GetExtItemLevelUpMaterialList
+74. GetExtentionBoxDescRowById
+75. GetHealthInfoById
+76. GetHelmetArmorFunctionById
+77. GetHeroInfoById
+78. GetHudQualityLinearColor
+79. GetItemArmedForceCfgNew
+80. GetItemAssetById
+81. GetItemConfigById
+82. GetItemIconFromID
+83. GetItemName
+84. GetItemQuality
+85. GetItemQualityColor
+86. GetItemQualityLinearColor
+87. GetItemQualitySlateColor
+88. GetItemRatityID
+89. GetItemSubName
+90. GetItemSubTagID
+91. GetItemTagName
+92. GetItemValueById
+93. GetItembHasKillCnter
+94. GetKeyBoxCfgListId
+95. GetKeyBoxSpaceOrder
+96. GetKeyBoxUnlockItemRowById
+97. GetKeyCellUnlockItemId
+98. GetLabelById
+99. GetLinerColor
+100. GetLinerColorByRowName

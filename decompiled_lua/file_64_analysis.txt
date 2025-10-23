@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_64.lua
+大小: 25392 字节
+字符串数量: 385
+函数数量: 75
+常量数量: 14154
+
+提取的字符串:
+1.  BattlefieldMapViewWindow:OnOpen
+2.  BattlefieldMapViewWindow:OnShow
+3.  DFM.YxFramework.Util.WidgetUtil
+4.  GetDownloadedMapNumInCheckedMap
+5.  SetCatchedMatchIdListAndGroupId
+6.  SetDifferentParentTransStrategy
+7. !EGPUINavGroupTransSimpleStrategy
+8. #BattlefieldMapViewWindow:OnNavBack
+9. #_markTDMMapReddotViewedDelayHandle
+10. $BattlefieldMapViewWindow:_CloseSelf
+11. $GetDownloadProgressInfoByModuleName
+12. $_checkAllBtnGroupReceiveFocusHandle
+13. %BattlefieldMapViewWindow:OnHideBegin
+14. %BattlefieldMapViewWindow:OnShowBegin
+15. %d_%d_%s
+16. &BattlefieldMapViewWindow:OnMapChecked
+17. &BattlefieldMapViewWindow:OnMapClicked
+18. &WBP_StrategicSelection_DownloadButton
+19. (AA
+20. (AB
+21. (AD
+22. (AE
+23. (AH
+24. (BattlefieldMapViewWindow:OnGetItemCount
+25. (BattlefieldMapViewWindow:RefreshMapView
+26. (w@
+27. )@@
+28. )A@
+29. )AA
+30. )AB
+31. )AC
+32. )AE
+33. )AP
+34. )B@
+35. )BC
+36. )BE
+37. )BG
+38. )BS
+39. )BattlefieldMapViewWindow:OnInitExtraData
+40. )CB
+41. )CH
+42. *BattlefieldMapViewWindow:CheckIsMapEnough
+43. *evtDownloadManagerNtfModuleDownloadResult
+44. +BattlefieldMapViewWindow:CheckDownloadInfo
+45. +BattlefieldMapViewWindow:GetNotSelectedNum
+46. ,@@
+47. ,@E
+48. ,BattlefieldMapViewWindow:OnOpen ReCheckMap!
+49. ,BattlefieldMapViewWindow:TryDownloadByMapId
+50. -BattlefieldMapViewWindow:OnProcessItemWidget
+51. -BattlefieldMapViewWindow:_OnDownloadBtnClick
+52. .BattlefieldMapViewWindow:_OnPackageDownloaded
+53. /BattlefieldMapViewWindow:_EnableGamepadFeature
+54. 0BattlefieldMapViewWindow:_DisableGamepadFeature
+55. 1BattlefieldMapViewWindow:OnOpen groupInfo is nil
+56. 1BattlefieldMapViewWindow:RefreshPopWindowSummary
+57. 1BattlefieldMapViewWindow:_OnCenterConfirmClicked
+58. 2BattlefieldMapViewWindow:GetType4AtLeastSelectNum
+59. 3BattlefieldMapViewWindow:OnCheckAllBtnStateChanged
+60. 3BattlefieldMapViewWindow:_OnCenterConfirmDeClicked
+61. 5BattlefieldMapViewWindow:_OnHandleMouseButtonUpEvent
+62. 8BattlefieldMapViewWindow:GetDownloadedMapNumInOpenedMap
+63. 9BattlefieldMapViewWindow:GetDownloadedMapNumInCheckedMap
+64. :BattlefieldMapViewWindow:OnOpen, disable centerConfirmBtn
+65. ;DFM.Business.Module.CommonWidgetModule.UI.CommonPopWindows
+66. ?BattlefieldMapViewWindow:OnProcessItemWidget, groupList is nil
+67. @BattlefieldMapViewWindow:OnMapChecked, disable centerConfirmBtn
+68. @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
+69. A@@
+70. A@F
+71. ABattlefieldMapViewWindow:RefreshDownloadState, map is downloaded
+72. ACD
+73. Add
+74. AddAxisInputActionBinding
+75. AddInputActionBinding
+76. AddLuaEvent
+77. AddNavWidgetToArray
+78. AddSummaries
+79. AsyncSetImagePath
+80. BBattlefieldMapViewWindow:TryDownloadByMapId, moduleName is nil!!!
+81. BattlefieldEntry
+82. BattlefieldMapViewWindow
+83. BattlefieldMapViewWindow:Ctor
+84. BindCloseCallBack
+85. BroadcastUpdateTDMMapReddot
+86. Button_Download
+87. Button_Light_Green
+88. CancelDelay
+89. CenterConfirm
+90. CheckAndUnCheck
+91. CheckDownloadInfo
+92. CheckIsMapEnough
+93. Click
+94. CloseUI
+95. Collapsed
+96. ColorManager
+97. CommonTips
+98. Common_ButtonBottom_Gamepad
+99. Common_ButtonLeft
+100. Common_Right_Y

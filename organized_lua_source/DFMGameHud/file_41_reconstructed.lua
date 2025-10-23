@@ -1,0 +1,13 @@
+-- Lua源代码重构
+-- 基于字节码分析重构的代码结构
+
+-- 导入模块
+-- import DFM.YxFramework.Util.WidgetUtil
+-- import *DFM.Business.Module.HeroModule.HeroConfig
+-- import .DFM.StandaloneLua.BusinessTool.HeroHelperTool
+-- import .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+-- import /DFM.StandaloneLua.BusinessTool.SkillHelperTool
+-- import 8DFM.Business.Module.HeroModule.UI.HeroMain.HeroPropItem
+-- import 9DFM.Business.Module.HeroModule.UI.HeroMain.HeroSkillIcon
+-- import 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
+-- import ?DFM.Business.Module.HeroModule.UI.HeroMain.HeroSkillDetailView

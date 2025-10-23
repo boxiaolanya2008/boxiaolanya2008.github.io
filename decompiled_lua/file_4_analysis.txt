@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_4.lua
+大小: 14017 字节
+字符串数量: 272
+函数数量: 17
+常量数量: 8594
+
+提取的字符串:
+1.  gameFlowType:
+2.  worldName delay:
+3.  worldName:
+4. "DFM.YxFramework.Util.AnalysisUtil
+5. #[ GFChange VS WorldCleanUp ]------------------------ self.stubLoadingUIRes:ClearAllResRefs 
+6. %DFM.YxFramework.Managers.ManagerBase
+7. &[UIManager] EnableLifeFunctionFraming
+8. (A@
+9. (AA
+10. (BA
+11. (BE
+12. (DFM.YxFramework.Managers.UI.Util.UIUtil
+13. (w@
+14. )AE
+15. )AF
+16. )AI
+17. *DFM.YxFramework.Managers.UI.LuaUIBaseView
+18. *DFM.YxFramework.Managers.UI.UIGlobalConst
+19. , UINavId == 
+20. , is not a preloaded sub view, 
+21. ,@@
+22. ,@A
+23. ,DFM.StandaloneLua.BusinessTool.LocalizeTool
+24. /DFM.YxFramework.Managers.Resource.Stub.ResStub
+25. /DFM.YxFramework.Managers.UI.Input.InputMonitor
+26. /DFM.YxFramework.Managers.UI.Util.UIReleaseUtil
+27. 1DFM.YxFramework.Managers.UI.Handle.BatchUIHandle
+28. 1DFM.YxFramework.Managers.UI.Util.UISimulatorUtil
+29. 2DFM.YxFramework.Managers.UI.Handle.SingleUIHandle
+30. 3DFM.YxFramework.Managers.Resource.Util.ResPathUtil
+31. 4DFM.YxFramework.Managers.UI.Part.UIManager_InsLogic
+32. 4DFM.YxFramework.Managers.UI.Part.UIManager_ResLogic
+33. 5DFM.YxFramework.Managers.UI.Part.UIManager_LinkLogic
+34. 5DFM.YxFramework.Managers.UI.Part.UIManager_RuleLogic
+35. 6CreateSubUI failed, uiSettings 
+36. 6DFM.YxFramework.Managers.UI.Part.UIManager_LayerLogic
+37. 6DFM.YxFramework.Managers.UI.Part.UIManager_ThemeLogic
+38. 7DFM.YxFramework.Managers.UI.Part.UIManager_UECallLogic
+39. 8DFM.YxFramework.Managers.UI.Part.UIManager_SubPackLogic
+40. 9DFM.YxFramework.Managers.UI.Input.Debug.InputDebugHelper
+41. ;DFM.YxFramework.Managers.UI.Part.UIManager_AliveCountLogic
+42. ;DFM.YxFramework.Managers.UI.Part.UIManager_NavigationLogic
+43. A@@
+44. A@A
+45. A@B
+46. A@D
+47. AA@
+48. Add
+49. AddListener
+50. AddSubUI
+51. AsyncCreateSubUI
+52. AsyncCreateSubUICustomlized
+53. AsyncLoadRes
+54. AsyncLoadUIAsset
+55. AsyncLoadUIResOnly
+56. AsyncShowUI
+57. AsyncShowUICustomlized
+58. BPPath
+59. BaseHUD
+60. BatchUIHandle
+61. BindDebugButtons
+62. BindOwnerSubHistory
+63. CacheUIForCurrentFrame
+64. CancelDelay
+65. CancelLoadProcess
+66. CheckIsLowMemoryState
+67. ClearAllResRefs
+68. ClearHUD
+69. ClearHUDBySettings
+70. ClearNavigationSelector
+71. ClearSubUIPack
+72. ClearUIResStub
+73. CloseUI
+74. CloseUIByBatchHandle
+75. CloseUIByHandle
+76. CreateCallBack
+77. CreateNavigationSelector
+78. CreateObjByLoadedRes
+79. CreateSubUI
+80. CreateSubUIBindOwner
+81. Ctor
+82. DCreateSubUI failed, uiSettings.UILayer ~= EUILayer.Sub, UINavId == 
+83. DFHD_LUA
+84. DFMLocalizationManager
+85. Destroy
+86. DisableInput
+87. DisableInputProcess
+88. ELayerRuleChangeReason
+89. ELuaLogCategory
+90. EUILayer
+91. EnableInput
+92. EnableInputProcess
+93. EnableLifeFunctionFraming
+94. EnablePerformanceMode
+95. EntranceFlow
+96. Events
+97. ExecuteConsoleCommand
+98. FUI
+99. FUIManager:CloseUI(uiIns) the ui needed to close is nil or hasdestroy:
+100. Facade

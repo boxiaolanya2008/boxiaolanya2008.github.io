@@ -1,0 +1,107 @@
+文件: extracted_gbk/file_14.lua
+大小: 116962 字节
+字符串数量: 1092
+函数数量: 192
+常量数量: 82010
+
+提取的字符串:
+1.  -> 
+2.  ActivityServer.evtSignResArrive
+3.  ActivityTypeMPComponentDelivery
+4.  ActivityTypeRecruitNewMilestone
+5.  AllActivityThemeEventTechConfig
+6.  CSActivityAhsarahTravelReplyReq
+7.  CSActivityAhsarahTravelTrackReq
+8.  CSActivityArchiveAudioFinishReq
+9.  CSActivityArknightsGameStartReq
+10.  CSActivityArknightsRefreshAdReq
+11.  CSActivityChangeExchangePlanReq
+12.  CSActivityMossReceiveMSAwardReq
+13.  GetReddotStateByTaskAndExchange
+14.  InitActivityThemeEventTechTable
+15.  InitBannerInfoRelatedByActivity
+16.  IsRoleSurveyInfoTaskStageRedDot
+17.  SendActivityExchangePasswordReq
+18.  SendActivitySOCSendRecvFlowsReq
+19.  SendActivityTaskReceiveAwardReq
+20.  evtActivityUnlockExchangeChange
+21.  evtFilingOnSequenceItemReceived
+22. !ActivityTypeSOLComponentDelivery
+23. !ActivityTypeSOLEquipmentDelivery
+24. !CSActivityArknightsChooseHeroReq
+25. !CSActivityOneClickRewardClaimReq
+26. !CSActivityStarFireChargeTowerReq
+27. !CSSettlementGetTdmMandelBrickReq
+28. !OnReloadLocalThemeEventTechTable
+29. !SendActivityReceiveFinalAwardReq
+30. !SendSelectFinalMilestoneAwardReq
+31. ![Magic_Tower] GameEndRes Failed!
+32. !ssy req exchange id and plan id 
+33. "ActivityTypeTestingWeaponTemplate
+34. "CSActivityChangeMilestoneAwardReq
+35. "CSActivityReceiveSequenceAwardReq
+36. "CSActivityRefreshDailyActivityReq
+37. "CSActivityRelinkReceiveMSAwardReq
+38. "CheckMilestoneFinalRewardFallback
+39. "FilterActivityInfosByModeLearning
+40. "GetActivityInfoByActivityIDAndTag
+41. "GetMilestoneFinalRewardChoiceInfo
+42. "OnReloadLocalNewbieChallengeTable
+43. "SendActivityTriggerReq_RoleSurvey
+44. "[Magic_Tower] GameEndRes Success!
+45. #ActivityServer.evtBannerBtnChanged
+46. #ActivityServer.evtBannerInfoUpdate
+47. #ActivityServer.evtMandelInfoUpdate
+48. #ActivityTypeRecruitGrowthMilestone
+49. #CSActivityCollectionSubmitPropsReq
+50. #CSActivityReceiveMilestoneAwardReq
+51. #SendActivityStarFireChargeTowerReq
+52. #[Magic_Tower] GameStartRes Failed!
+53. #evtActivityRoleSurveyExchangeClick
+54. $ActivityServer.evtActivityAnswerRes
+55. $ActivityServer.evtFilingAudioFinish
+56. $CSActivityExchangeMilestoneAwardReq
+57. $GetActivityBrowseReddotByActivityID
+58. $OnReloadActivityTeachingManualTable
+59. $[ChoosableMilestone] Try to select 
+60. $[Magic_Tower] GameStartRes Success!
+61. %ActivityServer.evtActivityInfoUpdate
+62. %ActivityServer.evtActivityTaskChange
+63. %ActivityServer.evtActivityTaskReward
+64. %ActivityServer.evtActivityTriggerRes
+65. %ActivityServer.evtActivityUpdateSign
+66. %ActivityServer.evtHardwareInfoUpdate
+67. %ActivityServer.evtSignInfoNeedUpdate
+68. %ActivityServer:SendTDMMandelBrickReq
+69. %ActivityTypeAnythingExchangeCurrency
+70. %CSActivityArknightsGameExploreEndReq
+71. %SendActivityReceiveMilestoneAwardReq
+72. %s]
+73. %s] %s
+74. &ActivityServer.evtActivityStarDecrypt
+75. &ActivityServer.evtEnableRewardNTFCall
+76. &CheckNormalTDMMandelBrickIsDropFinish
+77. &InitBannerInfo failed. res.result: %s
+78. &SendActivityExchangeMilestoneAwardReq
+79. &Unable to select final reward, error 
+80. &evtActivityRoleSurveyExchangeClickEnd
+81. 'ActivityServer.evtActivityUpdateRedDot
+82. 'CSActivityArknightsGameExploreStartReq
+83. 'CheckSpecialTDMMandelBrickIsDropFinish
+84. (A@
+85. (AA
+86. (ActivityServer.evtActTaraTrainingTravel
+87. (ActivityServer:receiveTDMMandelBrickReq
+88. (B@
+89. (BA
+90. (C@
+91. (CG
+92. (InitActivityInfo failed. res.result: %s
+93. (w@
+94. )@@
+95. )A@
+96. )AA
+97. )AB
+98. )AC
+99. )AE
+100. )AG

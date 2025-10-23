@@ -1,0 +1,70 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  CallSceneCtrlFunctionBySubstage
+-- 2.  DFM.YxFramework.Util.WidgetUtil
+-- 3.  bDownloaded=
+-- 4.  skinTasksNum=
+-- 5.  unlockedNum=
+-- 6. !CamouflageChallengeReActivateTip
+-- 7. !RegStackUITopBarCurrencyTypeList
+-- 8. !SetDisplayWeaponAutoBoundAdapter
+-- 9. !evtCollectionActivateSkinPattern
+-- 10. #WBP_Collections_SwitchChallenge_in
+-- 11. $_CheckIsFirstIndexOfCamouflageGroup
+-- 12. (AA
+-- 13. (AB
+-- 14. (BA
+-- 15. (BB
+-- 16. (CollectionAppearanceSwitchChallengePage
+-- 17. (w@
+-- 18. )A@
+-- 19. )AA
+-- 20. )AB
+-- 21. )AC
+-- 22. )AD
+-- 23. )AE
+-- 24. )AI
+-- 25. )B@
+-- 26. *evtDownloadManagerNtfModuleDownloadResult
+-- 27. ,@@
+-- 28. ,@A
+-- 29. ,@B
+-- 30. ,@G
+-- 31. ,@J
+-- 32. -evtDownloadManagerNtfModuleStateMaybeChanged
+-- 33. 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
+-- 34. ;DFM.Business.Module.CollectionModule.Logic.CollectionLogic
+-- 35. <DFM.Business.Module.ItemDetailModule.UI.ItemDetailTitleComp
+-- 36. <DFM.Business.Module.LitePackageModule.UI.LiteCommonDownload
+-- 37. A@@
+-- 38. A@C
+-- 39. AAB
+-- 40. AAJ
+-- 41. Activate
+-- 42. ActivateSkinPattern
+-- 43. Activated
+-- 44. Add
+-- 45. AddInputActionBinding
+-- 46. AddLuaEvent
+-- 47. AddNavWidgetToArray
+-- 48. AddScrollBoxClickStopScroll
+-- 49. BattlePassServer
+-- 50. BindClickCallback
+
+-- 重构的函数结构:
+
+-- 可能的函数:  CallSceneCtrlFunctionBySubstage
+-- 可能的赋值:  bDownloaded=
+-- 可能的赋值:  skinTasksNum=
+-- 可能的赋值:  unlockedNum=
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: Key2StrFormat
+-- 可能的赋值: S[v_dzhanshen] CollectionAppearanceSwitchChallengePage:_OnDownloadResult moduleKey=
+-- 可能的赋值: T[v_dzhanshen] CollectionAppearanceSwitchChallengePage:_DownLoadResources moduleKey=
+-- 可能的赋值: U[v_dzhanshen] CollectionAppearanceSwitchChallengePage:_OnActionBtnClicked patternId=
+-- 可能的赋值: U[v_dzhanshen] CollectionAppearanceSwitchChallengePage:_RefreshDownloadBtn moduleKey=
+-- 可能的赋值: X[v_dzhanshen] CollectionAppearanceSwitchChallengePage:_OnDownloadStateChange moduleKey=
+-- 可能的函数: _AddInputActionForActionBtn
+-- 可能的函数: _RemoveInputActionForActionBtn

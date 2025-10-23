@@ -1,0 +1,64 @@
+-- Lua源代码还原 (伪代码)
+-- 从字节码中提取的信息
+
+-- 提取的字符串:
+-- 1.  DFM.YxFramework.Util.WidgetUtil
+-- 2. !DisableDynamicNavConfigsbyWidget
+-- 3. !RecoverBottomBarInputSummaryList
+-- 4. !SetBottomBarTempInputSummaryList
+-- 5. !WBP_PatrolAsala_InputField_Q1ZNK
+-- 6. #SetDisplayInputActionWithLongPress
+-- 7. $WBP_PatrolAsala_SwitchBlogger_Q1ZNK
+-- 8. %_HandleBusinessCardDetailsPageClosed
+-- 9. &evtActivityTouringRuleDescriptionOpen
+-- 10. 'evtActivityTouringRuleDescriptionClose
+-- 11. (@A
+-- 12. (A@
+-- 13. (AA
+-- 14. (AE
+-- 15. (BA
+-- 16. (CC
+-- 17. (w@
+-- 18. )@@
+-- 19. )A@
+-- 20. )AA
+-- 21. )AB
+-- 22. )AC
+-- 23. )AD
+-- 24. )AF
+-- 25. )AG
+-- 26. )AK
+-- 27. )AQ
+-- 28. )AS
+-- 29. )AW
+-- 30. )BA
+-- 31. )BB
+-- 32. )BC
+-- 33. )BE
+-- 34. )BF
+-- 35. )BG
+-- 36. )BK
+-- 37. )BM
+-- 38. )DB
+-- 39. )DFM.Business.DataStruct.Common.Base.Deep
+-- 40. )FI
+-- 41. )FK
+-- 42. )FM
+-- 43. )FN
+-- 44. *@@
+-- 45. ,@@
+-- 46. ,EG
+-- 47. ,EH
+-- 48. ,EI
+-- 49. ,EJ
+-- 50. ,EK
+
+-- 重构的函数结构:
+
+-- 可能的赋值: 4<customstyle color="Color_Highlight01">{receive}</>
+-- 可能的赋值: =DFM.Business.Module.ActivityModule.UI.Tara.ActivityTaraItem1
+-- 可能的赋值: =DFM.Business.Module.ActivityModule.UI.Tara.ActivityTaraItem2
+-- 可能的函数: Forward
+-- 可能的函数: GenLocalLogFunc
+-- 可能的函数: Key2StrFormat
+-- 可能的函数: format
