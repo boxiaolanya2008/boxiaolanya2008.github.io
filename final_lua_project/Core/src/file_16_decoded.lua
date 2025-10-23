@@ -1,0 +1,45 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:19:59.328858
+
+-- 模块导入
+-- GenLocalLogFuncELuaLogCategory	LuaMTeamimportIrisWorldGamePlayUtilsSafeHouseLe
+-- !DFM.YxFramework.Plugin.Json.Json
+-- )DFM.Business.Module.TeamModule.TeamLogic
+-- +DFM.YxFramework.Managers.Module.ModuleBase
+-- import
+-- require
+
+-- 常量定义
+-- local AcceptInvite
+-- local AccountServer
+-- local Add
+-- local AddBlack
+-- local AddFriend
+-- local AddListener
+-- local AddLuaEvent
+-- local AddPlayerToSessionAccess
+-- local AddRecentPlayers
+-- local ApplyJoinFromMiniProgram
+-- local AsyncShowUI
+-- local BHD
+-- local BattlefieldEntry
+-- local BlackHawkDown
+-- local CannotJoinTeamByInvite
+-- local ChatServer
+-- local CheckIsBlack
+-- local CheckIsFriend
+-- local CheckShouldExitTeamFlow
+-- local ClearSteamGroupRichPresence
+-- local CloseInvitePanel
+-- local CloseInvitePanelProcess
+-- local CommonTips
+-- local CommunicateUsingText
+-- local Config
+-- local ConsoleHotfixLog
+-- local ConvenientAgreeInvite
+-- local ConvenientRejectInvite
+-- local CreatePlatformTeamSession
+-- local CreateTeam
+
+-- 函数实现

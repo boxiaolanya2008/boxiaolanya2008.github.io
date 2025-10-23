@@ -1,0 +1,44 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:03.332530
+
+-- 模块导入
+-- +DFM.YxFramework.Managers.Module.ModuleBase
+-- ;DFM.Business.Module.CollectionModule.Logic.CollectionLogic
+-- ?DFM.Business.Module.CollectionModule.Logic.CollectionLoadLogic
+-- @DFM.Business.Module.CollectionModule.Logic.CollectionEventLogic
+-- require
+
+-- 常量定义
+-- local AddListeners
+-- local AddWorkshopItemToTargetPool
+-- local ApplyWeaponSkin
+-- local AsyncShowUI
+-- local BaseWeaponId
+-- local BuyReNameCardView
+-- local CheckAreAnySkinsInRandomPool
+-- local CheckIsInFrontEnd
+-- local CheckIsRandomPoolEnabled
+-- local CloseMainPanel
+-- local CloseMainPanelProcess
+-- local Collection
+-- local CollectionChangeNameView
+-- local CollectionCommonVideoListView
+-- local CollectionHangingDefaultPanel
+-- local CollectionHangingDetailPage
+-- local CollectionMainPanel
+-- local CollectionModule
+-- local CollectionServer
+-- local CollectionWeaponSkinDetailPage
+-- local Config
+-- local Ctor
+-- local DoSomeThing
+-- local DoSomeThingProcess
+-- local EGameFlowStageType
+-- local ELuaLogCategory
+-- local EnableRandomSkin
+-- local EquipPendant
+-- local Events
+-- local Facade
+
+-- 函数实现

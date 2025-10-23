@@ -1,0 +1,59 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:03.015935
+
+-- 模块导入
+-- GenLocalLogFuncELuaLogCategoryLuaMCommonWidgetrequire:DFM.Business.Module.CommonWidgetModule.CommonWidgetConfigBDFM.Business.Module.CommonWidgetModule.UI.ItemView.IVTemplateBaseRDFM.Busine
+--  DFM.YxFramework.Util.WidgetUtil
+-- .DFM.StandaloneLua.BusinessTool.ItemHelperTool
+-- .DFM.StandaloneLua.BusinessTool.ShopHelperTool
+-- 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
+-- 4DFM.Business.Module.InventoryModule.InventoryConfig
+-- 4DFM.Business.Module.LootingModule.LootingAudioLogic
+-- 6DFM.Business.Module.InventoryModule.InventoryEvtLogic
+-- 7DFM.StandaloneLua.BusinessTool.StructTool.ItemBaseTool
+-- 8DFM.StandaloneLua.BusinessTool.StructTool.ItemOperaTool
+-- 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
+-- :DFM.Business.Module.CommonWidgetModule.CommonWidgetConfig
+-- =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+-- >DFM.Business.Module.InventoryModule.Logic.InventoryNavManager
+-- ADFM.YxFramework.Managers.GameFlow.InGameControl.InGameController
+-- BDFM.Business.Module.CommonWidgetModule.UI.ItemView.IVTemplateBase
+-- GDFM.Business.Module.CommonWidgetModule.UI.HD.IVCommonBlankItemTemplate
+-- LDFM.Business.Module.CommonWidgetModule.UI.ItemView.Components.IVBgComponent
+-- QDFM.Business.Module.CommonWidgetModule.UI.ItemView.Components.IVQualityComponent
+-- RDFM.Business.Module.CommonWidgetModule.UI.ItemView.Components.IVMainIconComponent
+
+-- 常量定义
+-- local AAA
+-- local AAC
+-- local AAD
+-- local AAE
+-- local AAF
+-- local AAL
+-- local ABM
+-- local ACO
+-- local Adapter
+-- local Add
+-- local AddBlankNavTarget
+-- local AddChild
+-- local AddComponentAtPosition2
+-- local AddInputActionBinding
+-- local AddListener
+-- local AddLuaEvent
+-- local AddNavBlankItem
+-- local AddSubUI
+-- local AmmoDataManager
+-- local Anchors
+-- local ArmedForceServer
+-- local AssembleWeaponDataLibrary
+-- local AssemblySelectionMain
+-- local AsyncShowUI
+-- local BagCapacityExtend
+-- local BeginSwapItem
+-- local BeginToFocusItemView
+-- local BgLayer
+-- local BindItem
+-- local Binding
+
+-- 函数实现

@@ -1,0 +1,44 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:03.381349
+
+-- 模块导入
+--  DFM.YxFramework.Util.WidgetUtil
+-- ;DFM.Business.Module.CommonWidgetModule.UI.CommonPopWindows
+-- @DFM.Business.Module.LitePackageModule.Logic.LiteDownloadManager
+-- import
+-- require
+
+-- 常量定义
+-- local ACD
+-- local Add
+-- local AddAxisInputActionBinding
+-- local AddInputActionBinding
+-- local AddLuaEvent
+-- local AddNavWidgetToArray
+-- local AddSummaries
+-- local AsyncSetImagePath
+-- local BattlefieldEntry
+-- local BattlefieldMapViewWindow
+-- local BindCloseCallBack
+-- local BroadcastUpdateTDMMapReddot
+-- local Button_Download
+-- local Button_Light_Green
+-- local CancelDelay
+-- local CenterConfirm
+-- local CheckAndUnCheck
+-- local CheckDownloadInfo
+-- local CheckIsMapEnough
+-- local Click
+-- local CloseUI
+-- local Collapsed
+-- local ColorManager
+-- local CommonTips
+-- local Common_ButtonBottom_Gamepad
+-- local Common_ButtonLeft
+-- local Common_Right_Y
+-- local Config
+-- local Confirm
+-- local CreateCallBack
+
+-- 函数实现

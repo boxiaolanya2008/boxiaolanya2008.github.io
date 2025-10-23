@@ -1,0 +1,50 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:02.938727
+
+-- 模块导入
+-- GenLocalLogFuncELuaLogCategoryLuaMGunsmithrequire@DFM.
+-- 0DFM.StandaloneLua.BusinessTool.WeaponHelperTool
+-- 9DFM.StandaloneLua.BusinessTool.StructTool.ItemConfigTool
+-- ;DFM.Business.Module.GunsmithModule.Define.EGunsmithUIState
+-- =DFM.StandaloneLua.BusinessTool.StructTool.WeaponAssemblyTool
+-- >DFM.Business.Module.GunsmithModule.Data.Skin.GunsmithSkinData
+-- @DFM.Business.Module.GunsmithModule.Logic.GunsmithUIContextLogic
+-- @DFM.Business.Module.GunsmithModule.Logic.TLog.GunsmithTLogLogic
+-- SDFM.Business.Module.GunsmithModule.Logic.GunsmithCPPLogic.GPModularWeaponDescLogic
+-- import
+-- require
+
+-- 常量定义
+-- local AAA
+-- local AddNodeToDescFromSocketGUID
+-- local AssembleWeaponDataLibrary
+-- local BuildFromModularWeaponDesc
+-- local CommonTips
+-- local Config
+-- local Ctor
+-- local DecodeSocketIDFromSocketGUID
+-- local ELuaLogCategory
+-- local Events
+-- local FastEquip
+-- local GenLocalLogFunc
+-- local GetBackup
+-- local GetFocusSocketGUID
+-- local GetFrontend
+-- local GetGUID
+-- local GetGroupID
+-- local GetIsFromUserPropInfo
+-- local GetItemByGid
+-- local GetItemID
+-- local GetItemName
+-- local GetNewPbWeaponSkinInfoParam
+-- local GetNewPendantInfo
+-- local GetPbWeaponSkinInfoParam
+-- local GetPresetPropinfo
+-- local GetRawDescObj
+-- local GetRawPropInfo
+-- local GetSocketFromGUID
+-- local GetUIState
+-- local GetWeaponDescription
+
+-- 函数实现

@@ -1,0 +1,43 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:19:58.983840
+
+-- 模块导入
+-- -DFM.YxFramework.Managers.UI.Util.UIDebugUtil
+-- .DFM.YxFramework.Managers.UI.Util.UIConfigUtil
+-- 3DFM.YxFramework.Managers.UI.Platform.PlatformLogic
+-- require
+
+-- 常量定义
+-- local AssetLoading
+-- local BPKey
+-- local BackToLastSubStage
+-- local CancelDelay
+-- local CommitTransition
+-- local CreateCallBack
+-- local Ctor
+-- local DelayCall
+-- local Destroy
+-- local ELayerRuleChangeReason
+-- local ELevelPriority
+-- local ELuaLogCategory
+-- local ESubStage
+-- local ETransitionChangeReason
+-- local EUILayer
+-- local EnterSubStage
+-- local Events
+-- local Facade
+-- local GameFlowManager
+-- local GenLocalLogFunc
+-- local GetCurrentStackUI
+-- local GetCurrentStackUIId
+-- local GetCurrentSubStage
+-- local GetTransitionConfigInfos
+-- local High
+-- local Invoke
+-- local IsForceAreaType
+-- local IsHidingLayersBelowPop
+-- local IsTransitionEnable
+-- local LayersOnly
+
+-- 函数实现

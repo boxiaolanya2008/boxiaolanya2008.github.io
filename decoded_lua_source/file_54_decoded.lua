@@ -1,0 +1,44 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:20:03.030593
+
+-- 模块导入
+-- >DFM.Business.Module.CommonWidgetModule.Logic.CommonVideoLogic
+-- NDFM.Business.Module.CommonWidgetModule.UI.CommonVideoView.CommonVideoViewBase
+-- QDFM.Business.Module.CommonWidgetModule.UI.CommonVideoView.CommonVideoProgressBar
+-- import
+-- require
+
+-- 常量定义
+-- local CancelDelay
+-- local CloseUI
+-- local Collapsed
+-- local CommonTips
+-- local CommonVideoChangeView
+-- local CommonWidget
+-- local Config
+-- local Ctor
+-- local DFCommonMediaView
+-- local DelayCall
+-- local ELuaLogCategory
+-- local EMediaDownloadType
+-- local EUMGSequencePlayMode
+-- local EnableCGMediaPlay
+-- local Event
+-- local Facade
+-- local Field
+-- local Forward
+-- local GenLocalLogFunc
+-- local GetVideoConfigData
+-- local Loc
+-- local LuaMCommonWidget
+-- local LuaS
+-- local Module
+-- local OnClicked
+-- local OnClose
+-- local OnCloseBtnClicked
+-- local OnHide
+-- local OnInitExtraData
+-- local OnNavBack
+
+-- 函数实现

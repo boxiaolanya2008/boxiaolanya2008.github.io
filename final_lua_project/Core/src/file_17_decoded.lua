@@ -1,0 +1,41 @@
+-- Lua源代码解码结果
+-- 基于字节码深度分析生成
+-- 生成时间: 2025-10-23 04:19:59.334434
+
+-- 模块导入
+-- /DFM.Business.Module.ChatModule.Logic.ChatLogic
+-- require
+
+-- 常量定义
+-- local AddListener
+-- local AddListeners
+-- local AddLuaEvent
+-- local AddSingleCacheData
+-- local AddTeamInviteMsg
+-- local AgreeInviteByIndex
+-- local Agreed
+-- local ArenaGameRule
+-- local AutoRejectRemainApply
+-- local Chat
+-- local ChatServer
+-- local Clear
+-- local Config
+-- local ConvenientAgreeInvite
+-- local ConvenientRejectInvite
+-- local Ctor
+-- local DEFAULT_APPOINT_COLD_TIME
+-- local DirectRejectIfNeed
+-- local EGameFlowStageType
+-- local ELuaLogCategory
+-- local EnterFlowType
+-- local EnterameStage
+-- local Events
+-- local ExitGameStage
+-- local Expired
+-- local Game
+-- local GameMode
+-- local GameTeamInviteViewModel
+-- local GenLocalLogFunc
+-- local GetCacheData
+
+-- 函数实现
