@@ -1,4 +1,4 @@
-import { createI18n } from 'vue-i18n'
+﻿import { createI18n } from 'vue-i18n'
 
 /* 语言持久化到 localStorage，首次访问跟随浏览器语言 */
 const saved = localStorage.getItem('locale')
@@ -10,60 +10,114 @@ export const i18n = createI18n({
   fallbackLocale: 'zh',
   messages: {
     zh: {
-      nav: { home: '首页', projects: '项目', blog: '博客', timeline: '时间线' },
-      hero: {
-        tagline: '喜欢折腾前端与工具链的开发者',
-        recent: '最近进展',
+      site: {
+        name: 'boxiaolanya2008',
+        tagline: '一个喜欢折腾前端与工具链的开发者',
       },
-      tags: { 发布: '发布', 前端: '前端', 博客: '博客', 工具: '工具', 随笔: '随笔' },
-      pages: {
-        projects: '项目 / 作品集',
-        blog: '博客 / 文章',
-        timeline: '时间线',
+      nav: {
+        home: '首页',
+        blog: '博客',
+        projects: '项目',
+        about: '关于',
+      },
+      home: {
+        hello: '你好，我是',
+        intro: '这里是我记录技术思考与生活随想的地方。写得不多，但每篇都认真。',
+        recent: '最近文章',
+        allPosts: '查看全部文章',
+        follow: '找到我',
+      },
+      blog: {
+        title: '博客',
         all: '全部',
         total: '共 {n} 篇',
-        repo: '查看仓库',
         readMore: '阅读全文',
-        fallback: 'GitHub 数据暂时拉取不到，以下为本地项目列表。',
+        noPosts: '该标签下还没有文章',
+        noPostsHint: '换个标签看看',
+        years: '归档',
+      },
+      projects: {
+        title: '项目',
+        all: '全部',
+        repo: '查看仓库',
+        homepage: '在线预览',
         noDesc: '暂无描述',
-        yearPosts: '{n} 篇',
+        fallback: 'GitHub 数据暂时拉取不到，以下为本地项目列表。',
+        noRepos: '该标签下没有项目',
+        noReposHint: '换个筛选条件',
+        stars: '星标',
       },
-      empty: {
-        posts: '该标签下还没有文章',
-        repos: '该标签下没有仓库',
-        postsHint: '换个标签看看吧～',
+      about: {
+        title: '关于',
+        bio: '我是 boxiaolanya2008，一名专注前端与工具链开发的工程师。这个博客用来沉淀日常的学习与踩坑记录。',
+        skills: '常用技术',
+        timeline: '时间线',
+        contact: '联系我',
       },
-      theme: { toDark: '切换到深色模式', toLight: '切换到浅色模式' },
-      lang: { label: 'English', aria: '切换语言' },
-      footer: 'Built with Vue3 · Deployed on Cloudflare Pages',
+      theme: {
+        toDark: '切换到深色模式',
+        toLight: '切换到浅色模式',
+      },
+      lang: {
+        label: 'EN',
+        aria: '切换语言',
+      },
+      footer: '用 Vue3 构建 · 部署于 GitHub Pages',
     },
     en: {
-      nav: { home: 'Home', projects: 'Projects', blog: 'Blog', timeline: 'Timeline' },
-      hero: {
+      site: {
+        name: 'boxiaolanya2008',
         tagline: 'A developer who loves tinkering with frontend & tooling',
-        recent: 'Recent Updates',
       },
-      tags: { 发布: 'Release', 前端: 'Frontend', 博客: 'Blog', 工具: 'Tools', 随笔: 'Notes' },
-      pages: {
-        projects: 'Projects / Portfolio',
-        blog: 'Blog / Posts',
-        timeline: 'Timeline',
+      nav: {
+        home: 'Home',
+        blog: 'Blog',
+        projects: 'Projects',
+        about: 'About',
+      },
+      home: {
+        hello: "Hi, I'm",
+        intro: 'A place where I write down technical thoughts and daily musings. Few posts, but each one is written with care.',
+        recent: 'Recent Posts',
+        allPosts: 'View all posts',
+        follow: 'Find me',
+      },
+      blog: {
+        title: 'Blog',
         all: 'All',
-        total: '{n} posts in total',
-        repo: 'View repo',
+        total: '{n} posts',
         readMore: 'Read more',
-        fallback: 'GitHub data unavailable right now, showing local projects.',
+        noPosts: 'No posts under this tag yet',
+        noPostsHint: 'Try another tag',
+        years: 'Archive',
+      },
+      projects: {
+        title: 'Projects',
+        all: 'All',
+        repo: 'View repo',
+        homepage: 'Live demo',
         noDesc: 'No description yet',
-        yearPosts: '{n} posts',
+        fallback: 'GitHub data unavailable right now, showing local projects.',
+        noRepos: 'No projects under this filter',
+        noReposHint: 'Try another filter',
+        stars: 'stars',
       },
-      empty: {
-        posts: 'No posts under this tag yet',
-        repos: 'No repos under this tag',
-        postsHint: 'Try another tag~',
+      about: {
+        title: 'About',
+        bio: "I'm boxiaolanya2008, an engineer focused on frontend and tooling. This blog is where I document daily learning and debugging notes.",
+        skills: 'Skills',
+        timeline: 'Timeline',
+        contact: 'Contact',
       },
-      theme: { toDark: 'Switch to dark mode', toLight: 'Switch to light mode' },
-      lang: { label: '中文', aria: 'Switch language' },
-      footer: 'Built with Vue3 · Deployed on Cloudflare Pages',
+      theme: {
+        toDark: 'Switch to dark mode',
+        toLight: 'Switch to light mode',
+      },
+      lang: {
+        label: '中文',
+        aria: 'Switch language',
+      },
+      footer: 'Built with Vue3 · Deployed on GitHub Pages',
     },
   },
 })

@@ -1,25 +1,21 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import GlassCard from '../components/GlassCard.vue'
-import EmptyState from '../components/EmptyState.vue'
-import GlassSelect from '../components/GlassSelect.vue'
+import PostCard from '../components/PostCard.vue'
 import AppIcon from '../components/AppIcon.vue'
 import { posts } from '../data'
 
 const { t } = useI18n()
 
-/* ±êÇ©É¸Ñ¡ + °´Äê·Ý¹éµµÍ³¼Æ£»ÓÃ ALL ÉÚ±øÖµ£¬ÓïÑÔÇÐ»»²»Ó°ÏìÑ¡ÖÐÌ¬ */
+/* æ ‡ç­¾ç­›é€‰ï¼šç”¨ ALL å“¨å…µå€¼ï¼Œè¯­è¨€åˆ‡æ¢ä¸å½±å“é€‰ä¸­æ€ */
 const activeTag = ref('ALL')
-const tagOptions = computed(() => [
-  { value: 'ALL', label: t('pages.all') },
-  ...[...new Set(posts.flatMap((p) => p.tags))].map((v) => ({ value: v, label: v })),
-])
+const allTags = computed(() => [...new Set(posts.flatMap((p) => p.tags))])
 
 const filtered = computed(() =>
   activeTag.value === 'ALL' ? posts : posts.filter((p) => p.tags.includes(activeTag.value)),
 )
 
+/* æŒ‰å¹´ä»½å½’æ¡£ç»Ÿè®¡ */
 const archive = computed(() => {
   const map = new Map<string, number>()
   for (const p of posts) map.set(p.date.slice(0, 4), (map.get(p.date.slice(0, 4)) ?? 0) + 1)
@@ -28,53 +24,60 @@ const archive = computed(() => {
 </script>
 
 <template>
-  <section class="mx-auto max-w-3xl px-4 pt-24 pb-16 sm:px-6 sm:pt-28 sm:pb-20">
-    <div class="mb-6 flex items-center justify-between">
-      <h2 class="flex items-center gap-2 text-2xl font-bold text-zinc-800 sm:text-3xl dark:text-zinc-100">
-        <AppIcon name="pen" :size="26" class="text-sky-500" />
-        {{ t('pages.blog') }}
+  <div class="mx-auto max-w-3xl px-5 py-14 sm:px-8 sm:py-20">
+    <header class="mb-10">
+      <h1 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">{{ t('blog.title') }}</h1>
+      <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+        {{ t('blog.total', { n: posts.length }) }}
+      </p>
+    </header>
+
+    <!-- æ ‡ç­¾ç­›é€‰ -->
+    <div class="mb-8 flex flex-wrap gap-2">
+      <button
+        class="cursor-pointer rounded-full border px-3.5 py-1.5 text-sm transition-all duration-200"
+        :class="activeTag === 'ALL'
+          ? 'border-zinc-900 bg-zinc-900 text-white dark:border-zinc-50 dark:bg-zinc-50 dark:text-zinc-900'
+          : 'border-zinc-200 text-zinc-600 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500'"
+        @click="activeTag = 'ALL'"
+      >
+        {{ t('blog.all') }}
+      </button>
+      <button
+        v-for="tag in allTags"
+        :key="tag"
+        class="cursor-pointer rounded-full border px-3.5 py-1.5 text-sm transition-all duration-200"
+        :class="activeTag === tag
+          ? 'border-zinc-900 bg-zinc-900 text-white dark:border-zinc-50 dark:bg-zinc-50 dark:text-zinc-900'
+          : 'border-zinc-200 text-zinc-600 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500'"
+        @click="activeTag = tag"
+      >
+        {{ tag }}
+      </button>
+    </div>
+
+    <!-- æ–‡ç« åˆ—è¡¨ -->
+    <div v-if="filtered.length" class="grid gap-4">
+      <PostCard v-for="post in filtered" :key="post.slug" :post="post" />
+    </div>
+    <div v-else class="py-16 text-center">
+      <p class="text-zinc-600 dark:text-zinc-300">{{ t('blog.noPosts') }}</p>
+      <p class="mt-1 text-sm text-zinc-400 dark:text-zinc-500">{{ t('blog.noPostsHint') }}</p>
+    </div>
+
+    <!-- å½’æ¡£ -->
+    <footer v-if="archive.length" class="mt-16 border-t border-zinc-100 pt-8 dark:border-zinc-800">
+      <h2 class="mb-4 flex items-center gap-2 text-sm font-semibold text-zinc-700 dark:text-zinc-200">
+        <AppIcon name="clock" :size="15" class="text-zinc-400" />
+        {{ t('blog.years') }}
       </h2>
-      <span class="text-sm text-zinc-400">{{ t('pages.total', { n: posts.length }) }}</span>
-    </div>
-
-    <!-- ±êÇ©ÏÂÀ­É¸Ñ¡£¬Ä¬ÈÏÑ¡ÖÐ¡¸È«²¿¡¹ -->
-    <div class="mb-6">
-      <GlassSelect v-model="activeTag" :options="tagOptions" :aria-label="t('pages.blog')" />
-    </div>
-
-    <div v-if="filtered.length" class="space-y-5">
-      <GlassCard v-for="post in filtered" :key="post.title">
-        <article>
-          <div class="flex items-baseline justify-between gap-4">
-            <h3 class="text-lg font-bold text-zinc-800 dark:text-zinc-100">{{ post.title }}</h3>
-            <time class="shrink-0 text-xs text-zinc-400">{{ post.date }}</time>
-          </div>
-          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{{ post.summary }}</p>
-          <div class="mt-3 flex items-center justify-between gap-4">
-            <div class="flex flex-wrap gap-2">
-              <span
-                v-for="tp in post.tags"
-                :key="tp"
-                class="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-600 dark:text-indigo-300"
-              >
-                {{ tp }}
-              </span>
-            </div>
-            <a v-if="post.url" :href="post.url" class="shrink-0 text-sm font-medium text-sky-500 hover:underline">
-              {{ t('pages.readMore') }} ¡ú
-            </a>
-          </div>
-        </article>
-      </GlassCard>
-    </div>
-    <EmptyState v-else :title="t('empty.posts')" :hint="t('empty.postsHint')" />
-
-    <!-- ¹éµµÍ³¼Æ -->
-    <div class="mt-10 flex items-center gap-3 text-sm text-zinc-500 dark:text-zinc-400">
-      <AppIcon name="clock" :size="16" />
-      <span v-for="([year, count], i) in archive" :key="year">
-        {{ i > 0 ? '¡¤' : '' }} {{ year }} {{ t('pages.yearPosts', { n: count }) }}
-      </span>
-    </div>
-  </section>
+      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-zinc-500 dark:text-zinc-400">
+        <span v-for="([year, count], i) in archive" :key="year" class="flex items-center gap-1.5">
+          <span v-if="i > 0" class="text-zinc-300 dark:text-zinc-600">Â·</span>
+          <span class="font-medium text-zinc-700 dark:text-zinc-200">{{ year }}</span>
+          <span>{{ count }}</span>
+        </span>
+      </div>
+    </footer>
+  </div>
 </template>

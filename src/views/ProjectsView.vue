@@ -1,11 +1,9 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import GlassCard from '../components/GlassCard.vue'
-import EmptyState from '../components/EmptyState.vue'
-import GlassSelect from '../components/GlassSelect.vue'
 import AppIcon from '../components/AppIcon.vue'
-import { projects as fallbackProjects, username } from '../data'
+import { fallbackProjects, username } from '../data'
+import type { Project } from '../data'
 
 interface Repo {
   name: string
@@ -14,7 +12,6 @@ interface Repo {
   homepage: string | null
   language: string | null
   stargazers_count: number
-  forks_count: number
   topics: string[]
   fork: boolean
 }
@@ -22,10 +19,8 @@ interface Repo {
 const { t, locale } = useI18n()
 const repos = ref<Repo[] | null>(null)
 const failed = ref(false)
-/* 用语义值 ALL 当哨兵，别拿界面文案当值；语言切换后文案变但选中态不丢 */
-const activeTag = ref('ALL')
 
-/* 直接渲染 GitHub 上的公开仓库；接口失败时退回本地数据，别让页面空白 */
+/* 鐩存帴鎷夊彇 GitHub 涓婄殑鍏紑浠撳簱锛涙帴鍙ｅけ璐ユ椂閫�鍥炴湰鍦版暟鎹紝鍒椤甸潰绌虹櫧 */
 onMounted(async () => {
   try {
     const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`)
@@ -39,108 +34,90 @@ onMounted(async () => {
   }
 })
 
-const tagOptions = computed(() => {
-  if (!repos.value) return [{ value: 'ALL', label: t('pages.all') }]
-  const set = new Set<string>()
-  for (const r of repos.value) {
-    if (r.language) set.add(r.language)
-    for (const tp of r.topics ?? []) set.add(tp)
-  }
-  return [{ value: 'ALL', label: t('pages.all') }, ...[...set].map((v) => ({ value: v, label: v }))]
-})
+const showFallback = computed(() => failed.value || (repos.value !== null && repos.value.length === 0))
 
-const filtered = computed(() => {
-  if (!repos.value) return []
-  if (activeTag.value === 'ALL') return repos.value
-  return repos.value.filter(
-    (r) => r.language === activeTag.value || r.topics?.includes(activeTag.value),
-  )
-})
+const fallbackDesc = (p: Project) => (locale.value === 'en' ? p.descriptionEn : p.description)
+const repoDesc = (r: Repo) => r.description ?? t('projects.noDesc')
 </script>
 
 <template>
-  <section class="mx-auto max-w-5xl px-4 pt-24 pb-16 sm:px-6 sm:pt-28 sm:pb-20">
-    <h2 class="mb-6 flex items-center gap-2 text-2xl font-bold text-zinc-800 sm:text-3xl dark:text-zinc-100">
-      <AppIcon name="folder" :size="26" class="text-sky-500" />
-      {{ t('pages.projects') }}
-    </h2>
+  <div class="mx-auto max-w-4xl px-5 py-14 sm:px-8 sm:py-20">
+    <header class="mb-10">
+      <h1 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">{{ t('projects.title') }}</h1>
+      <p v-if="failed" class="mt-3 flex items-center gap-2 text-sm text-amber-600 dark:text-amber-400">
+        <AppIcon name="clock" :size="15" />
+        {{ t('projects.fallback') }}
+      </p>
+    </header>
 
-    <!-- 标签下拉筛选，默认选中「全部」 -->
-    <div v-if="repos" class="mb-6">
-      <GlassSelect v-model="activeTag" :options="tagOptions" :aria-label="t('pages.projects')" />
+    <!-- 鍔犺浇涓鏋跺睆 -->
+    <div v-if="!repos && !failed" class="grid gap-4 sm:grid-cols-2">
+      <div v-for="i in 4" :key="i" class="h-40 animate-pulse rounded-xl border border-zinc-100 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900"></div>
     </div>
 
-    <!-- 骨架屏：GitHub 数据未返回前先渲染占位块 -->
-    <div v-if="!repos && !failed" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      <GlassCard v-for="i in 6" :key="i" loading />
-    </div>
-
-    <!-- GitHub 仓库 -->
-    <div v-else-if="repos" class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-      <GlassCard v-for="r in filtered" :key="r.name">
+    <!-- GitHub 浠撳簱 -->
+    <div v-else-if="repos && !showFallback" class="grid gap-4 sm:grid-cols-2">
+      <a
+        v-for="r in repos"
+        :key="r.name"
+        :href="r.html_url"
+        target="_blank"
+        rel="noopener"
+        class="group rounded-xl border border-zinc-200/80 bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-sm dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700"
+      >
         <div class="flex items-start justify-between gap-3">
-          <h3 class="text-lg font-bold break-all text-zinc-800 dark:text-zinc-100">{{ r.name }}</h3>
-          <span class="flex shrink-0 items-center gap-1 text-xs text-amber-500">
-            <AppIcon name="star" :size="14" />
+          <h3 class="text-base font-semibold text-zinc-800 transition-colors group-hover:text-sky-600 dark:text-zinc-100 dark:group-hover:text-sky-400">
+            {{ r.name }}
+          </h3>
+          <span class="flex shrink-0 items-center gap-1 text-xs text-zinc-400 dark:text-zinc-500">
+            <AppIcon name="star" :size="13" />
             {{ r.stargazers_count }}
           </span>
         </div>
-        <p class="mt-2 line-clamp-3 min-h-10 text-sm text-zinc-600 dark:text-zinc-300">
-          {{ r.description || t('pages.noDesc') }}
+        <p class="mt-2 line-clamp-3 min-h-10 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+          {{ repoDesc(r) }}
         </p>
-        <div v-if="r.language || r.topics?.length" class="mt-4 flex flex-wrap gap-2">
-          <span
-            v-if="r.language"
-            class="rounded-full bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-600 dark:text-sky-300"
-          >
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span v-if="r.language" class="rounded-full bg-zinc-100 px-2.5 py-0.5 text-xs text-zinc-600 dark:bg-zinc-800 dark:text-zinc-300">
             {{ r.language }}
           </span>
           <span
             v-for="tp in (r.topics ?? []).slice(0, 3)"
             :key="tp"
-            class="rounded-full bg-indigo-500/10 px-3 py-1 text-xs font-medium text-indigo-600 dark:text-indigo-300"
+            class="rounded-full border border-zinc-200 px-2.5 py-0.5 text-xs text-zinc-500 dark:border-zinc-700 dark:text-zinc-400"
           >
             {{ tp }}
           </span>
         </div>
-        <a
-          :href="r.html_url"
-          target="_blank"
-          rel="noopener"
-          class="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-sky-500 hover:underline"
-        >
-          <AppIcon name="github" :size="15" />
-          {{ t('pages.repo') }}
-        </a>
-      </GlassCard>
-      <div v-if="!filtered.length" class="sm:col-span-2 lg:col-span-3">
-        <EmptyState :title="t('empty.repos')" :hint="t('empty.postsHint')" />
-      </div>
+      </a>
     </div>
 
-    <!-- GitHub 接口失败时的兜底数据 -->
-    <template v-else>
-      <p class="mb-6 flex items-center gap-2 text-sm text-amber-600 dark:text-amber-400">
-        <AppIcon name="clock" :size="16" />
-        {{ t('pages.fallback') }}
-      </p>
-      <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        <GlassCard v-for="p in fallbackProjects" :key="p.name">
-          <h3 class="text-lg font-bold text-zinc-800 dark:text-zinc-100">{{ p.name }}</h3>
-          <p class="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
-            {{ locale === 'en' ? p.descriptionEn : p.description }}
-          </p>
-          <div class="mt-4 flex flex-wrap gap-2">
-            <span
-              v-for="tp in p.tags"
-              :key="tp"
-              class="rounded-full bg-sky-500/10 px-3 py-1 text-xs font-medium text-sky-600 dark:text-sky-300"
-            >
-              {{ tp }}
-            </span>
-          </div>
-        </GlassCard>
-      </div>
-    </template>
-  </section>
+    <!-- 鏈湴鍏滃簳椤圭洰 -->
+    <div v-else class="grid gap-4 sm:grid-cols-2">
+      <a
+        v-for="p in fallbackProjects"
+        :key="p.name"
+        :href="p.repo ?? '#'"
+        target="_blank"
+        rel="noopener"
+        class="group rounded-xl border border-zinc-200/80 bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-sm dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700"
+      >
+        <h3 class="text-base font-semibold text-zinc-800 transition-colors group-hover:text-sky-600 dark:text-zinc-100 dark:group-hover:text-sky-400">
+          {{ p.name }}
+        </h3>
+        <p class="mt-2 line-clamp-3 min-h-10 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+          {{ fallbackDesc(p) }}
+        </p>
+        <div class="mt-4 flex flex-wrap items-center gap-2">
+          <span
+            v-for="tp in p.tags"
+            :key="tp"
+            class="rounded-full border border-zinc-200 px-2.5 py-0.5 text-xs text-zinc-500 dark:border-zinc-700 dark:text-zinc-400"
+          >
+            {{ tp }}
+          </span>
+        </div>
+      </a>
+    </div>
+  </div>
 </template>

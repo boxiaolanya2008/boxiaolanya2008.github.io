@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import AppIcon from './AppIcon.vue'
 
 const { locale, t } = useI18n()
 
@@ -14,11 +13,10 @@ function toggleLocale() {
 
 <template>
   <button
-    class="liquid-glass flex h-9 cursor-pointer items-center gap-1.5 rounded-full px-3 text-xs font-semibold text-zinc-700 transition-all duration-300 hover:scale-105 hover:text-sky-500 dark:text-zinc-200"
+    class="flex h-9 cursor-pointer items-center rounded-md px-2.5 text-xs font-semibold text-zinc-600 transition-all duration-300 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
     :aria-label="t('lang.aria')"
     @click="toggleLocale"
   >
-    <AppIcon name="globe" :size="15" />
     {{ t('lang.label') }}
   </button>
 </template>

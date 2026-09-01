@@ -11,18 +11,17 @@ const { t } = useI18n()
 
 <template>
   <button
-    class="liquid-glass flex h-9 w-9 cursor-pointer items-center justify-center rounded-full text-zinc-700 transition-all duration-300 hover:scale-110 hover:text-sky-500 dark:text-zinc-200"
+    class="flex h-9 w-9 cursor-pointer items-center justify-center rounded-md text-zinc-600 transition-all duration-300 hover:scale-105 hover:bg-zinc-100 hover:text-zinc-900 dark:text-zinc-300 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
     :aria-label="isDark ? t('theme.toLight') : t('theme.toDark')"
     @click="toggleDark()"
   >
     <Transition name="theme-flip" mode="out-in">
-      <AppIcon :name="isDark ? 'moon' : 'sun'" :size="18" :key="String(isDark)" />
+      <AppIcon :name="isDark ? 'moon' : 'sun'" :size="17" :key="String(isDark)" />
     </Transition>
   </button>
 </template>
 
 <style scoped>
-/* 主题切换时图标翻转过渡，避免生硬跳变 */
 .theme-flip-enter-active,
 .theme-flip-leave-active {
   transition: transform 0.3s ease, opacity 0.3s ease;
