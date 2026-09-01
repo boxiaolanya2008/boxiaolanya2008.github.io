@@ -1,0 +1,48 @@
+/* 自托管 Inter 可变字体：修复无字体时文字渲染不一致的问题；@import 必须在最前面 */
+@import "@fontsource-variable/inter";
+@import "tailwindcss";
+
+/* 深色模式由 useDark 在 html 上切换 .dark 类 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter Variable", "HarmonyOS Sans SC", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --animate-float-up: float-up 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-blob: blob 18s ease-in-out infinite;
+}
+
+@keyframes float-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -50px) scale(1.15); }
+  66% { transform: translate(-30px, 30px) scale(0.9); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 液态玻璃核心样式：blur + saturate + 内高光，浅深两套参数
+   警告：这里不能写 position 属性；写了会覆盖组件上的 fixed/absolute 定位，导致导航栏占满整行 */
+.liquid-glass {
+  background: color-mix(in srgb, #ffffff 55%, transparent);
+  backdrop-filter: blur(18px) saturate(180%);
+  -webkit-backdrop-filter: blur(18px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.2),
+    0 8px 32px rgba(31, 38, 135, 0.12);
+}
+.dark .liquid-glass {
+  background: color-mix(in srgb, #1a1d29 45%, transparent);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.04),
+    0 8px 32px rgba(0, 0, 0, 0.45);
+}
