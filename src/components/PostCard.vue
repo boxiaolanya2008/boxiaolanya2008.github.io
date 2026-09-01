@@ -1,40 +1,55 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
-import type { Post } from '../data'
-import AppIcon from './AppIcon.vue'
+import { Star, ArrowRight, CollectionTag, Clock } from '@element-plus/icons-vue'
+import type { DbPost } from '../api'
 
-defineProps<{ post: Post }>()
+const props = defineProps<{ post: DbPost }>()
 const { locale } = useI18n()
 
-const localizedTitle = (p: Post) => (locale.value === 'en' && p.titleEn ? p.titleEn : p.title)
-const localizedSummary = (p: Post) => (locale.value === 'en' && p.summaryEn ? p.summaryEn : p.summary)
+const localizedTitle = computed(() =>
+  props.post.titleEn && locale.value === 'en' ? props.post.titleEn : props.post.title,
+)
+const localizedSummary = computed(() =>
+  props.post.summaryEn && locale.value === 'en' ? props.post.summaryEn : props.post.summary,
+)
+const reviewSubject = computed(() =>
+  props.post.review?.subjectEn && locale.value === 'en' ? props.post.review.subjectEn : props.post.review?.subject,
+)
 </script>
 
 <template>
-  <article class="group rounded-xl border border-zinc-200/80 bg-white p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-zinc-300 hover:shadow-sm dark:border-zinc-800 dark:bg-zinc-900/60 dark:hover:border-zinc-700">
-    <div class="flex items-center gap-3 text-xs text-zinc-400 dark:text-zinc-500">
+  <article class="page-panel group p-5 transition-all duration-300 hover:-translate-y-0.5 hover:border-[var(--border-strong)]">
+    <div class="mb-3 flex flex-wrap items-center gap-2 text-xs text-[var(--fg-subtle)]">
+      <el-icon :size="14"><Clock /></el-icon>
       <time :datetime="post.date">{{ post.date }}</time>
-      <span class="flex flex-wrap gap-1.5">
-        <span
-          v-for="tag in post.tags"
-          :key="tag"
-          class="rounded-full border border-zinc-200 px-2 py-0.5 text-[11px] text-zinc-500 dark:border-zinc-700 dark:text-zinc-400"
-        >
-          {{ tag }}
-        </span>
+      <el-tag v-for="tag in post.tags ?? []" :key="tag" size="small" type="info" effect="plain" round>
+        {{ tag }}
+      </el-tag>
+      <span v-if="post.review" class="review-score">
+        <el-icon :size="14"><Star /></el-icon>
+        {{ post.review.rating.toFixed(1) }}
       </span>
     </div>
-    <h3 class="mt-3 text-lg font-semibold text-zinc-800 transition-colors group-hover:text-sky-600 dark:text-zinc-100 dark:group-hover:text-sky-400">
+
+    <h3 class="text-lg font-semibold text-[var(--fg)] transition-colors group-hover:text-[var(--accent-fg)]">
       <RouterLink :to="`/blog/${post.slug}`" class="link-underline">
-        {{ localizedTitle(post) }}
+        {{ localizedTitle }}
       </RouterLink>
     </h3>
-    <p class="mt-2 line-clamp-3 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-      {{ localizedSummary(post) }}
+
+    <p v-if="reviewSubject" class="mt-1.5 flex items-center gap-1.5 text-xs font-medium text-[var(--accent-fg)]">
+      <el-icon :size="14"><CollectionTag /></el-icon>
+      {{ reviewSubject }}
     </p>
-    <div class="mt-4 flex items-center gap-1 text-xs font-medium text-zinc-400 transition-colors group-hover:text-sky-600 dark:group-hover:text-sky-400">
+
+    <p class="mt-3 line-clamp-3 text-sm leading-relaxed text-[var(--fg-muted)]">
+      {{ localizedSummary }}
+    </p>
+
+    <div class="mt-4 flex items-center gap-1 text-xs font-medium text-[var(--fg-subtle)] transition-colors group-hover:text-[var(--accent-fg)]">
       {{ $t('blog.readMore') }}
-      <AppIcon name="arrow-right" :size="13" class="transition-transform duration-300 group-hover:translate-x-0.5" />
+      <el-icon :size="13" class="transition-transform duration-300 group-hover:translate-x-0.5"><ArrowRight /></el-icon>
     </div>
   </article>
 </template>

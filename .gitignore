@@ -1,6 +1,8 @@
-node_modules
-dist
-*.local
-.DS_Store
-.zcode/ 
-*.tsbuildinfo 
+# 本地数据库文件（含用户与文章数据）
+data/
+# npm依赖
+node_modules/
+# 构建文件
+dist/
+# TypeScript 增量构建缓存
+*.tsbuildinfo

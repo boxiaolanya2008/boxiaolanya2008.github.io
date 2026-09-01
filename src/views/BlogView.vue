@@ -1,83 +1,126 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { ElMessage } from 'element-plus'
+import { computed, onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { useRouter } from 'vue-router'
+import { Delete, Star } from '@element-plus/icons-vue'
 import PostCard from '../components/PostCard.vue'
-import AppIcon from '../components/AppIcon.vue'
-import { posts } from '../data'
+import { postsApi, type DbPost } from '../api'
+import { isLoggedIn } from '../store'
 
 const { t } = useI18n()
+const router = useRouter()
 
-/* 标签筛选：用 ALL 哨兵值，语言切换不影响选中态 */
+const posts = ref<DbPost[] | null>(null)
+const loadError = ref(false)
+
+onMounted(async () => {
+  try {
+    posts.value = await postsApi.list()
+  } catch {
+    loadError.value = true
+    posts.value = []
+  }
+})
+
 const activeTag = ref('ALL')
-const allTags = computed(() => [...new Set(posts.flatMap((p) => p.tags))])
+const allTags = computed(() => [...new Set((posts.value ?? []).flatMap((p) => p.tags ?? []))])
 
 const filtered = computed(() =>
-  activeTag.value === 'ALL' ? posts : posts.filter((p) => p.tags.includes(activeTag.value)),
+  activeTag.value === 'ALL' ? posts.value ?? [] : (posts.value ?? []).filter((p) => p.tags?.includes(activeTag.value)),
 )
 
-/* 按年份归档统计 */
 const archive = computed(() => {
   const map = new Map<string, number>()
-  for (const p of posts) map.set(p.date.slice(0, 4), (map.get(p.date.slice(0, 4)) ?? 0) + 1)
+  for (const p of posts.value ?? []) map.set(p.date.slice(0, 4), (map.get(p.date.slice(0, 4)) ?? 0) + 1)
   return [...map.entries()]
 })
+
+const deleting = ref('')
+
+async function removePost(slug: string) {
+  if (!window.confirm(t('editor.deleteConfirm'))) return
+  deleting.value = slug
+  try {
+    await postsApi.remove(slug)
+    posts.value = (posts.value ?? []).filter((p) => p.slug !== slug)
+  } catch (e) {
+    ElMessage.error(e instanceof Error ? e.message : String(e))
+  } finally {
+    deleting.value = ''
+  }
+}
+
+const reviewCount = computed(() => (posts.value ?? []).filter((p) => p.review).length)
 </script>
 
 <template>
-  <div class="mx-auto max-w-3xl px-5 py-14 sm:px-8 sm:py-20">
-    <header class="mb-10">
-      <h1 class="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">{{ t('blog.title') }}</h1>
-      <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-        {{ t('blog.total', { n: posts.length }) }}
-      </p>
+  <div class="mx-auto max-w-5xl px-5 py-12 sm:px-8 sm:py-16">
+    <header class="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <h1 class="text-3xl font-bold tracking-tight text-[var(--fg)] sm:text-4xl">{{ t('blog.title') }}</h1>
+        <p class="mt-2 flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+          <span>{{ t('blog.total', { n: posts?.length ?? 0 }) }}</span>
+          <el-tag v-if="reviewCount" type="warning" effect="plain" size="small" round>
+            <el-icon :size="13"><Star /></el-icon>
+            {{ reviewCount }} Reviews
+          </el-tag>
+        </p>
+      </div>
+      <el-button v-if="isLoggedIn" type="primary" @click="router.push('/write')">
+        {{ t('editor.new') }}
+      </el-button>
     </header>
 
-    <!-- 标签筛选 -->
-    <div class="mb-8 flex flex-wrap gap-2">
-      <button
-        class="cursor-pointer rounded-full border px-3.5 py-1.5 text-sm transition-all duration-200"
-        :class="activeTag === 'ALL'
-          ? 'border-zinc-900 bg-zinc-900 text-white dark:border-zinc-50 dark:bg-zinc-50 dark:text-zinc-900'
-          : 'border-zinc-200 text-zinc-600 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500'"
-        @click="activeTag = 'ALL'"
-      >
-        {{ t('blog.all') }}
-      </button>
-      <button
-        v-for="tag in allTags"
-        :key="tag"
-        class="cursor-pointer rounded-full border px-3.5 py-1.5 text-sm transition-all duration-200"
-        :class="activeTag === tag
-          ? 'border-zinc-900 bg-zinc-900 text-white dark:border-zinc-50 dark:bg-zinc-50 dark:text-zinc-900'
-          : 'border-zinc-200 text-zinc-600 hover:border-zinc-400 dark:border-zinc-700 dark:text-zinc-400 dark:hover:border-zinc-500'"
-        @click="activeTag = tag"
-      >
-        {{ tag }}
-      </button>
+    <div v-if="posts === null" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <el-skeleton v-for="i in 6" :key="i" animated>
+        <template #template>
+          <el-skeleton-item variant="rect" class="!h-44" />
+        </template>
+      </el-skeleton>
     </div>
 
-    <!-- 文章列表 -->
-    <div v-if="filtered.length" class="grid gap-4">
-      <PostCard v-for="post in filtered" :key="post.slug" :post="post" />
-    </div>
-    <div v-else class="py-16 text-center">
-      <p class="text-zinc-600 dark:text-zinc-300">{{ t('blog.noPosts') }}</p>
-      <p class="mt-1 text-sm text-zinc-400 dark:text-zinc-500">{{ t('blog.noPostsHint') }}</p>
+    <div v-else-if="loadError" class="page-panel p-8 text-center">
+      <el-result icon="warning" :title="t('blog.backendDown')" />
     </div>
 
-    <!-- 归档 -->
-    <footer v-if="archive.length" class="mt-16 border-t border-zinc-100 pt-8 dark:border-zinc-800">
-      <h2 class="mb-4 flex items-center gap-2 text-sm font-semibold text-zinc-700 dark:text-zinc-200">
-        <AppIcon name="clock" :size="15" class="text-zinc-400" />
-        {{ t('blog.years') }}
-      </h2>
-      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-zinc-500 dark:text-zinc-400">
-        <span v-for="([year, count], i) in archive" :key="year" class="flex items-center gap-1.5">
-          <span v-if="i > 0" class="text-zinc-300 dark:text-zinc-600">·</span>
-          <span class="font-medium text-zinc-700 dark:text-zinc-200">{{ year }}</span>
-          <span>{{ count }}</span>
-        </span>
+    <template v-else>
+      <el-radio-group v-model="activeTag" class="mb-8 flex flex-wrap gap-2">
+        <el-radio-button value="ALL">{{ t('blog.all') }}</el-radio-button>
+        <el-radio-button v-for="tag in allTags" :key="tag" :value="tag">{{ tag }}</el-radio-button>
+      </el-radio-group>
+
+      <div v-if="filtered.length" class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div v-for="post in filtered" :key="post.slug" class="group relative">
+          <PostCard :post="post" />
+          <el-button
+            v-if="isLoggedIn"
+            class="absolute right-3 top-3 z-10 !p-2 opacity-0 focus:opacity-100 group-hover:opacity-100"
+            type="danger"
+            plain
+            circle
+            :loading="deleting === post.slug"
+            :aria-label="t('editor.delete')"
+            @click.prevent.stop="removePost(post.slug)"
+          >
+            <el-icon><Delete /></el-icon>
+          </el-button>
+        </div>
       </div>
-    </footer>
+
+      <div v-else class="page-panel p-14 text-center">
+        <el-empty :description="t('blog.noPosts')" />
+      </div>
+
+      <footer v-if="archive.length" class="mt-12 border-t border-[var(--border)] pt-6">
+        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[var(--fg-muted)]">
+          <span v-for="([year, count], i) in archive" :key="year" class="flex items-center gap-1.5">
+            <span v-if="i > 0" class="text-[var(--fg-subtle)]">·</span>
+            <span class="font-medium text-[var(--fg)]">{{ year }}</span>
+            <el-tag size="small" effect="plain" round>{{ count }}</el-tag>
+          </span>
+        </div>
+      </footer>
+    </template>
   </div>
 </template>
