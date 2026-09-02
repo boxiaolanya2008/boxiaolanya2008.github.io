@@ -92,73 +92,124 @@ const LANGUAGE_ALIASES = {
 
 function highlightCode(raw, rawLang) {
   const lang = LANGUAGE_ALIASES[String(rawLang || '').toLowerCase()] || String(rawLang || '').toLowerCase()
-  const esc = escapeHtml(raw)
-  if (!lang) return esc
+  if (!lang) return escapeHtml(raw)
 
-  const patterns = []
-  if (lang === 'html' || lang === 'xml' || lang === 'vue') {
-    patterns.push(
-      [/&lt;!--[\s\S]*?--&gt;/g, 'hl-comment'],
-      [/&lt;\/?[a-zA-Z][\w:-]*(?=\s|\/?&gt;)/g, 'hl-tag'],
-      [/&gt;/g, 'hl-tag'],
-      [/(?:&quot;|"[^"\n]*"|'[^'\n]*')/g, 'hl-string'],
-      [/&lt;\?[\s\S]*?\?&gt;/g, 'hl-meta'],
-    )
-  } else if (lang === 'css' || lang === 'scss') {
-    patterns.push(
-      [/\/\*[\s\S]*?\*\//g, 'hl-comment'],
-      [/(?<=[{;}\n])\s*[-_a-zA-Z][\w-]*(?=\s*:)/g, 'hl-attr'],
-      [/[.#][\w-]+(?=[\s{,:])/g, 'hl-title'],
-      [/url\([^)]*\)/g, 'hl-string'],
-      [/#[0-9a-fA-F]{3,8}\b/g, 'hl-number'],
-    )
-  } else if (lang === 'json') {
-    patterns.push(
-      [/"([^"\n]*)"(?=\s*:)/g, 'hl-attr'],
-      [/"([^"\n]*)"/g, 'hl-string'],
-      [/\b\d+(?:\.\d+)?\b/g, 'hl-number'],
-      [/\btrue\b|\bfalse\b|\bnull\b/g, 'hl-literal'],
-    )
-  } else if (lang === 'sql') {
-    patterns.push(
-      [/--[^\n]*/g, 'hl-comment'],
-      [/\b(SELECT|FROM|WHERE|INSERT|INTO|VALUES|UPDATE|SET|DELETE|JOIN|LEFT|RIGHT|INNER|OUTER|ON|GROUP|BY|ORDER|HAVING|LIMIT|OFFSET|CREATE|TABLE|DROP|ALTER|AND|OR|NOT|NULL|AS|DISTINCT|PRIMARY|KEY|FOREIGN|REFERENCES|CASE|WHEN|THEN|ELSE|END)\b/gi, 'hl-keyword'],
-      [/\b\d+\b/g, 'hl-number'],
-      [/'[^'\n]*'/g, 'hl-string'],
-    )
-  } else if (lang === 'markdown') {
-    patterns.push(
-      [/^#{1,6}.*$/gm, 'hl-title'],
-      [/`[^`\n]*`/g, 'hl-string'],
-      [/\*\*[^*\n]+\*\*/g, 'hl-keyword'],
-      [/!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)/g, 'hl-link'],
-    )
-  } else if (lang === 'bash') {
-    patterns.push(
-      [/#[^\n]*/g, 'hl-comment'],
-      [/'(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*"/g, 'hl-string'],
-      [/\b(echo|cd|ls|mkdir|rm|cp|mv|git|npm|pnpm|yarn|node|sudo|export|source|cat|grep|find|curl|wget|docker)\b/g, 'hl-keyword'],
-      [/\b\d+\b/g, 'hl-number'],
-    )
-  } else {
-    patterns.push(
-      [/\/\/[^\n]*|\/\*[\s\S]*?\*\//g, 'hl-comment'],
-      [/(?:&quot;|"[^"\n]*"|'[^'\n]*'|`[^`\n]*`)/g, 'hl-string'],
-      [/\b\d+(?:\.\d+)?\b/g, 'hl-number'],
-      [/\b(true|false|null|undefined|NaN|Infinity)\b/g, 'hl-literal'],
-      [/\b(?:const|let|var|function|return|if|else|for|while|do|switch|case|break|continue|new|class|extends|import|export|from|async|await|try|catch|finally|throw|typeof|instanceof|in|of|this|interface|type|enum|public|private|protected|readonly|static)\b/g, 'hl-keyword'],
-      [/\b[A-Z][A-Za-z0-9_]*\b/g, 'hl-title'],
-    )
-  }
-
-  let highlighted = esc
-  for (const [re, className] of patterns) {
-    highlighted = highlighted.replace(re, (match) => `<span class="${className}">${match}</span>`)
-  }
-  return highlighted
+  const lines = String(raw).replace(/\r\n/g, '\n').split('\n')
+  return lines.map((line) => highlightLine(line, lang)).join('\n')
 }
 
-function setStatus(message) {
+function highlightLine(line, lang) {
+  const tokens = []
+  const push = (value, className) => {
+    const token = `\uE000${tokens.length}\uE001`
+    tokens.push(`<span class="${className}">${escapeHtml(value)}</span>`)
+    return token
+  }
+  const restore = (source) => source.replace(/\uE000(\d+)\uE001/g, (_, index) => tokens[Number(index)])
+
+  if (lang === 'html' || lang === 'xml' || lang === 'vue') {
+    let out = escapeHtml(line)
+    out = out.replace(/&lt;!--[\s\S]*?--&gt;/g, (match) => push(match, 'hl-comment'))
+    out = out.replace(/&lt;\/?[a-zA-Z][\w:-]*(?=\s|\/?&gt;)/g, '<span class="hl-tag">$&</span>')
+    out = out.replace(/&gt;/g, '<span class="hl-tag">$&</span>')
+    out = out.replace(/&lt;\?[\s\S]*?\?&gt;/g, '<span class="hl-meta">$&</span>')
+    return out
+  }
+
+  if (lang === 'css' || lang === 'scss') {
+    let out = escapeHtml(line)
+    out = out.replace(/\/\*[\s\S]*?\*\//g, (match) => push(match, 'hl-comment'))
+    out = out.replace(/(?<=[{;}\n])\s*[-_a-zA-Z][\w-]*(?=\s*:)/g, '<span class="hl-attr">$&</span>')
+    out = out.replace(/[.#][\w-]+(?=[\s{,:])/g, '<span class="hl-title">$&</span>')
+    out = out.replace(/url\([^)]*\)/g, '<span class="hl-string">$&</span>')
+    out = out.replace(/#[0-9a-fA-F]{3,8}\b/g, '<span class="hl-number">$&</span>')
+    return out
+  }
+
+  if (lang === 'json') {
+    let out = escapeHtml(line)
+    out = out.replace(/"([^"\n]*)"(?=\s*:)/g, '<span class="hl-attr">$&</span>')
+    out = out.replace(/"([^"\n]*)"/g, '<span class="hl-string">$&</span>')
+    out = out.replace(/\b\d+(?:\.\d+)?\b/g, '<span class="hl-number">$&</span>')
+    out = out.replace(/\btrue\b|\bfalse\b|\bnull\b/g, '<span class="hl-literal">$&</span>')
+    return out
+  }
+
+  if (lang === 'sql') {
+    let out = escapeHtml(line)
+    out = out.replace(/--[^\n]*/g, (match) => push(match, 'hl-comment'))
+    out = out.replace(/\b(SELECT|FROM|WHERE|INSERT|INTO|VALUES|UPDATE|SET|DELETE|JOIN|LEFT|RIGHT|INNER|OUTER|ON|GROUP|BY|ORDER|HAVING|LIMIT|OFFSET|CREATE|TABLE|DROP|ALTER|AND|OR|NOT|NULL|AS|DISTINCT|PRIMARY|KEY|FOREIGN|REFERENCES|CASE|WHEN|THEN|ELSE|END)\b/gi, '<span class="hl-keyword">$&</span>')
+    out = out.replace(/\b\d+\b/g, '<span class="hl-number">$&</span>')
+    return out
+  }
+
+  if (lang === 'markdown') {
+    let out = escapeHtml(line)
+    out = out.replace(/^#{1,6}.*$/gm, '<span class="hl-title">$&</span>')
+    out = out.replace(/`[^`\n]*`/g, '<span class="hl-string">$&</span>')
+    out = out.replace(/\*\*[^*\n]+\*\*/g, '<span class="hl-keyword">$&</span>')
+    out = out.replace(/!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)/g, '<span class="hl-link">$&</span>')
+    return out
+  }
+
+  if (lang === 'bash') {
+    let out = escapeHtml(line)
+    out = out.replace(/#[^\n]*/g, (match) => push(match, 'hl-comment'))
+    out = out.replace(/\b(echo|cd|ls|mkdir|rm|cp|mv|git|npm|pnpm|yarn|node|sudo|export|source|cat|grep|find|curl|wget|docker)\b/g, '<span class="hl-keyword">$&</span>')
+    out = out.replace(/\b\d+\b/g, '<span class="hl-number">$&</span>')
+    return out
+  }
+
+  let out = ''
+  const length = line.length
+  let index = 0
+  while (index < length) {
+    const char = line[index]
+    const rest = line.slice(index)
+    const stringMatch = rest.match(/^"(?:[^"\\\n]|\\.)*"|^'(?:[^'\\\n]|\\.)*'|^`(?:[^`\\\n]|\\.)*`/)
+    const lineComment = rest.match(/^\/\/[^\n]*/)
+    const blockComment = rest.match(/^\/\*[\s\S]*?\*\//)
+    if (stringMatch) {
+      out += push(stringMatch[0], 'hl-string')
+      index += stringMatch[0].length
+      continue
+    }
+    if (lineComment) {
+      out += push(lineComment[0], 'hl-comment')
+      index += lineComment[0].length
+      continue
+    }
+    if (blockComment) {
+      out += push(blockComment[0], 'hl-comment')
+      index += blockComment[0].length
+      continue
+    }
+    const word = rest.match(/^[A-Za-z_$][\w$]*/)
+    if (word) {
+      const value = word[0]
+      const lower = value.toLowerCase()
+      const className = KEYWORDS.has(lower)
+        ? 'hl-keyword'
+        : value === 'true' || value === 'false' || value === 'null' || value === 'undefined' || value === 'NaN' || value === 'Infinity'
+          ? 'hl-literal'
+          : /^[A-Z]/.test(value)
+            ? 'hl-title'
+            : ''
+      out += className ? `<span class="${className}">${escapeHtml(value)}</span>` : escapeHtml(value)
+      index += value.length
+      continue
+    }
+    const number = rest.match(/^\d+(?:\.\d+)?/)
+    if (number) {
+      out += `<span class="hl-number">${escapeHtml(number[0])}</span>`
+      index += number[0].length
+      continue
+    }
+    out += escapeHtml(char)
+    index += 1
+  }
+  return restore(out)
+}function setStatus(message) {
   body.innerHTML = `<div class="state-card">${safeText(message)}</div>`
 }
 
