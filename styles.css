@@ -452,3 +452,64 @@ code {
     animation-duration: 0.01ms !important;
   }
 }
+
+/* 动态 SVG 图标与按钮 */
+.button svg,
+.about-links svg,
+.post-footer svg,
+.project-links svg,
+.article-footer svg {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 auto;
+}
+
+.about-links a,
+.article-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.post-footer a,
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* 页面滚动入场动画 */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero,
+.section,
+.site-footer {
+  animation: rise-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* 主题切换时整体颜色过渡 */
+html.theme-transition,
+html.theme-transition *,
+html.theme-transition *::before,
+html.theme-transition *::after {
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    color 0.35s ease,
+    box-shadow 0.35s ease !important;
+}
+
+/* 图片加载失败时回退为 GitHub 标识 */
+img.brand-avatar,
+.hero-visual img {
+  background: var(--bg-subtle);
+}
