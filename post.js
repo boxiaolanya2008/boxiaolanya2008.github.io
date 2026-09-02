@@ -60,6 +60,104 @@ function escapeHtml(value) {
   })[char])
 }
 
+const KEYWORDS = new Set([
+  'const', 'let', 'var', 'function', 'return', 'if', 'else', 'for', 'while',
+  'do', 'switch', 'case', 'break', 'continue', 'new', 'class', 'extends',
+  'import', 'export', 'from', 'async', 'await', 'try', 'catch', 'finally',
+  'throw', 'typeof', 'instanceof', 'in', 'of', 'this', 'null', 'undefined',
+  'true', 'false', 'interface', 'type', 'enum', 'public', 'private',
+  'protected', 'readonly', 'static', 'def', 'elif', 'pass', 'lambda', 'yield',
+])
+
+const LANGUAGE_ALIASES = {
+  js: 'javascript',
+  jsx: 'javascript',
+  ts: 'typescript',
+  tsx: 'typescript',
+  py: 'python',
+  sh: 'bash',
+  shell: 'bash',
+  zsh: 'bash',
+  html: 'html',
+  xml: 'xml',
+  svg: 'xml',
+  vue: 'html',
+  css: 'css',
+  scss: 'css',
+  json: 'json',
+  sql: 'sql',
+  md: 'markdown',
+  markdown: 'markdown',
+}
+
+function highlightCode(raw, rawLang) {
+  const lang = LANGUAGE_ALIASES[String(rawLang || '').toLowerCase()] || String(rawLang || '').toLowerCase()
+  const esc = escapeHtml(raw)
+  if (!lang) return esc
+
+  const patterns = []
+  if (lang === 'html' || lang === 'xml' || lang === 'vue') {
+    patterns.push(
+      [/&lt;!--[\s\S]*?--&gt;/g, 'hl-comment'],
+      [/&lt;\/?[a-zA-Z][\w:-]*(?=\s|\/?&gt;)/g, 'hl-tag'],
+      [/&gt;/g, 'hl-tag'],
+      [/(?:&quot;|"[^"\n]*"|'[^'\n]*')/g, 'hl-string'],
+      [/&lt;\?[\s\S]*?\?&gt;/g, 'hl-meta'],
+    )
+  } else if (lang === 'css' || lang === 'scss') {
+    patterns.push(
+      [/\/\*[\s\S]*?\*\//g, 'hl-comment'],
+      [/(?<=[{;}\n])\s*[-_a-zA-Z][\w-]*(?=\s*:)/g, 'hl-attr'],
+      [/[.#][\w-]+(?=[\s{,:])/g, 'hl-title'],
+      [/url\([^)]*\)/g, 'hl-string'],
+      [/#[0-9a-fA-F]{3,8}\b/g, 'hl-number'],
+    )
+  } else if (lang === 'json') {
+    patterns.push(
+      [/"([^"\n]*)"(?=\s*:)/g, 'hl-attr'],
+      [/"([^"\n]*)"/g, 'hl-string'],
+      [/\b\d+(?:\.\d+)?\b/g, 'hl-number'],
+      [/\btrue\b|\bfalse\b|\bnull\b/g, 'hl-literal'],
+    )
+  } else if (lang === 'sql') {
+    patterns.push(
+      [/--[^\n]*/g, 'hl-comment'],
+      [/\b(SELECT|FROM|WHERE|INSERT|INTO|VALUES|UPDATE|SET|DELETE|JOIN|LEFT|RIGHT|INNER|OUTER|ON|GROUP|BY|ORDER|HAVING|LIMIT|OFFSET|CREATE|TABLE|DROP|ALTER|AND|OR|NOT|NULL|AS|DISTINCT|PRIMARY|KEY|FOREIGN|REFERENCES|CASE|WHEN|THEN|ELSE|END)\b/gi, 'hl-keyword'],
+      [/\b\d+\b/g, 'hl-number'],
+      [/'[^'\n]*'/g, 'hl-string'],
+    )
+  } else if (lang === 'markdown') {
+    patterns.push(
+      [/^#{1,6}.*$/gm, 'hl-title'],
+      [/`[^`\n]*`/g, 'hl-string'],
+      [/\*\*[^*\n]+\*\*/g, 'hl-keyword'],
+      [/!\[[^\]]*\]\([^)]*\)|\[[^\]]*\]\([^)]*\)/g, 'hl-link'],
+    )
+  } else if (lang === 'bash') {
+    patterns.push(
+      [/#[^\n]*/g, 'hl-comment'],
+      [/'(?:[^'\\]|\\.)*'|"(?:[^"\\]|\\.)*"/g, 'hl-string'],
+      [/\b(echo|cd|ls|mkdir|rm|cp|mv|git|npm|pnpm|yarn|node|sudo|export|source|cat|grep|find|curl|wget|docker)\b/g, 'hl-keyword'],
+      [/\b\d+\b/g, 'hl-number'],
+    )
+  } else {
+    patterns.push(
+      [/\/\/[^\n]*|\/\*[\s\S]*?\*\//g, 'hl-comment'],
+      [/(?:&quot;|"[^"\n]*"|'[^'\n]*'|`[^`\n]*`)/g, 'hl-string'],
+      [/\b\d+(?:\.\d+)?\b/g, 'hl-number'],
+      [/\b(true|false|null|undefined|NaN|Infinity)\b/g, 'hl-literal'],
+      [/\b(?:const|let|var|function|return|if|else|for|while|do|switch|case|break|continue|new|class|extends|import|export|from|async|await|try|catch|finally|throw|typeof|instanceof|in|of|this|interface|type|enum|public|private|protected|readonly|static)\b/g, 'hl-keyword'],
+      [/\b[A-Z][A-Za-z0-9_]*\b/g, 'hl-title'],
+    )
+  }
+
+  let highlighted = esc
+  for (const [re, className] of patterns) {
+    highlighted = highlighted.replace(re, (match) => `<span class="${className}">${match}</span>`)
+  }
+  return highlighted
+}
+
 function setStatus(message) {
   body.innerHTML = `<div class="state-card">${safeText(message)}</div>`
 }
@@ -117,7 +215,8 @@ function renderMarkdown(markdown) {
 
   const flushCode = () => {
     if (inCode) {
-      const code = escapeHtml(codeLines.join('\n'))
+      const rawCode = codeLines.join('\n')
+      const code = highlightCode(rawCode, codeLang)
       html.push(
         `<pre><code${codeLang ? ` class="language-${safeText(codeLang)}"` : ''}>${code}\n</code></pre>`,
       )

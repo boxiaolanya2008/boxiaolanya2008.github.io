@@ -552,3 +552,73 @@ body.sidebar-open .sidebar-backdrop {
   opacity: 0.68;
   pointer-events: none;
 }
+
+/* 代码语法高亮 */
+.hl-comment {
+  color: var(--code-comment, #59636e);
+  font-style: italic;
+}
+
+.hl-keyword {
+  color: var(--code-keyword, #cf222e);
+  font-weight: 600;
+}
+
+.hl-string {
+  color: var(--code-string, #0a3069);
+}
+
+.hl-number,
+.hl-literal {
+  color: var(--code-number, #0550ae);
+}
+
+.hl-title {
+  color: var(--code-title, #8250df);
+}
+
+.hl-attr {
+  color: var(--code-attr, #0550ae);
+}
+
+.hl-tag {
+  color: var(--code-tag, #116329);
+}
+
+.hl-meta {
+  color: var(--code-meta, #1f2328);
+}
+
+.hl-link {
+  color: var(--accent-fg);
+}
+
+html.dark .hl-comment {
+  color: #8b949e;
+}
+
+html.dark .hl-keyword {
+  color: #ff7b72;
+}
+
+html.dark .hl-string {
+  color: #a5d6ff;
+}
+
+html.dark .hl-number,
+html.dark .hl-literal {
+  color: #79c0ff;
+}
+
+html.dark .hl-title {
+  color: #d2a8ff;
+}
+
+html.dark .hl-attr,
+html.dark .hl-meta {
+  color: #79c0ff;
+}
+
+html.dark .hl-tag {
+  color: #7ee787;
+}
