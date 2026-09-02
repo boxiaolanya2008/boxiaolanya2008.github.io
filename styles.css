@@ -313,6 +313,8 @@ code {
 
 .post-card,
 .project-card {
+  position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   min-height: 210px;
@@ -321,6 +323,28 @@ code {
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   box-shadow: var(--shadow);
+}
+
+.post-card::before,
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 52%, transparent), transparent 38%, transparent 62%, color-mix(in srgb, var(--accent) 28%, transparent));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.post-card:hover::before,
+.project-card:hover::before {
+  opacity: 1;
 }
 
 .post-card:hover,
@@ -386,6 +410,8 @@ code {
 }
 
 .about-panel {
+  position: relative;
+  isolation: isolate;
   display: grid;
   gap: 24px;
   padding: 32px;
@@ -393,6 +419,22 @@ code {
   border-radius: var(--radius);
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   box-shadow: var(--shadow);
+}
+
+.about-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 46%, transparent), transparent 40%, transparent 60%, color-mix(in srgb, var(--accent) 24%, transparent));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0.68;
+  pointer-events: none;
 }
 
 @media (min-width: 760px) {

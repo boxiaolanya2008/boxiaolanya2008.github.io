@@ -528,3 +528,27 @@ body.sidebar-open .sidebar-backdrop {
     margin-left: 232px;
   }
 }
+
+/* 卡片边缘高光 */
+.article-body .markdown-alert,
+.article-body pre {
+  position: relative;
+  isolation: isolate;
+}
+
+.article-body .markdown-alert::before,
+.article-body pre::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 46%, transparent), transparent 40%, transparent 60%, color-mix(in srgb, var(--accent) 24%, transparent));
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  opacity: 0.68;
+  pointer-events: none;
+}
