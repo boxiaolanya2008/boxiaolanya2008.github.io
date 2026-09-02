@@ -1,8 +1,6 @@
-# 本地数据库文件（含用户与文章数据）
-data/
-# npm依赖
-node_modules/
-# 构建文件
-dist/
-# TypeScript 增量构建缓存
+# 忽略本地系统文件
 *.tsbuildinfo
+.DS_Store
+node_modules/
+dist/
+data/

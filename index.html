@@ -4,11 +4,97 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="boxiaolanya2008 的个人博客，记录前端与工具链的技术思考。" />
+    <meta name="description" content="boxiaolanya2008 的个人博客，用 Markdown 写作，纯静态部署在 GitHub Pages。" />
     <title>boxiaolanya2008 · 个人博客</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script type="module" src="/app.js"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">
+          <img src="/avatar.svg" alt="boxiaolanya2008 头像" class="brand-avatar" />
+          <span>boxiaolanya2008</span>
+        </a>
+        <nav class="site-nav" aria-label="主导航">
+          <a href="/">首页</a>
+          <a href="/#posts">博客</a>
+          <a href="/#projects">项目</a>
+          <a href="/#about">关于</a>
+        </nav>
+        <div class="header-actions">
+          <button id="theme-toggle" class="icon-button" type="button" aria-label="切换深色模式" title="切换深色模式">
+            <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <p class="eyebrow">GitHub Pages · Markdown Blog</p>
+            <h1>boxiaolanya2008</h1>
+            <p class="hero-copy">一个喜欢折腾前端与工具链的开发者。这里用 Markdown 记录技术思考与日常经验。</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="/#posts">阅读博客</a>
+              <a class="button button-secondary" href="/#about">关于我</a>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="/avatar.svg" alt="boxiaolanya2008 的 GitHub 头像" />
+          </div>
+        </div>
+      </section>
+
+      <section id="posts" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>文章</h2>
+            <p>文章放在仓库 <code>posts/</code> 目录，使用 Markdown 编写。</p>
+          </div>
+          <div id="post-list" class="post-grid" aria-live="polite">
+            <div class="state-card">正在加载文章…</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>项目</h2>
+            <p>GitHub 公开仓库。</p>
+          </div>
+          <div id="project-list" class="project-grid" aria-live="polite">
+            <div class="state-card">正在加载项目…</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container about-panel">
+          <div>
+            <h2>关于</h2>
+            <p>我是 boxiaolanya2008，一名专注前端与工具链开发的开发者。这个博客用来沉淀日常学习与踩坑记录。</p>
+            <p>欢迎通过 GitHub 或邮箱联系我。</p>
+          </div>
+          <div class="about-links">
+            <a href="https://github.com/boxiaolanya2008" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://space.bilibili.com/432258335" target="_blank" rel="noopener">Bilibili</a>
+            <a href="mailto:3520687734@qq.com">Email</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span>© <span id="year">2026</span> boxiaolanya2008</span>
+        <span>纯 HTML · Markdown · GitHub Pages</span>
+      </div>
+    </footer>
   </body>
 </html>
