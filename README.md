@@ -7,6 +7,7 @@
 
 - 首页自动读取仓库 `posts/` 目录中的 Markdown 文件
 - 文章详情页支持常用 Markdown 语法
+- 桌面端固定侧边导航，移动端抽屉菜单
 - 深浅色主题切换
 - 项目区展示 GitHub 公开仓库
 - 不需要 Node.js、数据库或构建步骤
@@ -31,8 +32,8 @@
 ```text
 index.html      首页
 post.html       文章详情页
-app.js          首页逻辑
-post.js         文章渲染逻辑
+app.js          首页逻辑与侧边导航
+post.js         文章渲染与侧边导航
 styles.css      首页样式
 post.css        文章页样式
 posts/          Markdown 文章目录

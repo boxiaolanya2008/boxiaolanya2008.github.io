@@ -513,3 +513,108 @@ img.brand-avatar,
 .hero-visual img {
   background: var(--bg-subtle);
 }
+
+/* 侧边导航 */
+.sidebar {
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 60;
+  display: flex;
+  width: 232px;
+  flex-direction: column;
+  gap: 28px;
+  padding: 24px 18px;
+  border-right: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(18px);
+  transform: translateX(-100%);
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+body.sidebar-open .sidebar {
+  transform: translateX(0);
+}
+
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.site-nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 12px;
+  border-radius: 10px;
+  color: var(--fg-muted);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.site-nav a svg {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 auto;
+}
+
+.sidebar-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.sidebar-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: none;
+  border: 0;
+  background: rgba(2, 8, 23, 0.38);
+}
+
+body.sidebar-open .sidebar-backdrop {
+  display: block;
+}
+
+.mobile-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  display: flex;
+  min-height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 0 16px;
+  border-bottom: 1px solid var(--border);
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(14px);
+}
+
+.mobile-header .brand span {
+  font-size: 14px;
+}
+
+.menu-button {
+  width: 40px;
+  height: 40px;
+}
+
+/* 桌面端固定侧栏 */
+@media (min-width: 980px) {
+  .sidebar {
+    transform: none;
+  }
+
+  .sidebar-backdrop,
+  .mobile-header {
+    display: none;
+  }
+
+  main,
+  .site-footer {
+    margin-left: 232px;
+  }
+}

@@ -10,16 +10,39 @@
     <script type="module" src="/post.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="/">
-          <img src="https://github.com/boxiaolanya2008.png?size=80" alt="boxiaolanya2008 头像" class="brand-avatar" />
-          <span>boxiaolanya2008</span>
-        </a>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="/">
+        <img src="https://github.com/boxiaolanya2008.png?size=80" alt="boxiaolanya2008 头像" class="brand-avatar" />
+        <span>boxiaolanya2008</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg>首页</a>
+        <a href="/#posts"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>博客</a>
+        <a href="/#projects"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>项目</a>
+        <a href="/#about"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>关于</a>
+      </nav>
+      <div class="sidebar-actions">
         <button id="theme-toggle" class="icon-button" type="button" aria-label="切换深色模式" title="切换深色模式">
           <svg id="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
           </svg>
+        </button>
+      </div>
+    </aside>
+    <button id="sidebar-backdrop" class="sidebar-backdrop" type="button" aria-label="关闭菜单"></button>
+    <header class="mobile-header">
+      <a class="brand" href="/">
+        <img src="https://github.com/boxiaolanya2008.png?size=80" alt="boxiaolanya2008 头像" class="brand-avatar" />
+        <span>boxiaolanya2008</span>
+      </a>
+      <div class="header-actions">
+        <button id="theme-toggle-mobile" class="icon-button" type="button" aria-label="切换深色模式" title="切换深色模式">
+          <svg id="theme-icon-mobile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
+        <button id="sidebar-toggle" class="icon-button menu-button" type="button" aria-label="打开菜单" aria-expanded="false" aria-controls="sidebar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
         </button>
       </div>
     </header>

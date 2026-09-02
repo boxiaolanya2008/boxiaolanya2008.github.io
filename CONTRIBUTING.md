@@ -8,17 +8,17 @@
 ## 开发流程
 
 1. Fork 仓库并克隆到本地
-2. 安装依赖：`npm install`
-3. 启动开发服务器：`npm run dev`
-4. 新建分支：`git checkout -b feat/your-feature`
-5. 提交修改：`git commit -m "feat: 描述你的改动"`
-6. 推送并开 PR
+2. 新建分支：`git checkout -b feat/your-feature`
+3. 修改 HTML、CSS、JS 或 `posts/` 下的 Markdown 文章
+4. 提交修改：`git commit -m "feat: 描述你的改动"`
+5. 推送并开 PR
 
 ## 提交前自检
 
-- [ ] `npm run build` 通过（包含 vue-tsc 类型检查）
+- [ ] 直接在浏览器打开 `index.html` 或启动本地静态服务器检查页面
 - [ ] 浅色 / 深色两套主题下均正常显示
-- [ ] 新增组件遵循项目现有风格（极简排版、圆角卡片、微交互）
+- [ ] 桌面端侧边导航和移动端抽屉菜单均可用
+- [ ] 新增或修改文章后，`posts/` 中的 Front Matter 和 Markdown 格式正确
 - [ ] 不引入装饰性注释，只写必要的「为什么」注释
 
 ## 提交信息规范

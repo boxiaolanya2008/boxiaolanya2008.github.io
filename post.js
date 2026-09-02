@@ -295,5 +295,28 @@ function setupTheme() {
 }
 
 document.querySelector('#year').textContent = new Date().getFullYear()
+setupSidebar()
 setupTheme()
 loadPost()
+
+function setupSidebar() {
+  const sidebar = document.querySelector('#sidebar')
+  const toggle = document.querySelector('#sidebar-toggle')
+  const backdrop = document.querySelector('#sidebar-backdrop')
+  if (!sidebar || !toggle || !backdrop) return
+  const open = () => {
+    document.body.classList.add('sidebar-open')
+    toggle.setAttribute('aria-expanded', 'true')
+    toggle.setAttribute('aria-label', '关闭菜单')
+  }
+  const close = () => {
+    document.body.classList.remove('sidebar-open')
+    toggle.setAttribute('aria-expanded', 'false')
+    toggle.setAttribute('aria-label', '打开菜单')
+  }
+  toggle.addEventListener('click', () => {
+    document.body.classList.contains('sidebar-open') ? close() : open()
+  })
+  backdrop.addEventListener('click', close)
+  sidebar.querySelectorAll('a').forEach((link) => link.addEventListener('click', close))
+}
