@@ -273,7 +273,7 @@ code {
 
 .section-alt {
   border-top: 1px solid var(--border);
-  background: var(--bg-subtle);
+  background: transparent;
 }
 
 .section-heading {

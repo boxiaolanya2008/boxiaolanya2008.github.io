@@ -12,17 +12,30 @@ const state = {
 const postList = document.querySelector('#post-list')
 const projectList = document.querySelector('#project-list')
 
-/* GitHub Pages 无法列出目录，这里用 GitHub API 列出 posts/ 下的 Markdown 文件。
-   普通用户 API 默认每小时 60 次，页面只请求一次目录，足够日常浏览。 */
+/* 优先读取仓库内的静态 posts/index.json，避免 GitHub API 限流导致首页文章加载失败。
+   索引缺失时才回退到 GitHub API 列出 posts/ 下的 Markdown 文件。 */
+async function loadStaticIndex() {
+  const res = await fetch(`${POSTS_DIR}/index.json`, { cache: 'no-store' })
+  if (!res.ok) throw new Error(`index.json ${res.status}`)
+  const data = await res.json()
+  if (!Array.isArray(data)) throw new Error('posts/index.json 格式不正确')
+  return data.filter((post) => post && post.file && !post.draft)
+}
+
 async function listPostFiles() {
-  const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${POSTS_DIR}?ref=${GITHUB_BRANCH}`
-  const res = await fetch(url)
-  if (!res.ok) throw new Error(`GitHub API ${res.status}`)
-  const files = await res.json()
-  if (!Array.isArray(files)) throw new Error('posts 目录格式不正确')
-  return files
-    .filter((file) => file.name?.toLowerCase().endsWith('.md'))
-    .sort((a, b) => a.name.localeCompare(b.name))
+  try {
+    return await loadStaticIndex()
+  } catch {
+    const url = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${POSTS_DIR}?ref=${GITHUB_BRANCH}`
+    const res = await fetch(url)
+    if (!res.ok) throw new Error(`GitHub API ${res.status}`)
+    const files = await res.json()
+    if (!Array.isArray(files)) throw new Error('posts 目录格式不正确')
+    return files
+      .filter((file) => file.name?.toLowerCase().endsWith('.md'))
+      .map((file) => ({ file: file.name, title: file.name.replace(/\.md$/, '') }))
+      .sort((a, b) => a.file.localeCompare(b.file))
+  }
 }
 
 async function fetchText(url) {
@@ -86,16 +99,28 @@ async function loadPosts() {
 
     const posts = []
     for (const file of files) {
+      if (file.file && file.title && file.summary) {
+        posts.push({
+          slug: slugify(file.file),
+          title: file.title,
+          date: file.date || '',
+          summary: file.summary || '',
+          tags: Array.isArray(file.tags) ? file.tags : [],
+          file: postHref(file.file),
+          raw: '',
+        })
+        continue
+      }
       const raw = await fetchText(file.download_url)
       const { meta, content } = parseFrontMatter(raw)
       if (meta.draft === true) continue
       posts.push({
-        slug: slugify(file.name),
-        title: meta.title || file.name.replace(/\.md$/, ''),
+        slug: slugify(file.file || file.name),
+        title: meta.title || file.file?.replace(/\.md$/, '') || file.name.replace(/\.md$/, ''),
         date: meta.date || '',
         summary: meta.summary || content.trim().split(/\r?\n/).find(Boolean)?.slice(0, 120) || '',
         tags: Array.isArray(meta.tags) ? meta.tags : [],
-        file: postHref(file.name),
+        file: postHref(file.file || file.name),
         raw: content,
       })
     }

@@ -1,0 +1,24 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "你好，世界",
+    "date": "2026-09-02",
+    "summary": "这是第一篇 Markdown 文章示例，用来展示这个纯 HTML 博客的写作格式。",
+    "tags": [
+      "示例",
+      "博客"
+    ],
+    "file": "hello-world.md"
+  },
+  {
+    "slug": "git-pages-guide",
+    "title": "用 GitHub Pages 部署纯 HTML 博客",
+    "date": "2026-09-01",
+    "summary": "记录这个博客改为静态 Markdown 模式后的部署方式。",
+    "tags": [
+      "GitHub Pages",
+      "部署"
+    ],
+    "file": "git-pages-guide.md"
+  }
+]
